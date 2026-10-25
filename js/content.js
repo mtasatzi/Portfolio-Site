@@ -1,7 +1,7 @@
 window.PORTFOLIO_CONTENT = {
   contactEmail: "mattina13@hotmail.com",
   images: {
-    about: "assets/cover.jpg",
+    about: "assets/about.jpg",
     cv: "assets/cv.pdf"
   },
   translations: {
@@ -14,9 +14,24 @@ window.PORTFOLIO_CONTENT = {
       },
       about: {
         title: "About",
-        bio1: "I am a visual artist working in painting and mixed media print making. My practice is conceptual, rooted in geometric composition and the visual language of the Russian Avant Garde and the Bauhaus.",
-        bio2: "Each work is a considered arrangement of line, color and form — an exploration of space, structure and perception.",
-        imageAlt: "Cover artwork"
+        bio: "Matina Tasatzi was born in Athens in 1996. She studied Interior Architecture and Decoration at the University of West Attica for two years before entering the Department of Fine Arts and Art Sciences (formerly Plastic Arts and Art Sciences) at the University of Ioannina, from which she graduated with distinction in 2022. In September 2025, she completed the postgraduate program in Fine Arts at the same department.",
+        imageAlt: "Featured artwork"
+      },
+      exhibitions: {
+        title: "Selected group exhibitions: ",
+        items: [
+          { date: "24–27 November 2019", title: "“Violence Against Women”", venue: "Exhibition of works by students of the School of Fine Arts, University of Ioannina · “D. Hatzis” Cultural Space, Ioannina" },
+          { date: "15–30 May 2022", title: "Exhibition of students from the School of Fine Arts of Ioannina", venue: "Municipal Cultural Center of Ioannina" },
+          { date: "26 October–10 November 2022", title: "“The Independent Division”", venue: "War Museum of Athens" },
+          { date: "11 January–18 February (year not specified)", title: "Exhibition of students from the School of Ioannina", venue: "16 Fokionos Negri, Athens" },
+          { date: "26 November 2023–11 February 2024", title: "Graduate Printmaking Exhibition", venue: "Municipal Gallery of Ioannina" },
+          { date: "2–31 December 2023", title: "Biennale of Graduates of the Fine Arts Schools of Greece", venue: "Municipal Art Gallery of Larissa – G. I. Katsigras Museum" },
+          { date: "20 April–31 August 2024", title: "Graduate Printmaking Exhibition", venue: "Archaeological Museum of Igoumenitsa" },
+          { date: "14 June–15 September 2024", title: "“Mat(t)er-nity”", venue: "General State Archives, Historical Archive Museum of Ioannina" },
+          { date: "12 February–2 March 2025", title: "“Beyond the Visible”", venue: "Photometria Photography Center, Ioannina" },
+          { date: "14 February–15 March 2025", title: "“The School of Ioannina”", venue: "16 Fokionos Negri, Athens" },
+          { date: "17 June–5 July 2025", title: "Group exhibition", venue: "Technohoros Gallery, Athens" }
+        ]
       },
       gallery: {
         title: "Gallery",
@@ -81,9 +96,24 @@ window.PORTFOLIO_CONTENT = {
       },
       about: {
         title: "Σχετικά",
-        bio1: "Είμαι εικαστικός καλλιτέχνης με επίκεντρο τη ζωγραφική και τη χαρακτική μεικτών μέσων. Η πρακτική μου είναι εννοιολογική, βασισμένη στη γεωμετρική σύνθεση και στην οπτική γλώσσα της Ρωσικής Πρωτοπορίας και του Bauhaus.",
-        bio2: "Κάθε έργο αποτελεί μια προσεκτική διάταξη γραμμής, χρώματος και φόρμας — μια διερεύνηση του χώρου, της δομής και της αντίληψης.",
-        imageAlt: "Έργο εξωφύλλου"
+        bio: "Η Ματίνα Τασατζή γεννήθηκε το 1996 στην Αθήνα. Παρακολούθησε για δύο χρόνια μαθήματα στο Τμήμα Εσωτερικής Αρχιτεκτονικής και Διακόσμησης του Πανεπιστημίου Δυτικής Αττικής και στη συνέχεια εισήχθη στο Τμήμα Εικαστικών Τεχνών και Επιστημών της Τέχνης (πρώην Πλαστικών Τεχνών και Επιστημών της Τέχνης) του Πανεπιστημίου Ιωαννίνων, από το οποίο αποφοίτησε το 2022 με άριστα. Τον Σεπτέμβριο του 2025 ολοκλήρωσε το μεταπτυχιακό πρόγραμμα σπουδών «Εικαστικές Τέχνες» του ίδιου τμήματος.",
+        imageAlt: "Επιλεγμένο έργο"
+      },
+      exhibitions: {
+        title: "Επιλεγμένες ομαδικές εκθέσεις: ",
+        items: [
+          { date: "24–27 Νοεμβρίου 2019", title: "«Η βία κατά των γυναικών»", venue: "Έκθεση έργων φοιτητών της Σχολής Καλών Τεχνών Πανεπιστημίου Ιωαννίνων · Πολιτιστικός χώρος «Δ. Χατζής», Ιωάννινα" },
+          { date: "15–30 Μαΐου 2022", title: "Έκθεση φοιτητών από τη Σχολή Καλών Τεχνών Ιωαννίνων", venue: "Πνευματικό Κέντρο Δήμου Ιωαννιτών" },
+          { date: "26 Οκτωβρίου–10 Νοεμβρίου 2022", title: "«Η Ανεξάρτητη Μεραρχία»", venue: "Πολεμικό Μουσείο Αθηνών" },
+          { date: "11 Ιανουαρίου–18 Φεβρουαρίου (έτος δεν αναφέρεται)", title: "Έκθεση φοιτητών από τη Σχολή των Ιωαννίνων", venue: "Φωκίωνος Νέγρη 16, Αθήνα" },
+          { date: "26 Νοεμβρίου 2023–11 Φεβρουαρίου 2024", title: "Έκθεση Χαρακτικής Αποφοίτων", venue: "Δημοτική Πινακοθήκη Ιωαννίνων" },
+          { date: "2–31 Δεκεμβρίου 2023", title: "Μπιενάλε των Αποφοίτων των Σχολών Καλών Τεχνών της Ελλάδας", venue: "Δημοτική Πινακοθήκη Λάρισας – Μουσείο Γ. Ι. Κατσίγρα" },
+          { date: "20 Απριλίου–31 Αυγούστου 2024", title: "Έκθεση Χαρακτικής Αποφοίτων", venue: "Αρχαιολογικό Μουσείο Ηγουμενίτσας" },
+          { date: "14 Ιουνίου–15 Σεπτεμβρίου 2024", title: "«Mat(t)er-nity»", venue: "ΓΑΚ – Ιστορικό Αρχείο Μουσείο Ηπείρου, Ιωάννινα" },
+          { date: "12 Φεβρουαρίου–2 Μαρτίου 2025", title: "«Πέρα από το ορατό»", venue: "Photometria Photography Center, Ιωάννινα" },
+          { date: "14 Φεβρουαρίου–15 Μαρτίου 2025", title: "«Η σχολή των Ιωαννίνων»", venue: "Φωκίωνος Νέγρη 16, Αθήνα" },
+          { date: "17 Ιουνίου–5 Ιουλίου 2025", title: "Ομαδική έκθεση", venue: "Γκαλερί «Τεχνοχώρος», Αθήνα" }
+        ]
       },
       gallery: {
         title: "Γκαλερί",

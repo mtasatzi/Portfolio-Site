@@ -477,7 +477,7 @@ p {
 
 .about-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: minmax(0, 1.2fr) minmax(260px, 0.8fr);
   gap: var(--space-xl);
   align-items: start;
 }
@@ -489,22 +489,28 @@ p {
 
 .about-image {
   position: relative;
+  display: flex;
+  justify-content: center;
 }
 
-.cover-img {
+.about-artwork {
   width: 100%;
   height: auto;
+  max-height: 520px;
+  object-fit: contain;
   border: var(--border-width) solid var(--color-light-blue);
-  filter: grayscale(40%);
-}
-
-.cover-img:hover {
-  filter: grayscale(0%);
 }
 
 /* --- Gallery / Timeline --- */
 .gallery {
   background: var(--color-cream);
+}
+
+.about-exhibitions {
+  margin: var(--space-lg) 0 0;
+  color: var(--color-muted-blue);
+  font-size: 0.9rem;
+  line-height: 1.7;
 }
 
 .gallery-intro {

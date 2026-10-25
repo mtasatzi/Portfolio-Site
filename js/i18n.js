@@ -59,6 +59,15 @@ function renderGallery() {
   });
 }
 
+function renderExhibitions() {
+  const paragraph = document.getElementById("about-exhibitions");
+  if (!paragraph) return;
+
+  const items = STRINGS[currentLang].exhibitions.items
+    .map((item) => `${item.date} — ${item.title}, ${item.venue}`);
+  paragraph.textContent = `${STRINGS[currentLang].exhibitions.title}${items.join("; ")}.`;
+}
+
 function render() {
   document.documentElement.lang = currentLang;
   document.documentElement.dir = "ltr";
@@ -104,6 +113,7 @@ function render() {
   if (cvLink) cvLink.href = SITE_CONTENT.images.cv;
 
   renderGallery();
+  renderExhibitions();
 }
 
 /* Set language directly */
