@@ -31,6 +31,8 @@ Artwork image paths are stored once, outside the language-specific fields:
 
 Years that are the same in both languages are stored once as a string, such as `"year": "2022"`. Use the `{ "en": "...", "el": "..." }` form only if the English and Greek year text needs to differ.
 
+Gallery period dates are shared strings, such as `"date": "2023-2024"`.
+
 Keep the JSON quotation marks, braces, and commas valid. JSON does not allow comments or trailing commas.
 
 ## Publish changes

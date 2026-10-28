@@ -72,7 +72,7 @@ components:
     fields:
       - name: date
         label: Date
-        component: translatedString
+        type: string
       - name: title
         label: Title
         component: translatedString
@@ -197,7 +197,7 @@ content:
             list:
               collapsible:
                 collapsed: true
-                summary: "{fields.title.en} ({fields.date.en})"
+                summary: "{fields.title.en} ({fields.date})"
       - name: cv
         label: CV section
         type: object
