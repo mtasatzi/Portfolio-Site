@@ -1,0 +1,276 @@
+media:
+  input: assets
+  output: assets
+  rename: false
+  categories:
+    - image
+    - document
+
+components:
+  translatedString:
+    type: object
+    label: Translated text
+    fields:
+      - name: en
+        label: English
+        type: string
+      - name: el
+        label: Greek
+        type: string
+  translatedText:
+    type: object
+    label: Translated text
+    fields:
+      - name: en
+        label: English
+        type: text
+      - name: el
+        label: Greek
+        type: text
+  exhibition:
+    type: object
+    label: Exhibition
+    fields:
+      - name: date
+        label: Date
+        component: translatedString
+      - name: title
+        label: Exhibition title
+        component: translatedString
+      - name: venue
+        label: Venue
+        component: translatedText
+  artwork:
+    type: object
+    label: Artwork
+    fields:
+      - name: title
+        label: Title
+        component: translatedString
+      - name: details
+        label: Medium and dimensions
+        component: translatedText
+      - name: year
+        label: Year
+        type: string
+      - name: image
+        label: Image
+        type: image
+        options:
+          path: gallery
+          extensions:
+            - jpg
+            - jpeg
+            - png
+            - webp
+      - name: alt
+        label: Image description
+        component: translatedText
+  galleryPeriod:
+    type: object
+    label: Gallery period
+    fields:
+      - name: date
+        label: Date
+        component: translatedString
+      - name: title
+        label: Title
+        component: translatedString
+      - name: summary
+        label: Introduction
+        component: translatedText
+      - name: works
+        label: Artworks
+        component: artwork
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{fields.title.en} ({index})"
+
+content:
+  - name: portfolio
+    label: Portfolio content
+    type: file
+    path: content.json
+    format: json
+    fields:
+      - name: contactEmail
+        label: Contact email
+        type: string
+      - name: images
+        label: Site files
+        type: object
+        fields:
+          - name: about
+            label: Featured artwork
+            type: image
+            options:
+              extensions:
+                - jpg
+                - jpeg
+                - png
+                - webp
+          - name: cv
+            label: CV PDF
+            type: file
+            options:
+              extensions:
+                - pdf
+      - name: nav
+        label: Navigation
+        type: object
+        fields:
+          - name: about
+            label: About
+            component: translatedString
+          - name: gallery
+            label: Gallery
+            component: translatedString
+          - name: cv
+            label: CV
+            component: translatedString
+          - name: contact
+            label: Contact
+            component: translatedString
+      - name: hero
+        label: Homepage introduction
+        type: object
+        fields:
+          - name: title
+            label: Name
+            component: translatedString
+          - name: subtitle
+            label: Subtitle
+            component: translatedString
+          - name: enter
+            label: Enter button
+            component: translatedString
+      - name: about
+        label: About section
+        type: object
+        fields:
+          - name: title
+            label: Section title
+            component: translatedString
+          - name: bio
+            label: Biography
+            component: translatedText
+          - name: imageAlt
+            label: Featured artwork description
+            component: translatedString
+      - name: exhibitions
+        label: Group exhibitions
+        type: object
+        fields:
+          - name: title
+            label: Section heading
+            component: translatedString
+          - name: items
+            label: Exhibitions
+            component: exhibition
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{fields.title.en} ({index})"
+      - name: gallery
+        label: Gallery
+        type: object
+        fields:
+          - name: title
+            label: Section title
+            component: translatedString
+          - name: intro
+            label: Introduction
+            component: translatedText
+          - name: zoomLabel
+            label: Artwork zoom button
+            component: translatedString
+          - name: previewLabel
+            label: Image preview accessibility label
+            component: translatedString
+          - name: closePreview
+            label: Close preview button
+            component: translatedString
+          - name: periods
+            label: Gallery periods
+            component: galleryPeriod
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{fields.title.en} ({fields.date.en})"
+      - name: cv
+        label: CV section
+        type: object
+        fields:
+          - name: title
+            label: Section title
+            component: translatedString
+          - name: intro
+            label: Introduction
+            component: translatedText
+          - name: download
+            label: Download button
+            component: translatedString
+      - name: contact
+        label: Contact section
+        type: object
+        fields:
+          - name: title
+            label: Section title
+            component: translatedString
+          - name: formIntro
+            label: Introduction
+            component: translatedText
+          - name: name
+            label: Name field
+            component: translatedString
+          - name: namePlaceholder
+            label: Name placeholder
+            component: translatedString
+          - name: email
+            label: Email field
+            component: translatedString
+          - name: emailPlaceholder
+            label: Email placeholder
+            component: translatedString
+          - name: subject
+            label: Subject field
+            component: translatedString
+          - name: subjectPlaceholder
+            label: Subject placeholder
+            component: translatedString
+          - name: message
+            label: Message field
+            component: translatedString
+          - name: messagePlaceholder
+            label: Message placeholder
+            component: translatedString
+          - name: send
+            label: Send button
+            component: translatedString
+          - name: successMsg
+            label: Success message
+            component: translatedText
+          - name: errorMsg
+            label: Validation error message
+            component: translatedText
+          - name: sending
+            label: Sending status
+            component: translatedString
+      - name: footer
+        label: Footer
+        type: object
+        fields:
+          - name: copyright
+            label: Copyright text
+            component: translatedString
+      - name: language
+        label: Language switch
+        type: object
+        fields:
+          - name: switchToGreek
+            label: Switch to Greek label
+            component: translatedString
+          - name: switchToEnglish
+            label: Switch to English label
+            component: translatedString

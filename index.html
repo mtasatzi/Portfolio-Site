@@ -140,7 +140,20 @@
     <p data-i18n="footer.copyright">&copy; <span id="year"></span> Matina Tasatzi. All rights reserved.</p>
   </footer>
 
-  <script src="js/content.js"></script>
+  <p id="content-load-error" role="alert" hidden>
+    Portfolio content could not be loaded. Open this site through VS Code Live Server.
+    <br>
+    Δεν ήταν δυνατή η φόρτωση του περιεχομένου. Ανοίξτε τον ιστότοπο μέσω του VS Code Live Server.
+  </p>
+
+  <dialog class="image-lightbox" id="image-lightbox" aria-label="Artwork preview" data-i18n-aria-label="gallery.previewLabel">
+    <button class="image-lightbox-close" id="image-lightbox-close" type="button"
+      aria-label="Close image preview" data-i18n="gallery.closePreview"
+      data-i18n-aria-label="gallery.closePreview">Close</button>
+    <img class="image-lightbox-img" id="image-lightbox-img" alt="">
+    <p class="image-lightbox-caption" id="image-lightbox-caption"></p>
+  </dialog>
+
   <script src="js/i18n.js"></script>
 </body>
 

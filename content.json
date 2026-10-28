@@ -1,0 +1,1591 @@
+{
+    "contactEmail":  "mattina13@hotmail.com",
+    "images":  {
+                   "about":  "assets/about.jpg",
+                   "cv":  "assets/cv.pdf"
+               },
+    "nav":  {
+                "about":  {
+                              "en":  "About",
+                              "el":  "Σχετικά"
+                          },
+                "gallery":  {
+                                "en":  "Gallery",
+                                "el":  "Γκαλερί"
+                            },
+                "cv":  {
+                           "en":  "CV",
+                           "el":  "Βιογραφικό"
+                       },
+                "contact":  {
+                                "en":  "Contact",
+                                "el":  "Επικοινωνία"
+                            }
+            },
+    "hero":  {
+                 "title":  {
+                               "en":  "Matina Tasatzi",
+                               "el":  "Ματίνα Τασατζή"
+                           },
+                 "subtitle":  {
+                                  "en":  "Painting \u0026 mixed media printmaking",
+                                  "el":  "Ζωγραφική \u0026 χαρακτική μεικτών μέσων"
+                              },
+                 "enter":  {
+                               "en":  "Enter",
+                               "el":  "Είσοδος"
+                           }
+             },
+    "about":  {
+                  "title":  {
+                                "en":  "About",
+                                "el":  "Σχετικά"
+                            },
+                  "bio":  {
+                              "en":  "Matina Tasatzi was born in Athens in 1996. She studied Interior Architecture and Decoration at the University of West Attica for two years before entering the Department of Fine Arts and Art Sciences (formerly Plastic Arts and Art Sciences) at the University of Ioannina, from which she graduated with distinction in 2022. In September 2025, she completed the postgraduate program in Fine Arts at the same department.",
+                              "el":  "Η Ματίνα Τασατζή γεννήθηκε το 1996 στην Αθήνα. Παρακολούθησε για δύο χρόνια μαθήματα στο Τμήμα Εσωτερικής Αρχιτεκτονικής και Διακόσμησης του Πανεπιστημίου Δυτικής Αττικής και στη συνέχεια εισήχθη στο Τμήμα Εικαστικών Τεχνών και Επιστημών της Τέχνης (πρώην Πλαστικών Τεχνών και Επιστημών της Τέχνης) του Πανεπιστημίου Ιωαννίνων, από το οποίο αποφοίτησε το 2022 με άριστα. Τον Σεπτέμβριο του 2025 ολοκλήρωσε το μεταπτυχιακό πρόγραμμα σπουδών «Εικαστικές Τέχνες» του ίδιου τμήματος."
+                          },
+                  "imageAlt":  {
+                                   "en":  "Featured artwork",
+                                   "el":  "Επιλεγμένο έργο"
+                               }
+              },
+    "exhibitions":  {
+                        "title":  {
+                                      "en":  "Selected group exhibitions: ",
+                                      "el":  "Επιλεγμένες ομαδικές εκθέσεις: "
+                                  },
+                        "items":  [
+                                      {
+                                          "date":  {
+                                                       "en":  "24–27 November 2019",
+                                                       "el":  "24–27 Νοεμβρίου 2019"
+                                                   },
+                                          "title":  {
+                                                        "en":  "“Violence Against Women”",
+                                                        "el":  "«Η βία κατά των γυναικών»"
+                                                    },
+                                          "venue":  {
+                                                        "en":  "Exhibition of works by students of the School of Fine Arts, University of Ioannina · “D. Hatzis” Cultural Space, Ioannina",
+                                                        "el":  "Έκθεση έργων φοιτητών της Σχολής Καλών Τεχνών Πανεπιστημίου Ιωαννίνων · Πολιτιστικός χώρος «Δ. Χατζής», Ιωάννινα"
+                                                    }
+                                      },
+                                      {
+                                          "date":  {
+                                                       "en":  "15–30 May 2022",
+                                                       "el":  "15–30 Μαΐου 2022"
+                                                   },
+                                          "title":  {
+                                                        "en":  "Exhibition of students from the School of Fine Arts of Ioannina",
+                                                        "el":  "Έκθεση φοιτητών από τη Σχολή Καλών Τεχνών Ιωαννίνων"
+                                                    },
+                                          "venue":  {
+                                                        "en":  "Municipal Cultural Center of Ioannina",
+                                                        "el":  "Πνευματικό Κέντρο Δήμου Ιωαννιτών"
+                                                    }
+                                      },
+                                      {
+                                          "date":  {
+                                                       "en":  "26 October–10 November 2022",
+                                                       "el":  "26 Οκτωβρίου–10 Νοεμβρίου 2022"
+                                                   },
+                                          "title":  {
+                                                        "en":  "“The Independent Division”",
+                                                        "el":  "«Η Ανεξάρτητη Μεραρχία»"
+                                                    },
+                                          "venue":  {
+                                                        "en":  "War Museum of Athens",
+                                                        "el":  "Πολεμικό Μουσείο Αθηνών"
+                                                    }
+                                      },
+                                      {
+                                          "date":  {
+                                                       "en":  "11 January–18 February (year not specified)",
+                                                       "el":  "11 Ιανουαρίου–18 Φεβρουαρίου (έτος δεν αναφέρεται)"
+                                                   },
+                                          "title":  {
+                                                        "en":  "Exhibition of students from the School of Ioannina",
+                                                        "el":  "Έκθεση φοιτητών από τη Σχολή των Ιωαννίνων"
+                                                    },
+                                          "venue":  {
+                                                        "en":  "16 Fokionos Negri, Athens",
+                                                        "el":  "Φωκίωνος Νέγρη 16, Αθήνα"
+                                                    }
+                                      },
+                                      {
+                                          "date":  {
+                                                       "en":  "26 November 2023–11 February 2024",
+                                                       "el":  "26 Νοεμβρίου 2023–11 Φεβρουαρίου 2024"
+                                                   },
+                                          "title":  {
+                                                        "en":  "Graduate Printmaking Exhibition",
+                                                        "el":  "Έκθεση Χαρακτικής Αποφοίτων"
+                                                    },
+                                          "venue":  {
+                                                        "en":  "Municipal Gallery of Ioannina",
+                                                        "el":  "Δημοτική Πινακοθήκη Ιωαννίνων"
+                                                    }
+                                      },
+                                      {
+                                          "date":  {
+                                                       "en":  "2–31 December 2023",
+                                                       "el":  "2–31 Δεκεμβρίου 2023"
+                                                   },
+                                          "title":  {
+                                                        "en":  "Biennale of Graduates of the Fine Arts Schools of Greece",
+                                                        "el":  "Μπιενάλε των Αποφοίτων των Σχολών Καλών Τεχνών της Ελλάδας"
+                                                    },
+                                          "venue":  {
+                                                        "en":  "Municipal Art Gallery of Larissa – G. I. Katsigras Museum",
+                                                        "el":  "Δημοτική Πινακοθήκη Λάρισας – Μουσείο Γ. Ι. Κατσίγρα"
+                                                    }
+                                      },
+                                      {
+                                          "date":  {
+                                                       "en":  "20 April–31 August 2024",
+                                                       "el":  "20 Απριλίου–31 Αυγούστου 2024"
+                                                   },
+                                          "title":  {
+                                                        "en":  "Graduate Printmaking Exhibition",
+                                                        "el":  "Έκθεση Χαρακτικής Αποφοίτων"
+                                                    },
+                                          "venue":  {
+                                                        "en":  "Archaeological Museum of Igoumenitsa",
+                                                        "el":  "Αρχαιολογικό Μουσείο Ηγουμενίτσας"
+                                                    }
+                                      },
+                                      {
+                                          "date":  {
+                                                       "en":  "14 June–15 September 2024",
+                                                       "el":  "14 Ιουνίου–15 Σεπτεμβρίου 2024"
+                                                   },
+                                          "title":  {
+                                                        "en":  "“Mat(t)er-nity”",
+                                                        "el":  "«Mat(t)er-nity»"
+                                                    },
+                                          "venue":  {
+                                                        "en":  "General State Archives, Historical Archive Museum of Ioannina",
+                                                        "el":  "ΓΑΚ – Ιστορικό Αρχείο Μουσείο Ηπείρου, Ιωάννινα"
+                                                    }
+                                      },
+                                      {
+                                          "date":  {
+                                                       "en":  "12 February–2 March 2025",
+                                                       "el":  "12 Φεβρουαρίου–2 Μαρτίου 2025"
+                                                   },
+                                          "title":  {
+                                                        "en":  "“Beyond the Visible”",
+                                                        "el":  "«Πέρα από το ορατό»"
+                                                    },
+                                          "venue":  {
+                                                        "en":  "Photometria Photography Center, Ioannina",
+                                                        "el":  "Photometria Photography Center, Ιωάννινα"
+                                                    }
+                                      },
+                                      {
+                                          "date":  {
+                                                       "en":  "14 February–15 March 2025",
+                                                       "el":  "14 Φεβρουαρίου–15 Μαρτίου 2025"
+                                                   },
+                                          "title":  {
+                                                        "en":  "“The School of Ioannina”",
+                                                        "el":  "«Η σχολή των Ιωαννίνων»"
+                                                    },
+                                          "venue":  {
+                                                        "en":  "16 Fokionos Negri, Athens",
+                                                        "el":  "Φωκίωνος Νέγρη 16, Αθήνα"
+                                                    }
+                                      },
+                                      {
+                                          "date":  {
+                                                       "en":  "17 June–5 July 2025",
+                                                       "el":  "17 Ιουνίου–5 Ιουλίου 2025"
+                                                   },
+                                          "title":  {
+                                                        "en":  "Group exhibition",
+                                                        "el":  "Ομαδική έκθεση"
+                                                    },
+                                          "venue":  {
+                                                        "en":  "Technohoros Gallery, Athens",
+                                                        "el":  "Γκαλερί «Τεχνοχώρος», Αθήνα"
+                                                    }
+                                      }
+                                  ]
+                    },
+    "gallery":  {
+                    "title":  {
+                                  "en":  "Gallery",
+                                  "el":  "Γκαλερί"
+                              },
+                    "intro":  {
+                                  "en":  "A chronological timeline of selected works, grouped by period. Each period presents the artworks together with their title and year.",
+                                  "el":  "Μια χρονολογική σειρά επιλεγμένων έργων, ταξινομημένων ανά περίοδο. Σε κάθε ενότητα παρουσιάζονται τα έργα με τον τίτλο και το έτος δημιουργίας τους."
+                              },
+                    "zoomLabel":  {
+                                      "en":  "View {title} full screen",
+                                      "el":  "Προβολή του έργου «{title}» σε πλήρη οθόνη"
+                                  },
+                    "previewLabel":  {
+                                         "en":  "Artwork preview",
+                                         "el":  "Προεπισκόπηση έργου"
+                                     },
+                    "closePreview":  {
+                                         "en":  "Close preview",
+                                         "el":  "Κλείσιμο προεπισκόπησης"
+                                     },
+                    "periods":  [
+                                    {
+                                        "date":  {
+                                                     "en":  "2022",
+                                                     "el":  "2022"
+                                                 },
+                                        "title":  {
+                                                      "en":  "Camera Incognita",
+                                                      "el":  "Camera Incognita"
+                                                  },
+                                        "summary":  {
+                                                        "en":  "These works are multiple prints made using a number of original matrices, printed repeatedly to create rhythmic representations of architectural ensembles. The original design, the unit that generates all the works in this series, is my student room, where an imaginary story unfolds. It begins with a diary and a stone map I found while walking around Lake Ioannina. Opening the diary disrupts the space-time continuum and brings a prehistoric tribe into being. Mystically connected to the stone, the tribe is called to make a circular journey around the lake, fulfilling a prophecy and living eternally beneath it. In an attempt to interpret this story, the room is rendered axonometrically and gradually gives rise to the utopia of the glass tower. Although printmaking emerged from the need to create identical works, these pieces turn our attention to its “errors” and “accidents.” Through these accidents, and the different ensembles they create each time, the works explore the paradoxical in opposition to the rational. Influenced by the Russian avant-garde, the work of El Lissitzky and modern architecture, they mediate between the rational and the utopian, inviting us to consider how the unpredictable continues to emerge no matter how much we classify and plan space and time. As Nietzsche suggests, our senses are deceptive and create imaginary worlds that cannot, however, be interpreted through rational means.",
+                                                        "el":  "Τα έργα αυτά αποτελούν πολλαπλά τυπώματα, στα οποία έχουν χρησιμοποιηθεί κάποιες αρχικές μήτρες που τυπώνονται επαναλαμβανόμενα και μέσω του ρυθμού δημιουργούνται κάποιες αναπαραστάσεις αρχιτεκτονικών συνόλων. Το αρχικό σχέδιο, η μονάδα, που χρησιμοποιείται ως γεννήτορας για όλα τα έργα της ενότητας αυτής είναι το φοιτητικό μου δωμάτιο μέσα στο οποίο διαδραματίζεται μια φανταστική ιστορία. Η ιστορία αφορά ένα ημερολόγιο και έναν πέτρινο χάρτη που βρήκα σε μια περιήγησή μου γύρω από τη λίμνη των Ιωαννίνων. Ανοίγοντας το ημερολόγιο διαταράσσεται το χωροχρονικό συνεχές και δημιουργείται μια προϊστορική φυλή. Η φυλή αυτή συνδέεται μυστικιστικά με την πέτρα και καλείται να κάνει την κυκλική διαδρομή γύρω από τη λίμνη, ώστε να υλοποιήσει την προφητεία και να ζει αιώνια κάτω από τη λίμνη. Σε μια προσπάθεια να ερμηνευθεί αυτή η ιστορία αποτυπώνεται το δωμάτιο αξονομετρικά και σταδιακά προκύπτει η ουτοπία του γυάλινου πύργου. Ενώ η τέχνη της χαρακτικής προέκυψε ως ανάγκη για δημιουργία πανομοιότυπων έργων, τα συγκεκριμένα έργα στρέφουν την προσοχή στα «λάθη» και τα «ατυχήματα» της χαρακτικής. Μέσα από τα «ατυχήματα» αυτά και τη δημιουργία διαφορετικών συνόλων κάθε φορά επιχειρείται να αναδειχθεί το παράδοξο έναντι του ορθολογικού. Τα έργα αυτά συνεπώς, με επιρροή από τη ρωσική πρωτοπορία, τα έργα του El Lissitzky και τη μοντέρνα αρχιτεκτονική στέκονται ως διαμεσολαβητές μεταξύ ορθολογικού και ουτοπικού και μας καλούν να σκεφτούμε πώς όσο και αν ταξινομούμε και προγραμματίζουμε τον χώρο και τον χρόνο τόσο θα αναδύεται και το απρόβλεπτο. Όπως λέει ο Νίτσε, οι αισθήσεις μας είναι απατηλές και δημιουργούν φανταστικούς κόσμους, οι οποίοι όμως δεν γίνεται να ερμηνευτούν με ορθολογικά μέσα."
+                                                    },
+                                        "works":  [
+                                                      {
+                                                          "title":  {
+                                                                        "en":  "Unit",
+                                                                        "el":  "Μονάδα"
+                                                                    },
+                                                          "details":  {
+                                                                          "en":  "55 × 26 cm · mixed media, ink on paper",
+                                                                          "el":  "55 × 26 εκ. · μεικτή τεχνική, μελάνι σε χαρτί"
+                                                                      },
+                                                          "year":  "2022",
+                                                          "image":  "assets/gallery/camera-incognita/01.jpeg",
+                                                          "alt":  {
+                                                                      "en":  "Unit, mixed media and ink on paper",
+                                                                      "el":  "Μονάδα, μεικτή τεχνική και μελάνι σε χαρτί"
+                                                                  }
+                                                      },
+                                                      {
+                                                          "title":  {
+                                                                        "en":  "Mirror",
+                                                                        "el":  "Καθρέφτης"
+                                                                    },
+                                                          "details":  {
+                                                                          "en":  "35 × 50 cm · mixed media, ink on paper",
+                                                                          "el":  "35 × 50 εκ. · μεικτή τεχνική, μελάνι σε χαρτί"
+                                                                      },
+                                                          "year":  "2022",
+                                                          "image":  "assets/gallery/camera-incognita/03.jpeg",
+                                                          "alt":  {
+                                                                      "en":  "Mirror, mixed media and ink on paper",
+                                                                      "el":  "Καθρέφτης, μεικτή τεχνική και μελάνι σε χαρτί"
+                                                                  }
+                                                      },
+                                                      {
+                                                          "title":  {
+                                                                        "en":  "Horizontal",
+                                                                        "el":  "Οριζόντιος"
+                                                                    },
+                                                          "details":  {
+                                                                          "en":  "35 × 50 cm · mixed media, ink on paper",
+                                                                          "el":  "35 × 50 εκ. · μεικτή τεχνική, μελάνι σε χαρτί"
+                                                                      },
+                                                          "year":  "2022",
+                                                          "image":  "assets/gallery/camera-incognita/04.jpeg",
+                                                          "alt":  {
+                                                                      "en":  "Horizontal, mixed media and ink on paper",
+                                                                      "el":  "Οριζόντιος, μεικτή τεχνική και μελάνι σε χαρτί"
+                                                                  }
+                                                      },
+                                                      {
+                                                          "title":  {
+                                                                        "en":  "Western Diagonal with Exterior Entrance",
+                                                                        "el":  "Δυτικός διαγώνιος με εξωτερική είσοδο"
+                                                                    },
+                                                          "details":  {
+                                                                          "en":  "35 × 40 cm · mixed media, ink on paper",
+                                                                          "el":  "35 × 40 εκ. · μεικτή τεχνική, μελάνι σε χαρτί"
+                                                                      },
+                                                          "year":  "2022",
+                                                          "image":  "assets/gallery/camera-incognita/05.jpeg",
+                                                          "alt":  {
+                                                                      "en":  "Western Diagonal with Exterior Entrance, mixed media and ink on paper",
+                                                                      "el":  "Δυτικός διαγώνιος με εξωτερική είσοδο, μεικτή τεχνική και μελάνι σε χαρτί"
+                                                                  }
+                                                      },
+                                                      {
+                                                          "title":  {
+                                                                        "en":  "Western Diagonal",
+                                                                        "el":  "Δυτικός διαγώνιος"
+                                                                    },
+                                                          "details":  {
+                                                                          "en":  "25 × 30 cm · mixed media, ink on paper",
+                                                                          "el":  "25 × 30 εκ. · μεικτή τεχνική, μελάνι σε χαρτί"
+                                                                      },
+                                                          "year":  "2022",
+                                                          "image":  "assets/gallery/camera-incognita/06.jpeg",
+                                                          "alt":  {
+                                                                      "en":  "Western Diagonal, mixed media and ink on paper",
+                                                                      "el":  "Δυτικός διαγώνιος, μεικτή τεχνική και μελάνι σε χαρτί"
+                                                                  }
+                                                      },
+                                                      {
+                                                          "title":  {
+                                                                        "en":  "Western Diagonal with Glass Surfaces",
+                                                                        "el":  "Δυτικός διαγώνιος με γυάλινες επιφάνειες"
+                                                                    },
+                                                          "details":  {
+                                                                          "en":  "35 × 40 cm · mixed media, ink on paper",
+                                                                          "el":  "35 × 40 εκ. · μεικτή τεχνική, μελάνι σε χαρτί"
+                                                                      },
+                                                          "year":  "2022",
+                                                          "image":  "assets/gallery/camera-incognita/07.jpeg",
+                                                          "alt":  {
+                                                                      "en":  "Western Diagonal with Glass Surfaces, mixed media and ink on paper",
+                                                                      "el":  "Δυτικός διαγώνιος με γυάλινες επιφάνειες, μεικτή τεχνική και μελάνι σε χαρτί"
+                                                                  }
+                                                      },
+                                                      {
+                                                          "title":  {
+                                                                        "en":  "Eastern Diagonal with Glass Surfaces",
+                                                                        "el":  "Ανατολικός διαγώνιος με γυάλινες επιφάνειες"
+                                                                    },
+                                                          "details":  {
+                                                                          "en":  "35 × 35 cm · mixed media, ink on paper",
+                                                                          "el":  "35 × 35 εκ. · μεικτή τεχνική, μελάνι σε χαρτί"
+                                                                      },
+                                                          "year":  "2022",
+                                                          "image":  "assets/gallery/camera-incognita/08.jpeg",
+                                                          "alt":  {
+                                                                      "en":  "Eastern Diagonal with Glass Surfaces, mixed media and ink on paper",
+                                                                      "el":  "Ανατολικός διαγώνιος με γυάλινες επιφάνειες, μεικτή τεχνική και μελάνι σε χαρτί"
+                                                                  }
+                                                      },
+                                                      {
+                                                          "title":  {
+                                                                        "en":  "Western Diagonal",
+                                                                        "el":  "Δυτικός διαγώνιος"
+                                                                    },
+                                                          "details":  {
+                                                                          "en":  "35 × 50 cm · mixed media, ink on paper",
+                                                                          "el":  "35 × 50 εκ. · μεικτή τεχνική, μελάνι σε χαρτί"
+                                                                      },
+                                                          "year":  "2022",
+                                                          "image":  "assets/gallery/camera-incognita/11.jpeg",
+                                                          "alt":  {
+                                                                      "en":  "Western Diagonal, mixed media and ink on paper",
+                                                                      "el":  "Δυτικός διαγώνιος, μεικτή τεχνική και μελάνι σε χαρτί"
+                                                                  }
+                                                      },
+                                                      {
+                                                          "title":  {
+                                                                        "en":  "Eastern Diagonal",
+                                                                        "el":  "Ανατολικός διαγώνιος"
+                                                                    },
+                                                          "details":  {
+                                                                          "en":  "35 × 40 cm · mixed media, ink on paper",
+                                                                          "el":  "35 × 40 εκ. · μεικτή τεχνική, μελάνι σε χαρτί"
+                                                                      },
+                                                          "year":  "2022",
+                                                          "image":  "assets/gallery/camera-incognita/12.jpeg",
+                                                          "alt":  {
+                                                                      "en":  "Eastern Diagonal, mixed media and ink on paper",
+                                                                      "el":  "Ανατολικός διαγώνιος, μεικτή τεχνική και μελάνι σε χαρτί"
+                                                                  }
+                                                      },
+                                                      {
+                                                          "title":  {
+                                                                        "en":  "Diagonal with Color",
+                                                                        "el":  "Διαγώνιος με χρώμα"
+                                                                    },
+                                                          "details":  {
+                                                                          "en":  "30 × 35 cm · mixed media, ink on paper",
+                                                                          "el":  "30 × 35 εκ. · μεικτή τεχνική, μελάνι σε χαρτί"
+                                                                      },
+                                                          "year":  "2022",
+                                                          "image":  "assets/gallery/camera-incognita/13.jpeg",
+                                                          "alt":  {
+                                                                      "en":  "Diagonal with Color, mixed media and ink on paper",
+                                                                      "el":  "Διαγώνιος με χρώμα, μεικτή τεχνική και μελάνι σε χαρτί"
+                                                                  }
+                                                      },
+                                                      {
+                                                          "title":  {
+                                                                        "en":  "Entrance with Color",
+                                                                        "el":  "Είσοδος με χρώμα"
+                                                                    },
+                                                          "details":  {
+                                                                          "en":  "30 × 30 cm · mixed media, ink on paper",
+                                                                          "el":  "30 × 30 εκ. · μεικτή τεχνική, μελάνι σε χαρτί"
+                                                                      },
+                                                          "year":  "2022",
+                                                          "image":  "assets/gallery/camera-incognita/14.jpeg",
+                                                          "alt":  {
+                                                                      "en":  "Entrance with Color, mixed media and ink on paper",
+                                                                      "el":  "Είσοδος με χρώμα, μεικτή τεχνική και μελάνι σε χαρτί"
+                                                                  }
+                                                      },
+                                                      {
+                                                          "title":  {
+                                                                        "en":  "Vertical with Glass Surfaces",
+                                                                        "el":  "Κατακόρυφος με γυάλινες επιφάνειες"
+                                                                    },
+                                                          "details":  {
+                                                                          "en":  "25 × 35 cm · mixed media, ink on paper",
+                                                                          "el":  "25 × 35 εκ. · μεικτή τεχνική, μελάνι σε χαρτί"
+                                                                      },
+                                                          "year":  "2022",
+                                                          "image":  "assets/gallery/camera-incognita/15.jpeg",
+                                                          "alt":  {
+                                                                      "en":  "Vertical with Glass Surfaces, mixed media and ink on paper",
+                                                                      "el":  "Κατακόρυφος με γυάλινες επιφάνειες, μεικτή τεχνική και μελάνι σε χαρτί"
+                                                                  }
+                                                      },
+                                                      {
+                                                          "title":  {
+                                                                        "en":  "Construction Site",
+                                                                        "el":  "Εργοτάξιο"
+                                                                    },
+                                                          "details":  {
+                                                                          "en":  "50 × 70 cm · mixed media, ink on paper",
+                                                                          "el":  "50 × 70 εκ. · μεικτή τεχνική, μελάνι σε χαρτί"
+                                                                      },
+                                                          "year":  "2022",
+                                                          "image":  "assets/gallery/camera-incognita/16.jpeg",
+                                                          "alt":  {
+                                                                      "en":  "Construction Site, mixed media and ink on paper",
+                                                                      "el":  "Εργοτάξιο, μεικτή τεχνική και μελάνι σε χαρτί"
+                                                                  }
+                                                      },
+                                                      {
+                                                          "title":  {
+                                                                        "en":  "Space and Time",
+                                                                        "el":  "Χώρος και χρόνος"
+                                                                    },
+                                                          "details":  {
+                                                                          "en":  "100 × 70 cm · mixed media, ink on paper",
+                                                                          "el":  "100 × 70 εκ. · μεικτή τεχνική, μελάνι σε χαρτί"
+                                                                      },
+                                                          "year":  "2022",
+                                                          "image":  "assets/gallery/camera-incognita/17.jpeg",
+                                                          "alt":  {
+                                                                      "en":  "Space and Time, mixed media and ink on paper",
+                                                                      "el":  "Χώρος και χρόνος, μεικτή τεχνική και μελάνι σε χαρτί"
+                                                                  }
+                                                      },
+                                                      {
+                                                          "title":  {
+                                                                        "en":  "Enclosed Composition",
+                                                                        "el":  "Περίκλειστη σύνθεση"
+                                                                    },
+                                                          "details":  {
+                                                                          "en":  "30 × 40 cm · mixed media, ink on paper",
+                                                                          "el":  "30 × 40 εκ. · μεικτή τεχνική, μελάνι σε χαρτί"
+                                                                      },
+                                                          "year":  "2022",
+                                                          "image":  "assets/gallery/camera-incognita/18.jpg",
+                                                          "alt":  {
+                                                                      "en":  "Enclosed Composition, mixed media and ink on paper",
+                                                                      "el":  "Περίκλειστη σύνθεση, μεικτή τεχνική και μελάνι σε χαρτί"
+                                                                  }
+                                                      },
+                                                      {
+                                                          "title":  {
+                                                                        "en":  "Unfolding",
+                                                                        "el":  "Ανάπτυγμα"
+                                                                    },
+                                                          "details":  {
+                                                                          "en":  "30 × 40 cm · mixed media, ink on paper",
+                                                                          "el":  "30 × 40 εκ. · μεικτή τεχνική, μελάνι σε χαρτί"
+                                                                      },
+                                                          "year":  "2022",
+                                                          "image":  "assets/gallery/camera-incognita/19.jpg",
+                                                          "alt":  {
+                                                                      "en":  "Unfolding, mixed media and ink on paper",
+                                                                      "el":  "Ανάπτυγμα, μεικτή τεχνική και μελάνι σε χαρτί"
+                                                                  }
+                                                      },
+                                                      {
+                                                          "title":  {
+                                                                        "en":  "Under Angle",
+                                                                        "el":  "Υπό γωνία"
+                                                                    },
+                                                          "details":  {
+                                                                          "en":  "30 × 40 cm · mixed media, ink on paper",
+                                                                          "el":  "30 × 40 εκ. · μεικτή τεχνική, μελάνι σε χαρτί"
+                                                                      },
+                                                          "year":  "2022",
+                                                          "image":  "assets/gallery/camera-incognita/20.jpg",
+                                                          "alt":  {
+                                                                      "en":  "Under Angle, mixed media and ink on paper",
+                                                                      "el":  "Υπόγωνία, μεικτή τεχνική και μελάνι σε χαρτί"
+                                                                  }
+                                                      },
+                                                      {
+                                                          "title":  {
+                                                                        "en":  "Panoramic",
+                                                                        "el":  "Πανοραμικό"
+                                                                    },
+                                                          "details":  {
+                                                                          "en":  "30 × 40 cm · mixed media, ink on paper",
+                                                                          "el":  "30 × 40 εκ. · μεικτή τεχνική, μελάνι σε χαρτί"
+                                                                      },
+                                                          "year":  "2022",
+                                                          "image":  "assets/gallery/camera-incognita/21.jpg",
+                                                          "alt":  {
+                                                                      "en":  "Panoramic, mixed media and ink on paper",
+                                                                      "el":  "Πανοραμικό, μεικτή τεχνική και μελάνι σε χαρτί"
+                                                                  }
+                                                      },
+                                                      {
+                                                          "title":  {
+                                                                        "en":  "Division",
+                                                                        "el":  "Διαίρεση"
+                                                                    },
+                                                          "details":  {
+                                                                          "en":  "42 × 58.7 cm · mixed media, ink on paper",
+                                                                          "el":  "42 × 58,7 εκ. · μεικτή τεχνική, μελάνι σε χαρτί"
+                                                                      },
+                                                          "year":  "2022",
+                                                          "image":  "assets/gallery/camera-incognita/22.png",
+                                                          "alt":  {
+                                                                      "en":  "Division, mixed media and ink on paper",
+                                                                      "el":  "Διαίρεση, μεικτή τεχνική και μελάνι σε χαρτί"
+                                                                  }
+                                                      },
+                                                      {
+                                                          "title":  {
+                                                                        "en":  "Corridor",
+                                                                        "el":  "Διάδρομος"
+                                                                    },
+                                                          "details":  {
+                                                                          "en":  "163.5 × 55.5 cm · mixed media, ink on paper",
+                                                                          "el":  "163,5 × 55,5 εκ. · μεικτή τεχνική, μελάνι σε χαρτί"
+                                                                      },
+                                                          "year":  "2022",
+                                                          "image":  "assets/gallery/camera-incognita/23.png",
+                                                          "alt":  {
+                                                                      "en":  "Corridor, mixed media and ink on paper",
+                                                                      "el":  "Διάδρομος, μεικτή τεχνική και μελάνι σε χαρτί"
+                                                                  }
+                                                      },
+                                                      {
+                                                          "title":  {
+                                                                        "en":  "Division with Color",
+                                                                        "el":  "Διαίρεση με χρώμα"
+                                                                    },
+                                                          "details":  {
+                                                                          "en":  "42 × 45 cm · mixed media, ink on paper",
+                                                                          "el":  "42 × 45 εκ. · μεικτή τεχνική, μελάνι σε χαρτί"
+                                                                      },
+                                                          "year":  "2022",
+                                                          "image":  "assets/gallery/camera-incognita/24.png",
+                                                          "alt":  {
+                                                                      "en":  "Division with Color, mixed media and ink on paper",
+                                                                      "el":  "Διαίρεση με χρώμα, μεικτή τεχνική και μελάνι σε χαρτί"
+                                                                  }
+                                                      },
+                                                      {
+                                                          "title":  {
+                                                                        "en":  "Glass Tower",
+                                                                        "el":  "Γυάλινος πύργος"
+                                                                    },
+                                                          "details":  {
+                                                                          "en":  "130 × 100 cm · mixed media, ink on paper",
+                                                                          "el":  "130 × 100 εκ. · μεικτή τεχνική, μελάνι σε χαρτί"
+                                                                      },
+                                                          "year":  "2022",
+                                                          "image":  "assets/gallery/camera-incognita/27.png",
+                                                          "alt":  {
+                                                                      "en":  "Glass Tower, mixed media and ink on paper",
+                                                                      "el":  "Γυάλινος πύργος, μεικτή τεχνική και μελάνι σε χαρτί"
+                                                                  }
+                                                      },
+                                                      {
+                                                          "title":  {
+                                                                        "en":  "Glass Tower",
+                                                                        "el":  "Γυάλινος πύργος"
+                                                                    },
+                                                          "details":  {
+                                                                          "en":  "70 × 100 cm · mixed media, ink on paper",
+                                                                          "el":  "70 × 100 εκ. · μεικτή τεχνική, μελάνι σε χαρτί"
+                                                                      },
+                                                          "year":  "2022",
+                                                          "image":  "assets/gallery/camera-incognita/28.png",
+                                                          "alt":  {
+                                                                      "en":  "Glass Tower, mixed media and ink on paper",
+                                                                      "el":  "Γυάλινος πύργος, μεικτή τεχνική και μελάνι σε χαρτί"
+                                                                  }
+                                                      },
+                                                      {
+                                                          "title":  {
+                                                                        "en":  "Glass Tower",
+                                                                        "el":  "Γυάλινος πύργος"
+                                                                    },
+                                                          "details":  {
+                                                                          "en":  "70 × 100 cm · mixed media, ink on paper",
+                                                                          "el":  "70 × 100 εκ. · μεικτή τεχνική, μελάνι σε χαρτί"
+                                                                      },
+                                                          "year":  "",
+                                                          "image":  "assets/gallery/camera-incognita/29.png",
+                                                          "alt":  {
+                                                                      "en":  "Glass Tower, mixed media and ink on paper",
+                                                                      "el":  "Γυάλινος πύργος, μεικτή τεχνική και μελάνι σε χαρτί"
+                                                                  }
+                                                      },
+                                                      {
+                                                          "title":  {
+                                                                        "en":  "Glass Tower",
+                                                                        "el":  "Γυάλινος πύργος"
+                                                                    },
+                                                          "details":  {
+                                                                          "en":  "100 × 140 cm · mixed media, ink on paper",
+                                                                          "el":  "100 × 140 εκ. · μεικτή τεχνική, μελάνι σε χαρτί"
+                                                                      },
+                                                          "year":  "2022",
+                                                          "image":  "assets/gallery/camera-incognita/30.jpeg",
+                                                          "alt":  {
+                                                                      "en":  "Glass Tower, mixed media and ink on paper",
+                                                                      "el":  "Γυάλινος πύργος, μεικτή τεχνική και μελάνι σε χαρτί"
+                                                                  }
+                                                      }
+                                                  ]
+                                    },
+                                    {
+                                        "date":  {
+                                                     "en":  "2023",
+                                                     "el":  "2023-2024"
+                                                 },
+                                        "title":  {
+                                                      "en":  "Vehicles",
+                                                      "el":  "Οχήματα"
+                                                  },
+                                        "summary":  {
+                                                        "en":  "This body of work presents ambiguous images poised between temple and vehicle. As the sound of bells disappears among horns and exhausts in contemporary cities, the temple’s structural elements in these drawings are absorbed by the central idea of the vehicle. The work began with an accidental observation, alongside Le Corbusier’s connection between the Parthenon and the automobile. Just as religious architecture evolves through gradual variations on an original model, the modern car seeks perfection through small successive changes. These vehicles, however, are neither designed for comfort nor speed: they are imaginary images shaped mainly by mass culture and popular entertainment. Against the modern world’s rational focus on technological progress and its rejection of metaphysical interpretations, these works trace the opposite path. From the rationality of axonometric drawing emerges the irrational and fantastic, reminding us of the need for wonder, imagination and play. Ultimately, they invite us to ask whether we leave the window open for magic to enter our everyday lives.",
+                                                        "el":  "Στην παρούσα δουλειά παρουσιάζονται κάποιες αμφίσημες εικόνες που ακροβατούν μεταξύ ναού και οχήματος. Όμοια με τα σύγχρονα αστικά κέντρα στα οποία ο ήχος της καμπάνας χάνεται ανάμεσα σε κορναρίσματα και ήχους εξατμίσεων, στα σχέδια αυτά τα δομικά στοιχεία του ναού αφομοιώνονται πίσω από την κεντρική ιδέα του οχήματος. Ενώ αφορμή για τη δημιουργία τους στάθηκε μια τυχαία παρατήρηση, αφετηρία υπήρξε επίσης ο τρόπος που ο Le Corbusier συνδέει τον Παρθενώνα με το αυτοκίνητο. Όπως η θρησκευτική αρχιτεκτονική προέρχεται από ένα αρχικό πρότυπο το οποίο υπόκειται σε σταδιακές μεταβολές, έτσι και το μοντέρνο αυτοκίνητο μέσα από μικρές αλλαγές επιχειρεί κάθε φορά να αγγίξει την τελειότητα. Τα οχήματα όμως αυτά δεν επιχειρούν ούτε να προσφέρουν ανέσεις στον χρήστη ούτε να τρέξουν ολοένα και πιο γρήγορα, μιας και αποτελούν φανταστικές απεικονίσεις επηρεασμένες κυρίως από τη μαζική κουλτούρα και τη μαζική διασκέδαση. Ενώ ο μοντέρνος κόσμος, χάριν της τεχνικής εξέλιξης, θέλησε να αποκοπεί από τη μεταφυσική ερμηνεία και να επικεντρωθεί στην ορθολογική θεώρηση, στα έργα αυτά διαγράφεται μια αντίθετη πορεία. Από την ορθολογικότητα του αξονομετρικού σχεδίου γεννιέται το παράλογο, το φανταστικό των οχημάτων αυτών, με σκοπό να υπενθυμίσει την ανάγκη ύπαρξης του θαύματος, της φαντασίας και του παιχνιδιού. Έτσι, καταλήγοντας, καλούμαστε να διερωτηθούμε κατά πόσο αφήνουμε τελικά ανοιχτό το παράθυρο να εισέλθει η μαγεία στην καθημερινότητά μας."
+                                                    },
+                                        "works":  [
+                                                      {
+                                                          "title":  {
+                                                                        "en":  "Vehicle 01 Athena",
+                                                                        "el":  "Όχημα 01 Athena"
+                                                                    },
+                                                          "details":  {
+                                                                          "en":  "25 × 35 cm · mixed media, ink on paper",
+                                                                          "el":  "25 × 35 εκ. · μεικτή τεχνική, μελάνι σε χαρτί"
+                                                                      },
+                                                          "year":  "2023",
+                                                          "image":  "assets/gallery/vehicles/01.jpg",
+                                                          "alt":  {
+                                                                      "en":  "Vehicle 01 Athena, mixed media and ink on paper",
+                                                                      "el":  "Όχημα 01 Athena, μεικτή τεχνική και μελάνι σε χαρτί"
+                                                                  }
+                                                      },
+                                                      {
+                                                          "title":  {
+                                                                        "en":  "Aircraft 01 Sophia",
+                                                                        "el":  "Αεροσκάφος 01 Sophia"
+                                                                    },
+                                                          "details":  {
+                                                                          "en":  "25 × 35 cm · mixed media, ink on paper",
+                                                                          "el":  "25 × 35 εκ. · μεικτή τεχνική, μελάνι σε χαρτί"
+                                                                      },
+                                                          "year":  "2023",
+                                                          "image":  "assets/gallery/vehicles/03.jpeg",
+                                                          "alt":  {
+                                                                      "en":  "Aircraft 01 Sophia, mixed media and ink on paper",
+                                                                      "el":  "Αεροσκάφος 01 Sophia, μεικτή τεχνική και μελάνι σε χαρτί"
+                                                                  }
+                                                      },
+                                                      {
+                                                          "title":  {
+                                                                        "en":  "Aircraft 02 Sophia",
+                                                                        "el":  "Αεροσκάφος 02 Sophia"
+                                                                    },
+                                                          "details":  {
+                                                                          "en":  "25 × 35 cm · mixed media, ink on paper",
+                                                                          "el":  "25 × 35 εκ. · μεικτή τεχνική, μελάνι σε χαρτί"
+                                                                      },
+                                                          "year":  "2023",
+                                                          "image":  "assets/gallery/vehicles/04.jpeg",
+                                                          "alt":  {
+                                                                      "en":  "Aircraft 02 Sophia, mixed media and ink on paper",
+                                                                      "el":  "Αεροσκάφος 02 Sophia, μεικτή τεχνική και μελάνι σε χαρτί"
+                                                                  }
+                                                      },
+                                                      {
+                                                          "title":  {
+                                                                        "en":  "Vehicle 01 Prodromos",
+                                                                        "el":  "Όχημα 01 Πρόδρομος"
+                                                                    },
+                                                          "details":  {
+                                                                          "en":  "25 × 35 cm · mixed media, ink on paper",
+                                                                          "el":  "25 × 35 εκ. · μεικτή τεχνική, μελάνι σε χαρτί"
+                                                                      },
+                                                          "year":  "2023",
+                                                          "image":  "assets/gallery/vehicles/05.jpg",
+                                                          "alt":  {
+                                                                      "en":  "Vehicle 01 Prodromos, mixed media and ink on paper",
+                                                                      "el":  "Όχημα 01 Πρόδρομος, μεικτή τεχνική και μελάνι σε χαρτί"
+                                                                  }
+                                                      },
+                                                      {
+                                                          "title":  {
+                                                                        "en":  "Vehicle 02 Prodromos",
+                                                                        "el":  "Όχημα 02 Πρόδρομος"
+                                                                    },
+                                                          "details":  {
+                                                                          "en":  "40 × 35 cm · mixed media, ink on paper",
+                                                                          "el":  "40 × 35 εκ. · μεικτή τεχνική, μελάνι σε χαρτί"
+                                                                      },
+                                                          "year":  "2023",
+                                                          "image":  "assets/gallery/vehicles/06.jpeg",
+                                                          "alt":  {
+                                                                      "en":  "Vehicle 02 Prodromos, mixed media and ink on paper",
+                                                                      "el":  "Όχημα 02 Πρόδρομος, μεικτή τεχνική και μελάνι σε χαρτί"
+                                                                  }
+                                                      },
+                                                      {
+                                                          "title":  {
+                                                                        "en":  "Vehicle 03 Prodromos",
+                                                                        "el":  "Όχημα 03 Πρόδρομος"
+                                                                    },
+                                                          "details":  {
+                                                                          "en":  "25 × 35 cm · mixed media, ink on paper",
+                                                                          "el":  "25 × 35 εκ. · μεικτή τεχνική, μελάνι σε χαρτί"
+                                                                      },
+                                                          "year":  "2023",
+                                                          "image":  "assets/gallery/vehicles/07.jpeg",
+                                                          "alt":  {
+                                                                      "en":  "Vehicle 03 Prodromos, mixed media and ink on paper",
+                                                                      "el":  "Όχημα 03 Πρόδρομος, μεικτή τεχνική και μελάνι σε χαρτί"
+                                                                  }
+                                                      },
+                                                      {
+                                                          "title":  {
+                                                                        "en":  "Vehicle 04 Prodromos",
+                                                                        "el":  "Όχημα 04 Πρόδρομος"
+                                                                    },
+                                                          "details":  {
+                                                                          "en":  "50 × 35 cm · mixed media, ink on paper",
+                                                                          "el":  "50 × 35 εκ. · μεικτή τεχνική, μελάνι σε χαρτί"
+                                                                      },
+                                                          "year":  "2023",
+                                                          "image":  "assets/gallery/vehicles/08.jpeg",
+                                                          "alt":  {
+                                                                      "en":  "Vehicle 04 Prodromos, mixed media and ink on paper",
+                                                                      "el":  "Όχημα 04 Πρόδρομος, μεικτή τεχνική και μελάνι σε χαρτί"
+                                                                  }
+                                                      },
+                                                      {
+                                                          "title":  {
+                                                                        "en":  "Vehicle 05 Prodromos",
+                                                                        "el":  "Όχημα 05 Πρόδρομος"
+                                                                    },
+                                                          "details":  {
+                                                                          "en":  "25 × 35 cm · mixed media, ink on paper",
+                                                                          "el":  "25 × 35 εκ. · μεικτή τεχνική, μελάνι σε χαρτί"
+                                                                      },
+                                                          "year":  "2023",
+                                                          "image":  "assets/gallery/vehicles/09.jpeg",
+                                                          "alt":  {
+                                                                      "en":  "Vehicle 05 Prodromos, mixed media and ink on paper",
+                                                                      "el":  "Όχημα 05 Πρόδρομος, μεικτή τεχνική και μελάνι σε χαρτί"
+                                                                  }
+                                                      },
+                                                      {
+                                                          "title":  {
+                                                                        "en":  "Vehicle 06 Prodromos",
+                                                                        "el":  "Όχημα 06 Πρόδρομος"
+                                                                    },
+                                                          "details":  {
+                                                                          "en":  "25 × 35 cm · mixed media, ink on paper",
+                                                                          "el":  "25 × 35 εκ. · μεικτή τεχνική, μελάνι σε χαρτί"
+                                                                      },
+                                                          "year":  "2023",
+                                                          "image":  "assets/gallery/vehicles/10.jpeg",
+                                                          "alt":  {
+                                                                      "en":  "Vehicle 06 Prodromos, mixed media and ink on paper",
+                                                                      "el":  "Όχημα 06 Πρόδρομος, μεικτή τεχνική και μελάνι σε χαρτί"
+                                                                  }
+                                                      },
+                                                      {
+                                                          "title":  {
+                                                                        "en":  "Train 01 Prodromos",
+                                                                        "el":  "Τρένο 01 Πρόδρομος"
+                                                                    },
+                                                          "details":  {
+                                                                          "en":  "100 × 35 cm · mixed media, ink on paper",
+                                                                          "el":  "100 × 35 εκ. · μεικτή τεχνική, μελάνι σε χαρτί"
+                                                                      },
+                                                          "year":  "2023",
+                                                          "image":  "assets/gallery/vehicles/11.jpg",
+                                                          "alt":  {
+                                                                      "en":  "Train 01 Prodromos, mixed media and ink on paper",
+                                                                      "el":  "Τρένο 01 Πρόδρομος, μεικτή τεχνική και μελάνι σε χαρτί"
+                                                                  }
+                                                      },
+                                                      {
+                                                          "title":  {
+                                                                        "en":  "Aircraft 01 Prodromos",
+                                                                        "el":  "Αεροσκάφος 01 Πρόδρομος"
+                                                                    },
+                                                          "details":  {
+                                                                          "en":  "25 × 35 cm · mixed media, ink on paper",
+                                                                          "el":  "25 × 35 εκ. · μεικτή τεχνική, μελάνι σε χαρτί"
+                                                                      },
+                                                          "year":  "2023",
+                                                          "image":  "assets/gallery/vehicles/12.jpeg",
+                                                          "alt":  {
+                                                                      "en":  "Aircraft 01 Prodromos, mixed media and ink on paper",
+                                                                      "el":  "Αεροσκάφος 01 Πρόδρομος, μεικτή τεχνική και μελάνι σε χαρτί"
+                                                                  }
+                                                      },
+                                                      {
+                                                          "title":  {
+                                                                        "en":  "Aircraft 02 Prodromos",
+                                                                        "el":  "Αεροσκάφος 02 Πρόδρομος"
+                                                                    },
+                                                          "details":  {
+                                                                          "en":  "25 × 35 cm · mixed media, ink on paper",
+                                                                          "el":  "25 × 35 εκ. · μεικτή τεχνική, μελάνι σε χαρτί"
+                                                                      },
+                                                          "year":  "2023",
+                                                          "image":  "assets/gallery/vehicles/13.jpeg",
+                                                          "alt":  {
+                                                                      "en":  "Aircraft 02 Prodromos, mixed media and ink on paper",
+                                                                      "el":  "Αεροσκάφος 02 Πρόδρομος, μεικτή τεχνική και μελάνι σε χαρτί"
+                                                                  }
+                                                      },
+                                                      {
+                                                          "title":  {
+                                                                        "en":  "Aircraft 03 Prodromos",
+                                                                        "el":  "Αεροσκάφος 03 Πρόδρομος"
+                                                                    },
+                                                          "details":  {
+                                                                          "en":  "25 × 35 cm · mixed media, ink on paper",
+                                                                          "el":  "25 × 35 εκ. · μεικτή τεχνική, μελάνι σε χαρτί"
+                                                                      },
+                                                          "year":  "2023",
+                                                          "image":  "assets/gallery/vehicles/14.jpeg",
+                                                          "alt":  {
+                                                                      "en":  "Aircraft 03 Prodromos, mixed media and ink on paper",
+                                                                      "el":  "Αεροσκάφος 03 Πρόδρομος, μεικτή τεχνική και μελάνι σε χαρτί"
+                                                                  }
+                                                      },
+                                                      {
+                                                          "title":  {
+                                                                        "en":  "Aircraft 05 Prodromos",
+                                                                        "el":  "Αεροσκάφος 05 Πρόδρομος"
+                                                                    },
+                                                          "details":  {
+                                                                          "en":  "17 × 35 cm · mixed media, ink on paper",
+                                                                          "el":  "17 × 35 εκ. · μεικτή τεχνική, μελάνι σε χαρτί"
+                                                                      },
+                                                          "year":  "2023",
+                                                          "image":  "assets/gallery/vehicles/15.jpeg",
+                                                          "alt":  {
+                                                                      "en":  "Aircraft 05 Prodromos, mixed media and ink on paper",
+                                                                      "el":  "Αεροσκάφος 05 Πρόδρομος, μεικτή τεχνική και μελάνι σε χαρτί"
+                                                                  }
+                                                      },
+                                                      {
+                                                          "title":  {
+                                                                        "en":  "Wright Aircraft Prodromos",
+                                                                        "el":  "Αεροσκάφος Wright Πρόδρομος"
+                                                                    },
+                                                          "details":  {
+                                                                          "en":  "50 × 35 cm · mixed media, ink on paper",
+                                                                          "el":  "50 × 35 εκ. · μεικτή τεχνική, μελάνι σε χαρτί"
+                                                                      },
+                                                          "year":  "2023",
+                                                          "image":  "assets/gallery/vehicles/16.jpeg",
+                                                          "alt":  {
+                                                                      "en":  "Wright Aircraft Prodromos, mixed media and ink on paper",
+                                                                      "el":  "Αεροσκάφος Wright Πρόδρομος, μεικτή τεχνική και μελάνι σε χαρτί"
+                                                                  }
+                                                      },
+                                                      {
+                                                          "title":  {
+                                                                        "en":  "Aircraft 04 Prodromos",
+                                                                        "el":  "Αεροσκάφος 04 Πρόδρομος"
+                                                                    },
+                                                          "details":  {
+                                                                          "en":  "25 × 35 cm · mixed media",
+                                                                          "el":  "25 × 35 εκ. · μεικτή τεχνική"
+                                                                      },
+                                                          "year":  "2023",
+                                                          "image":  "assets/gallery/vehicles/17.jpeg",
+                                                          "alt":  {
+                                                                      "en":  "Aircraft 04 Prodromos, mixed media",
+                                                                      "el":  "Αεροσκάφος 04 Πρόδρομος, μεικτή τεχνική"
+                                                                  }
+                                                      },
+                                                      {
+                                                          "title":  {
+                                                                        "en":  "Runway",
+                                                                        "el":  "Αεροδιάδρομος"
+                                                                    },
+                                                          "details":  {
+                                                                          "en":  "50 × 35 cm · mixed media, ink on paper",
+                                                                          "el":  "50 × 35 εκ. · μεικτή τεχνική, μελάνι σε χαρτί"
+                                                                      },
+                                                          "year":  "2023",
+                                                          "image":  "assets/gallery/vehicles/18.jpeg",
+                                                          "alt":  {
+                                                                      "en":  "Runway, mixed media and ink on paper",
+                                                                      "el":  "Αεροδιάδρομος, μεικτή τεχνική και μελάνι σε χαρτί"
+                                                                  }
+                                                      },
+                                                      {
+                                                          "title":  {
+                                                                        "en":  "Flight",
+                                                                        "el":  "Πτήση"
+                                                                    },
+                                                          "details":  {
+                                                                          "en":  "35 × 30 cm · monotype, ink on fabric",
+                                                                          "el":  "35 × 30 εκ. · μονοτυπία, μελάνι σε ύφασμα"
+                                                                      },
+                                                          "year":  "",
+                                                          "image":  "assets/gallery/vehicles/19.jpeg",
+                                                          "alt":  {
+                                                                      "en":  "Flight, monotype and ink on fabric",
+                                                                      "el":  "Πτήση, μονοτυπία και μελάνι σε ύφασμα"
+                                                                  }
+                                                      },
+                                                      {
+                                                          "title":  {
+                                                                        "en":  "Highway",
+                                                                        "el":  "Αυτοκινητόδρομος"
+                                                                    },
+                                                          "details":  {
+                                                                          "en":  "50 × 35 cm · mixed media, ink on paper",
+                                                                          "el":  "50 × 35 εκ. · μεικτή τεχνική, μελάνι σε χαρτί"
+                                                                      },
+                                                          "year":  "2023",
+                                                          "image":  "assets/gallery/vehicles/20.jpeg",
+                                                          "alt":  {
+                                                                      "en":  "Highway, mixed media and ink on paper",
+                                                                      "el":  "Αυτοκινητόδρομος, μεικτή τεχνική και μελάνι σε χαρτί"
+                                                                  }
+                                                      },
+                                                      {
+                                                          "title":  {
+                                                                        "en":  "Highway",
+                                                                        "el":  "Αυτοκινητόδρομος"
+                                                                    },
+                                                          "details":  {
+                                                                          "en":  "25 × 35 cm · mixed media, ink on paper",
+                                                                          "el":  "25 × 35 εκ. · μεικτή τεχνική, μελάνι σε χαρτί"
+                                                                      },
+                                                          "year":  "2023",
+                                                          "image":  "assets/gallery/vehicles/21.jpeg",
+                                                          "alt":  {
+                                                                      "en":  "Highway, mixed media and ink on paper",
+                                                                      "el":  "Αυτοκινητόδρομος, μεικτή τεχνική και μελάνι σε χαρτί"
+                                                                  }
+                                                      },
+                                                      {
+                                                          "title":  {
+                                                                        "en":  "Highway",
+                                                                        "el":  "Αυτοκινητόδρομος"
+                                                                    },
+                                                          "details":  {
+                                                                          "en":  "50 × 35 cm · mixed media, ink on paper",
+                                                                          "el":  "50 × 35 εκ. · μεικτή τεχνική, μελάνι σε χαρτί"
+                                                                      },
+                                                          "year":  "2023",
+                                                          "image":  "assets/gallery/vehicles/22.jpeg",
+                                                          "alt":  {
+                                                                      "en":  "Highway, mixed media and ink on paper",
+                                                                      "el":  "Αυτοκινητόδρομος, μεικτή τεχνική και μελάνι σε χαρτί"
+                                                                  }
+                                                      },
+                                                      {
+                                                          "title":  {
+                                                                        "en":  "Untitled Study",
+                                                                        "el":  "Carousel"
+                                                                    },
+                                                          "details":  {
+                                                                          "en":  "Mixed media, typographic ink and acrylic on paper",
+                                                                          "el":  "49x70cm, Μεικτή τεχνική, τυπογραφικό μελάνι και ακρυλικό σε χαρτί"
+                                                                      },
+                                                          "year":  "",
+                                                          "image":  "assets/gallery/vehicles/25.jpg",
+                                                          "alt":  {
+                                                                      "en":  "Untitled mixed-media vehicle study",
+                                                                      "el":  "Μελέτη οχήματος χωρίς τίτλο, μεικτή τεχνική"
+                                                                  }
+                                                      },
+                                                      {
+                                                          "title":  {
+                                                                        "en":  "Untitled Study",
+                                                                        "el":  "Carousel"
+                                                                    },
+                                                          "details":  {
+                                                                          "en":  "Indian ink on paper",
+                                                                          "el":  "50x70cm, Σινική μελάνη σε χαρτί"
+                                                                      },
+                                                          "year":  "",
+                                                          "image":  "assets/gallery/vehicles/26.jpg",
+                                                          "alt":  {
+                                                                      "en":  "Untitled vehicle study in Indian ink",
+                                                                      "el":  "Μελέτη οχήματος χωρίς τίτλο με σινική μελάνη"
+                                                                  }
+                                                      },
+                                                      {
+                                                          "title":  {
+                                                                        "en":  "Tricycle 01",
+                                                                        "el":  "Τρίκυκλο 01Sophia"
+                                                                    },
+                                                          "details":  {
+                                                                          "en":  "Intaglio and relief printing, typographic ink on paper",
+                                                                          "el":  "24x18,5cm, Βαθυτυπία και υψιτυπία, τυπογραφικό μελάνι σε χαρτί"
+                                                                      },
+                                                          "year":  "",
+                                                          "image":  "assets/gallery/vehicles/29.jpg",
+                                                          "alt":  {
+                                                                      "en":  "Tricycle 01, intaglio and relief print",
+                                                                      "el":  "Τρίκυκλο 01, βαθυτυπία και υψιτυπία"
+                                                                  }
+                                                      },
+                                                      {
+                                                          "title":  {
+                                                                        "en":  "Tricycle 02",
+                                                                        "el":  "Τρίκυκλο 02Sophia"
+                                                                    },
+                                                          "details":  {
+                                                                          "en":  "Intaglio and relief printing, typographic ink on paper",
+                                                                          "el":  "24x18,5cm, Βαθυτυπία και υψιτυπία, τυπογραφικό μελάνι σε χαρτί"
+                                                                      },
+                                                          "year":  "",
+                                                          "image":  "assets/gallery/vehicles/28.jpg",
+                                                          "alt":  {
+                                                                      "en":  "Tricycle 02, intaglio and relief print",
+                                                                      "el":  "Τρίκυκλο 02, βαθυτυπία και υψιτυπία"
+                                                                  }
+                                                      },
+                                                      {
+                                                          "title":  {
+                                                                        "en":  "Tricycle 03",
+                                                                        "el":  "Τρίκυκλο 03Sophia"
+                                                                    },
+                                                          "details":  {
+                                                                          "en":  "Intaglio, typographic ink on metallic foam paper",
+                                                                          "el":  "21x29,7cm, Βαθυτυπία, τυπογραφικό μελάνι σε αφρώδες μεταλλικό χαρτί"
+                                                                      },
+                                                          "year":  "",
+                                                          "image":  "assets/gallery/vehicles/27.jpg",
+                                                          "alt":  {
+                                                                      "en":  "Tricycle 03, intaglio print on metallic foam paper",
+                                                                      "el":  "Τρίκυκλο 03, βαθυτυπία σε αφρώδες μεταλλικό χαρτί"
+                                                                  }
+                                                      },
+                                                      {
+                                                          "title":  {
+                                                                        "en":  "Tricycle 04",
+                                                                        "el":  "Τρίκυκλο 04Sophia"
+                                                                    },
+                                                          "details":  {
+                                                                          "en":  "Intaglio and relief printing, typographic ink on paper",
+                                                                          "el":  "25x35cm, Βαθυτυπία και υψιτυπία, τυπογραφικό μελάνι σε χαρτί"
+                                                                      },
+                                                          "year":  "",
+                                                          "image":  "assets/gallery/vehicles/30.jpg",
+                                                          "alt":  {
+                                                                      "en":  "Tricycle 04, intaglio and relief print",
+                                                                      "el":  "Τρίκυκλο 04, βαθυτυπία και υψιτυπία"
+                                                                  }
+                                                      },
+                                                      {
+                                                          "title":  {
+                                                                        "en":  "Tricycle 05",
+                                                                        "el":  "Τρίκυκλο 05Sophia"
+                                                                    },
+                                                          "details":  {
+                                                                          "en":  "Intaglio and relief printing, typographic ink on paper",
+                                                                          "el":  "25x35cm, Βαθυτυπία και υψιτυπία, τυπογραφικό μελάνι σε χαρτί"
+                                                                      },
+                                                          "year":  "",
+                                                          "image":  "assets/gallery/vehicles/31.jpg",
+                                                          "alt":  {
+                                                                      "en":  "Tricycle 05, intaglio and relief print",
+                                                                      "el":  "Τρίκυκλο 05, βαθυτυπία και υψιτυπία"
+                                                                  }
+                                                      },
+                                                      {
+                                                          "title":  {
+                                                                        "en":  "Tricycle 06",
+                                                                        "el":  "Τρίκυκλο 06Sophia"
+                                                                    },
+                                                          "details":  {
+                                                                          "en":  "Hand-coloured print, typographic ink and acrylic on paper",
+                                                                          "el":  "25x35cm, Επιζωγραφισμένο χαρακτικό τύπωμα, τυπογραφικό μελάνι και ακρυλικό σε χαρτί"
+                                                                      },
+                                                          "year":  "",
+                                                          "image":  "assets/gallery/vehicles/32.jpg",
+                                                          "alt":  {
+                                                                      "en":  "Tricycle 06, hand-coloured print",
+                                                                      "el":  "Τρίκυκλο 06, επιζωγραφισμένο χαρακτικό τύπωμα"
+                                                                  }
+                                                      },
+                                                      {
+                                                          "title":  {
+                                                                        "en":  "Ice Rink",
+                                                                        "el":  "Παγοδρόμιο"
+                                                                    },
+                                                          "details":  {
+                                                                          "en":  "Hand-coloured intaglio, typographic ink on foam paper with glitter",
+                                                                          "el":  "Επιζωγραφισμένη βαθυτυπία, τυπογραφικό μελάνι σε αφρώδες χαρτί με γκλίτερ"
+                                                                      },
+                                                          "year":  "",
+                                                          "image":  "assets/gallery/vehicles/33.jpg",
+                                                          "alt":  {
+                                                                      "en":  "Ice Rink, hand-coloured intaglio print with glitter",
+                                                                      "el":  "Παγοδρόμιο, επιζωγραφισμένη βαθυτυπία με γκλίτερ"
+                                                                  }
+                                                      },
+                                                      {
+                                                          "title":  {
+                                                                        "en":  "Steamboat 01",
+                                                                        "el":  "Ατμόπλοιο 01"
+                                                                    },
+                                                          "details":  {
+                                                                          "en":  "Intaglio and relief printing, typographic ink on paper",
+                                                                          "el":  "Βαθυτυπία και υψιτυπία, τυπογραφικό μελάνι σε χαρτί"
+                                                                      },
+                                                          "year":  "",
+                                                          "image":  "assets/gallery/vehicles/34.jpg",
+                                                          "alt":  {
+                                                                      "en":  "Steamboat 01, intaglio and relief print",
+                                                                      "el":  "Ατμόπλοιο 01, βαθυτυπία και υψιτυπία"
+                                                                  }
+                                                      },
+                                                      {
+                                                          "title":  {
+                                                                        "en":  "Steamboat 02",
+                                                                        "el":  "Ατμόπλοιο 02"
+                                                                    },
+                                                          "details":  {
+                                                                          "en":  "Intaglio and relief printing, typographic ink on paper",
+                                                                          "el":  "Βαθυτυπία και υψιτυπία, τυπογραφικό μελάνι σε χαρτί"
+                                                                      },
+                                                          "year":  "",
+                                                          "image":  "assets/gallery/vehicles/35.jpg",
+                                                          "alt":  {
+                                                                      "en":  "Steamboat 02, intaglio and relief print",
+                                                                      "el":  "Ατμόπλοιο 02, βαθυτυπία και υψιτυπία"
+                                                                  }
+                                                      },
+                                                      {
+                                                          "title":  {
+                                                                        "en":  "Steamboat 03",
+                                                                        "el":  "Ατμόπλοιο 03"
+                                                                    },
+                                                          "details":  {
+                                                                          "en":  "Mixed media, typographic ink and acrylic on paper",
+                                                                          "el":  "Μεικτή τεχνική, τυπογραφικό μελάνι και ακρυλικό σε χαρτί"
+                                                                      },
+                                                          "year":  "",
+                                                          "image":  "assets/gallery/vehicles/36.jpg",
+                                                          "alt":  {
+                                                                      "en":  "Steamboat 03, mixed media",
+                                                                      "el":  "Ατμόπλοιο 03, μεικτή τεχνική"
+                                                                  }
+                                                      },
+                                                      {
+                                                          "title":  {
+                                                                        "en":  "Submarine 01",
+                                                                        "el":  "Υποβρύχιο 01"
+                                                                    },
+                                                          "details":  {
+                                                                          "en":  "Intaglio and relief printing, typographic ink on paper",
+                                                                          "el":  "Βαθυτυπία και υψιτυπία, τυπογραφικό μελάνι σε χαρτί"
+                                                                      },
+                                                          "year":  "",
+                                                          "image":  "assets/gallery/vehicles/37.jpg",
+                                                          "alt":  {
+                                                                      "en":  "Submarine 01, intaglio and relief print",
+                                                                      "el":  "Υποβρύχιο 01, βαθυτυπία και υψιτυπία"
+                                                                  }
+                                                      },
+                                                      {
+                                                          "title":  {
+                                                                        "en":  "Submarine 02",
+                                                                        "el":  "Υποβρύχιο 02"
+                                                                    },
+                                                          "details":  {
+                                                                          "en":  "Intaglio and relief printing, typographic ink on paper",
+                                                                          "el":  "Βαθυτυπία και υψιτυπία, τυπογραφικό μελάνι σε χαρτί"
+                                                                      },
+                                                          "year":  "",
+                                                          "image":  "assets/gallery/vehicles/38.jpg",
+                                                          "alt":  {
+                                                                      "en":  "Submarine 02, intaglio and relief print",
+                                                                      "el":  "Υποβρύχιο 02, βαθυτυπία και υψιτυπία"
+                                                                  }
+                                                      },
+                                                      {
+                                                          "title":  {
+                                                                        "en":  "Submarine 03",
+                                                                        "el":  "Υποβρύχιο 03"
+                                                                    },
+                                                          "details":  {
+                                                                          "en":  "Mixed media, typographic ink and acrylic on paper",
+                                                                          "el":  "Μεικτή τεχνική, τυπογραφικό μελάνι και ακρυλικό σε χαρτί"
+                                                                      },
+                                                          "year":  "",
+                                                          "image":  "assets/gallery/vehicles/39.jpg",
+                                                          "alt":  {
+                                                                      "en":  "Submarine 03, mixed media",
+                                                                      "el":  "Υποβρύχιο 03, μεικτή τεχνική"
+                                                                  }
+                                                      },
+                                                      {
+                                                          "title":  {
+                                                                        "en":  "Airplane",
+                                                                        "el":  "Αεροπλάνο"
+                                                                    },
+                                                          "details":  {
+                                                                          "en":  "Indian ink and acrylic on paper",
+                                                                          "el":  "Σινική μελάνη και ακρυλικό σε χαρτί"
+                                                                      },
+                                                          "year":  "",
+                                                          "image":  "assets/gallery/vehicles/40.jpg",
+                                                          "alt":  {
+                                                                      "en":  "Airplane, Indian ink and acrylic on paper",
+                                                                      "el":  "Αεροπλάνο, σινική μελάνη και ακρυλικό σε χαρτί"
+                                                                  }
+                                                      },
+                                                      {
+                                                          "title":  {
+                                                                        "en":  "Hot Air Balloon 01",
+                                                                        "el":  "Αερόστατο 01"
+                                                                    },
+                                                          "details":  {
+                                                                          "en":  "Mixed media, typographic ink and acrylic on paper",
+                                                                          "el":  "Μεικτή τεχνική, τυπογραφικό μελάνι και ακρυλικό σε χαρτί"
+                                                                      },
+                                                          "year":  "",
+                                                          "image":  "assets/gallery/vehicles/41.jpg",
+                                                          "alt":  {
+                                                                      "en":  "Hot Air Balloon 01, mixed media",
+                                                                      "el":  "Αερόστατο 01, μεικτή τεχνική"
+                                                                  }
+                                                      },
+                                                      {
+                                                          "title":  {
+                                                                        "en":  "Hot Air Balloon 02",
+                                                                        "el":  "Αερόστατο 02"
+                                                                    },
+                                                          "details":  {
+                                                                          "en":  "Mixed media, typographic ink and acrylic on paper",
+                                                                          "el":  "Μεικτή τεχνική, τυπογραφικό μελάνι και ακρυλικό σε χαρτί"
+                                                                      },
+                                                          "year":  "",
+                                                          "image":  "assets/gallery/vehicles/42.jpg",
+                                                          "alt":  {
+                                                                      "en":  "Hot Air Balloon 02, mixed media",
+                                                                      "el":  "Αερόστατο 02, μεικτή τεχνική"
+                                                                  }
+                                                      },
+                                                      {
+                                                          "title":  {
+                                                                        "en":  "Hot Air Balloon 03",
+                                                                        "el":  "Αερόστατο 03"
+                                                                    },
+                                                          "details":  {
+                                                                          "en":  "Intaglio, typographic ink on metallic foam paper",
+                                                                          "el":  "Βαθυτυπία, τυπογραφικό μελάνι σε μεταλλικό αφρώδες χαρτί"
+                                                                      },
+                                                          "year":  "",
+                                                          "image":  "assets/gallery/vehicles/43.jpg",
+                                                          "alt":  {
+                                                                      "en":  "Hot Air Balloon 03, intaglio print on metallic foam paper",
+                                                                      "el":  "Αερόστατο 03, βαθυτυπία σε μεταλλικό αφρώδες χαρτί"
+                                                                  }
+                                                      },
+                                                      {
+                                                          "title":  {
+                                                                        "en":  "Airplane 02",
+                                                                        "el":  "Αεροπλάνο 02"
+                                                                    },
+                                                          "details":  {
+                                                                          "en":  "Intaglio, typographic ink on metallic foam paper",
+                                                                          "el":  "Βαθυτυπία, τυπογραφικό μελάνι σε μεταλλικό αφρώδες χαρτί"
+                                                                      },
+                                                          "year":  "",
+                                                          "image":  "assets/gallery/vehicles/44.jpg",
+                                                          "alt":  {
+                                                                      "en":  "Airplane 02, intaglio print on metallic foam paper",
+                                                                      "el":  "Αεροπλάνο 02, βαθυτυπία σε μεταλλικό αφρώδες χαρτί"
+                                                                  }
+                                                      },
+                                                      {
+                                                          "title":  {
+                                                                        "en":  "Hot Air Balloon 04",
+                                                                        "el":  "Αερόστατο 04"
+                                                                    },
+                                                          "details":  {
+                                                                          "en":  "Intaglio, typographic ink on metallic foam paper",
+                                                                          "el":  "Βαθυτυπία, τυπογραφικό μελάνι σε μεταλλικό αφρώδες χαρτί"
+                                                                      },
+                                                          "year":  "",
+                                                          "image":  "assets/gallery/vehicles/45.jpg",
+                                                          "alt":  {
+                                                                      "en":  "Hot Air Balloon 04, intaglio print on metallic foam paper",
+                                                                      "el":  "Αερόστατο 04, βαθυτυπία σε μεταλλικό αφρώδες χαρτί"
+                                                                  }
+                                                      },
+                                                      {
+                                                          "title":  {
+                                                                        "en":  "Airplane 03",
+                                                                        "el":  "Αεροπλάνο 03"
+                                                                    },
+                                                          "details":  {
+                                                                          "en":  "Intaglio, typographic ink on metallic foam paper",
+                                                                          "el":  "Βαθυτυπία, τυπογραφικό μελάνι σε μεταλλικό αφρώδες χαρτί"
+                                                                      },
+                                                          "year":  "",
+                                                          "image":  "assets/gallery/vehicles/46.jpg",
+                                                          "alt":  {
+                                                                      "en":  "Airplane 03, intaglio print on metallic foam paper",
+                                                                      "el":  "Αεροπλάνο 03, βαθυτυπία σε μεταλλικό αφρώδες χαρτί"
+                                                                  }
+                                                      },
+                                                      {
+                                                          "title":  {
+                                                                        "en":  "Submarine 04",
+                                                                        "el":  "Υποβρύχιο 04"
+                                                                    },
+                                                          "details":  {
+                                                                          "en":  "Hand-coloured intaglio, typographic ink and acrylic on metallic foam paper",
+                                                                          "el":  "Επιζωγραφισμένη βαθυτυπία, τυπογραφικό μελάνι και ακρυλικό σε αφρώδες μεταλλικό χαρτί"
+                                                                      },
+                                                          "year":  "",
+                                                          "image":  "assets/gallery/vehicles/47.jpg",
+                                                          "alt":  {
+                                                                      "en":  "Submarine 04, hand-coloured intaglio print",
+                                                                      "el":  "Υποβρύχιο 04, επιζωγραφισμένη βαθυτυπία"
+                                                                  }
+                                                      },
+                                                      {
+                                                          "title":  {
+                                                                        "en":  "Submarine 05",
+                                                                        "el":  "Υποβρύχιο 05"
+                                                                    },
+                                                          "details":  {
+                                                                          "en":  "Hand-coloured intaglio, typographic ink and acrylic on paper",
+                                                                          "el":  "Επιζωγραφισμένη βαθυτυπία, τυπογραφικό μελάνι και ακρυλικό σε χαρτί"
+                                                                      },
+                                                          "year":  "",
+                                                          "image":  "assets/gallery/vehicles/48.jpg",
+                                                          "alt":  {
+                                                                      "en":  "Submarine 05, hand-coloured intaglio print",
+                                                                      "el":  "Υποβρύχιο 05, επιζωγραφισμένη βαθυτυπία"
+                                                                  }
+                                                      },
+                                                      {
+                                                          "title":  {
+                                                                        "en":  "Crane",
+                                                                        "el":  "Γερανός 01 Sophia/ It’s a girl!"
+                                                                    },
+                                                          "details":  {
+                                                                          "en":  "Mixed media, typographic ink and acrylic on paper",
+                                                                          "el":  "Μεικτή τεχνική, τυπογραφικό μελάνι και ακρυλικό σε μεταλλιζέ χαρτί"
+                                                                      },
+                                                          "year":  "",
+                                                          "image":  "assets/gallery/vehicles/50.jpg",
+                                                          "alt":  {
+                                                                      "en":  "Crane, mixed media",
+                                                                      "el":  "Γερανός (Κοιμήσου Αγγελούδι), μεικτή τεχνική"
+                                                                  }
+                                                      },
+                                                      {
+                                                          "title":  {
+                                                                        "en":  "Crane (Sleep, Little Angel)",
+                                                                        "el":  "Γερανός 02 Sophia/ Κοιμήσου Αγγελούδι"
+                                                                    },
+                                                          "details":  {
+                                                                          "en":  "Mixed media, typographic ink and acrylic on metallic paper",
+                                                                          "el":  "Μεικτή τεχνική, τυπογραφικό μελάνι και ακρυλικό σε χαρτί"
+                                                                      },
+                                                          "year":  "",
+                                                          "image":  "assets/gallery/vehicles/49.jpg",
+                                                          "alt":  {
+                                                                      "en":  "Crane (Sleep, Little Angel), mixed media",
+                                                                      "el":  "Γερανός, μεικτή τεχνική"
+                                                                  }
+                                                      },
+                                                      {
+                                                          "title":  {
+                                                                        "en":  "Ark",
+                                                                        "el":  "Κιβωτός"
+                                                                    },
+                                                          "details":  {
+                                                                          "en":  "Indian ink and acrylic on paper",
+                                                                          "el":  "Σινική μελάνη και ακρυλικό σε χαρτί"
+                                                                      },
+                                                          "year":  "",
+                                                          "image":  "assets/gallery/vehicles/51.jpg",
+                                                          "alt":  {
+                                                                      "en":  "Ark, Indian ink and acrylic on paper",
+                                                                      "el":  "Κιβωτός, σινική μελάνη και ακρυλικό σε χαρτί"
+                                                                  }
+                                                      },
+                                                      {
+                                                          "title":  {
+                                                                        "en":  "Collision 01",
+                                                                        "el":  "Συγκρουόμενα"
+                                                                    },
+                                                          "details":  {
+                                                                          "en":  "Print on Plexiglas",
+                                                                          "el":  "Τύπωμα σε πλεξιγκλάς"
+                                                                      },
+                                                          "year":  "",
+                                                          "image":  "assets/gallery/vehicles/52.jpg",
+                                                          "alt":  {
+                                                                      "en":  "Collision 01, print on Plexiglas",
+                                                                      "el":  "Συγκρουόμενα 01, τύπωμα σε πλεξιγκλάς"
+                                                                  }
+                                                      },
+                                                      {
+                                                          "title":  {
+                                                                        "en":  "Collision 02",
+                                                                        "el":  "Συγκρουόμενα"
+                                                                    },
+                                                          "details":  {
+                                                                          "en":  "Mixed media, typographic ink, acrylic and gold spray on fabric",
+                                                                          "el":  "Μεικτή τεχνική, τυπογραφικό μελάνι, ακρυλικό και χρυσό σπρέι σε ύφασμα"
+                                                                      },
+                                                          "year":  "",
+                                                          "image":  "assets/gallery/vehicles/53.jpg",
+                                                          "alt":  {
+                                                                      "en":  "Collision 02, mixed media on fabric",
+                                                                      "el":  "Συγκρουόμενα 02, μεικτή τεχνική σε ύφασμα"
+                                                                  }
+                                                      },
+                                                      {
+                                                          "title":  {
+                                                                        "en":  "Cherubim",
+                                                                        "el":  "Χερουβείμ"
+                                                                    },
+                                                          "details":  {
+                                                                          "en":  "Intaglio, typographic ink on tracing paper and metallic paper mounted on wood",
+                                                                          "el":  "Βαθυτυπία, τυπογραφικό μελάνι σε ριζόχαρτο και μεταλλικό χαρτί επικολλημένο σε ξύλο"
+                                                                      },
+                                                          "year":  "",
+                                                          "image":  "assets/gallery/vehicles/54.jpg",
+                                                          "alt":  {
+                                                                      "en":  "Cherubim, intaglio print mounted on wood",
+                                                                      "el":  "Χερουβείμ, βαθυτυπία σε χαρτί επικολλημένο σε ξύλο"
+                                                                  }
+                                                      },
+                                                      {
+                                                          "title":  {
+                                                                        "en":  "Untitled",
+                                                                        "el":  "Χωρίς τίτλο"
+                                                                    },
+                                                          "details":  {
+                                                                          "en":  "Mixed media, typographic ink on fabric",
+                                                                          "el":  "Μεικτή τεχνική, τυπογραφικό μελάνι σε ύφασμα"
+                                                                      },
+                                                          "year":  "",
+                                                          "image":  "assets/gallery/vehicles/55.jpg",
+                                                          "alt":  {
+                                                                      "en":  "Untitled mixed-media work on fabric",
+                                                                      "el":  "Έργο χωρίς τίτλο, μεικτή τεχνική σε ύφασμα"
+                                                                  }
+                                                      }
+                                                  ]
+                                    }
+                                ]
+                },
+    "cv":  {
+               "title":  {
+                             "en":  "CV",
+                             "el":  "Βιογραφικό"
+                         },
+               "intro":  {
+                             "en":  "A summary of my education, exhibitions and professional experience. The full CV is available below.",
+                             "el":  "Σύνοψη της εκπαίδευσης, των εκθέσεων και της επαγγελματικής μου πορείας. Το πλήρες βιογραφικό είναι διαθέσιμο παρακάτω."
+                         },
+               "download":  {
+                                "en":  "Download CV (PDF)",
+                                "el":  "Λήψη Βιογραφικού (PDF)"
+                            }
+           },
+    "contact":  {
+                    "title":  {
+                                  "en":  "Contact",
+                                  "el":  "Επικοινωνία"
+                              },
+                    "formIntro":  {
+                                      "en":  "For inquiries, exhibition opportunities, or commissions, please get in touch using the form below.",
+                                      "el":  "Για πληροφορίες, εκθέσεις ή αναθέσεις έργων, παρακαλώ επικοινωνήστε μέσω της παρακάτω φόρμας."
+                                  },
+                    "name":  {
+                                 "en":  "Name",
+                                 "el":  "Όνομα"
+                             },
+                    "namePlaceholder":  {
+                                            "en":  "Your name",
+                                            "el":  "Το όνομά σας"
+                                        },
+                    "email":  {
+                                  "en":  "Email",
+                                  "el":  "Email"
+                              },
+                    "emailPlaceholder":  {
+                                             "en":  "your@email.com",
+                                             "el":  "your@email.com"
+                                         },
+                    "subject":  {
+                                    "en":  "Subject",
+                                    "el":  "Θέμα"
+                                },
+                    "subjectPlaceholder":  {
+                                               "en":  "Inquiry / Commission / Exhibition",
+                                               "el":  "Πληροφορίες / Ανάθεση / Έκθεση"
+                                           },
+                    "message":  {
+                                    "en":  "Message",
+                                    "el":  "Μήνυμα"
+                                },
+                    "messagePlaceholder":  {
+                                               "en":  "Your message...",
+                                               "el":  "Το μήνυμά σας..."
+                                           },
+                    "send":  {
+                                 "en":  "Send message",
+                                 "el":  "Αποστολή μηνύματος"
+                             },
+                    "successMsg":  {
+                                       "en":  "Thank you for reaching out! Your message has been received.",
+                                       "el":  "Ευχαριστώ για την επικοινωνία! Το μήνυμά σας παραλήφθηκε."
+                                   },
+                    "errorMsg":  {
+                                     "en":  "Please fill in all required fields.",
+                                     "el":  "Παρακαλώ συμπληρώστε όλα τα απαραίτητα πεδία."
+                                 },
+                    "sending":  {
+                                    "en":  "Sending...",
+                                    "el":  "Αποστολή..."
+                                }
+                },
+    "footer":  {
+                   "copyright":  {
+                                     "en":  "© \u003cspan id=\"year\"\u003e\u003c/span\u003e Matina Tasatzi. All rights reserved.",
+                                     "el":  "© \u003cspan id=\"year\"\u003e\u003c/span\u003e Ματίνα Τασατζή. Όλα τα δικαιώματα διατηρούνται."
+                                 }
+               },
+    "language":  {
+                     "switchToGreek":  {
+                                           "en":  "Switch language to Greek",
+                                           "el":  "Αλλαγή γλώσσας σε Ελληνικά"
+                                       },
+                     "switchToEnglish":  {
+                                             "en":  "Switch language to English",
+                                             "el":  "Αλλαγή γλώσσας σε Αγγλικά"
+                                         }
+                 }
+}

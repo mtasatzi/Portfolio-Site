@@ -1,36 +1,38 @@
 # Updating the portfolio
 
-Portfolio text and image choices are in `js/content.js`. You can edit this file in a text editor without changing the site's HTML, CSS, or behavior. The page still opens directly from `index.html`; there is no build step.
+Edit portfolio text, artwork, and image paths in [`content.json`](./content.json). Each translated field keeps English and Greek together, and each artwork has one shared image path. The portfolio remains static and has no build step.
 
-## Change text
+## Open the site locally
 
-1. Open `js/content.js` in a text editor.
-2. Find the text you want under `translations`.
-3. Change the value between the quotation marks, keeping the English (`en`) and Greek (`el`) versions together.
-4. Save the file and reopen or refresh `index.html`.
+Browsers block websites opened directly from a `file://` address from loading a separate JSON file. Use the VS Code Live Server extension to serve the project locally, then preview the portfolio at the URL it opens. The VS Code **Portfolio: Public site** launch profile opens the site at `http://127.0.0.1:5501/` when Live Server is running.
 
-For example, change `title: "Early studies"` to `title: "New title"` in the English gallery period, and change the matching Greek title in the `el` section too.
+## Edit with Pages CMS
 
-## Change an image
+The repository includes a Pages CMS configuration in [`.pages.yml`](./.pages.yml). Commit and push that file to GitHub first so Pages CMS can read it. Then visit [Pages CMS](https://app.pagescms.org), sign in with GitHub, authorize its GitHub App for this repository, and open the repository. The configuration provides structured bilingual fields for the site content, exhibitions, and gallery, plus media fields for artwork images and the CV.
 
-1. Copy the image into the `assets` folder. Use a short filename with no spaces, such as `ceramics-01.jpg`.
-2. In `js/content.js`, find the matching `image` value and replace it with the path, for example `image: "assets/ceramics-01.jpg"`.
-3. For the About picture, change `images.about`.
-4. Update the artwork's `alt` text in both languages so it describes the image.
+Pages CMS saves edits as changes to files in the GitHub repository. Review and publish those changes through the repository's normal workflow. Uploaded media is stored under `assets`; artwork uploads can be browsed from `assets/gallery`.
 
-Keep the old image file until you have checked the page. Image paths are relative to the site folder, and spelling and letter case must match the filename.
+## Edit the JSON directly
 
-## Add an artwork
+Open [`content.json`](./content.json) in VS Code. Translated text sits side by side:
 
-In the correct period's `works` list, copy one complete artwork entry, including its opening and closing braces. Paste it next to the other entries, add a comma between entries, then replace its title, year, image path, and English and Greek alt text. Each artwork is displayed in the order it appears in this list.
+```json
+"title": {
+  "en": "Camera Incognita",
+  "el": "Camera Incognita"
+}
+```
 
-## Add a period
+Artwork image paths are stored once, outside the language-specific fields:
 
-Copy one complete period entry in `gallery.periods` in both `en` and `el`. Update the date, title, summary, and works in each copy. Keep the same period order in both languages.
+```json
+"image": "assets/gallery/camera-incognita/01.jpeg"
+```
 
-## Save and check your changes
+Years that are the same in both languages are stored once as a string, such as `"year": "2022"`. Use the `{ "en": "...", "el": "..." }` form only if the English and Greek year text needs to differ.
 
-- Keep the quotation marks and commas around the values and entries. Do not change the braces or property names.
-- Save `js/content.js`, then refresh the local `index.html` page. Use **Ctrl+F5** if the browser shows a cached image.
-- Check the page in both languages and confirm that every image appears.
-- To publish your changes, include `js/content.js` and any new files in `assets` when updating the website.
+Keep the JSON quotation marks, braces, and commas valid. JSON does not allow comments or trailing commas.
+
+## Publish changes
+
+Include the updated `content.json` and any new files in `assets` when publishing the static site.

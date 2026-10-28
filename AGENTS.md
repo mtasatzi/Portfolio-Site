@@ -16,8 +16,11 @@ Static, fast, bilingual (English/Greek) fine-arts portfolio site for Matina, a F
 Matina-Portfolio-Site/
 ├── index.html              # single HTML page, all sections
 ├── css/style.css           # palette, Courier New, geometric layout, responsive
-├── js/content.js           # editable EN/EL text and image paths
+├── content.json            # editable bilingual content; artwork image paths appear once
+├── .pages.yml              # Pages CMS content and media configuration
 ├── js/i18n.js              # language toggle and content rendering
+├── .vscode/
+│   └── launch.json          # F5 profile for local site preview
 ├── assets/
 │   ├── logo.*              # supplied logo image
 │   ├── cover.jpg           # supplied cover artwork
@@ -35,10 +38,11 @@ Matina-Portfolio-Site/
 5. Contact form
 
 ## How to work on this (for any session)
-- Edit `js/content.js` to update text and image paths; see `CONTENT-GUIDE.md`. Open `index.html` in a browser to preview — no build step.
+- Edit content in Pages CMS or update `content.json` directly; see `CONTENT-GUIDE.md`. Use VS Code Live Server to preview the site locally; no build step is required.
 - Keep the exact hex palette; do not substitute colors.
 - Keep Courier New as the primary typeface.
-- All user-facing text must be bilingual (EN/EL), stored in `js/content.js`, and shown through the language toggle.
+- Keep each translated field together as `{ "en": "...", "el": "..." }` in `content.json`; store each shared artwork image path only once.
+- All user-facing portfolio text must be bilingual (EN/EL), stored in `content.json`, and shown through the language toggle.
 - When adding new sections, add them chronologically and keep the Bauhaus-inspired geometry consistent.
 - Commit messages end with: `Co-Authored-By: Claude Code <noreply@anthropic.com>`
 

@@ -1,12 +1,16 @@
 /* Current language; defaults to English */
 let currentLang = "en";
-const SITE_CONTENT = window.PORTFOLIO_CONTENT;
-const STRINGS = SITE_CONTENT.translations;
+let SITE_CONTENT;
 
 /* Map data-i18n keys ("section.key") to string lookups */
 function t(key) {
-  const value = key.split(".").reduce((entry, part) => entry?.[part], STRINGS[currentLang]);
-  return typeof value === "string" ? value : key;
+  const value = key.split(".").reduce((entry, part) => entry?.[part], SITE_CONTENT);
+  const translation = typeof value === "string" ? value : value?.[currentLang];
+  return typeof translation === "string" ? translation : key;
+}
+
+function localized(value) {
+  return typeof value === "string" ? value : value?.[currentLang] || "";
 }
 
 function renderGallery() {
@@ -14,17 +18,21 @@ function renderGallery() {
   if (!timeline) return;
 
   timeline.replaceChildren();
-  STRINGS[currentLang].gallery.periods.forEach((period) => {
+  SITE_CONTENT.gallery.periods.forEach((period) => {
     const article = document.createElement("article");
     article.className = "period";
 
     const date = document.createElement("time");
     date.className = "period-date";
-    date.textContent = period.date;
+    date.textContent = localized(period.date);
 
     const title = document.createElement("h3");
     title.className = "period-title";
-    title.textContent = period.title;
+    title.textContent = localized(period.title);
+
+    const summary = document.createElement("p");
+    summary.className = "period-summary";
+    summary.textContent = localized(period.summary);
 
     const works = document.createElement("div");
     works.className = "period-works";
@@ -35,37 +43,65 @@ function renderGallery() {
       const image = document.createElement("img");
       image.className = "work-img";
       image.src = work.image;
-      image.alt = work.alt;
+      image.alt = localized(work.alt);
+      image.loading = "lazy";
+      image.decoding = "async";
+
+      const imageButton = document.createElement("button");
+      imageButton.className = "work-image-button";
+      imageButton.type = "button";
+      imageButton.setAttribute(
+        "aria-label",
+        t("gallery.zoomLabel").replace("{title}", localized(work.title))
+      );
+      imageButton.addEventListener("click", () => openImagePreview(work));
 
       const caption = document.createElement("figcaption");
       const workTitle = document.createElement("span");
       workTitle.className = "work-title";
-      workTitle.textContent = work.title;
-      const year = document.createElement("span");
-      year.className = "work-year";
-      year.textContent = work.year;
-
-      caption.append(workTitle, year);
-      figure.append(image, caption);
+      workTitle.textContent = localized(work.title);
+      caption.append(workTitle);
+      if (localized(work.details)) {
+        const details = document.createElement("span");
+        details.className = "work-details";
+        details.textContent = localized(work.details);
+        caption.append(details);
+      }
+      if (localized(work.year)) {
+        const year = document.createElement("span");
+        year.className = "work-year";
+        year.textContent = localized(work.year);
+        caption.append(year);
+      }
+      imageButton.append(image);
+      figure.append(imageButton, caption);
       works.append(figure);
     });
 
-    const summary = document.createElement("p");
-    summary.className = "period-summary";
-    summary.textContent = period.summary;
-
-    article.append(date, title, works, summary);
+    article.append(date, title, summary, works);
     timeline.append(article);
   });
+}
+
+function openImagePreview(work) {
+  const dialog = document.getElementById("image-lightbox");
+  const image = document.getElementById("image-lightbox-img");
+  const caption = document.getElementById("image-lightbox-caption");
+  if (!dialog || !image || !caption) return;
+
+  image.src = work.image;
+  image.alt = localized(work.alt);
+  caption.textContent = [work.title, work.details, work.year].map(localized).filter(Boolean).join(" · ");
+  dialog.showModal();
 }
 
 function renderExhibitions() {
   const paragraph = document.getElementById("about-exhibitions");
   if (!paragraph) return;
 
-  const items = STRINGS[currentLang].exhibitions.items
-    .map((item) => `${item.date} — ${item.title}, ${item.venue}`);
-  paragraph.textContent = `${STRINGS[currentLang].exhibitions.title}${items.join("; ")}.`;
+  const items = SITE_CONTENT.exhibitions.items
+    .map((item) => `${localized(item.date)} — ${localized(item.title)}, ${localized(item.venue)}`);
+  paragraph.textContent = `${localized(SITE_CONTENT.exhibitions.title)}${items.join("; ")}.`;
 }
 
 function render() {
@@ -88,11 +124,15 @@ function render() {
     if (translation) node.placeholder = translation;
   });
 
+  document.querySelectorAll("[data-i18n-aria-label]").forEach((node) => {
+    const translation = t(node.getAttribute("data-i18n-aria-label"));
+    if (translation) node.setAttribute("aria-label", translation);
+  });
+
   document.querySelectorAll(".lang-toggle").forEach((toggle) => {
-    toggle.setAttribute(
-      "aria-label",
-      currentLang === "en" ? "Switch language to Greek" : "Αλλαγή γλώσσας σε Αγγλικά"
-    );
+    toggle.setAttribute("aria-label", t(
+      currentLang === "en" ? "language.switchToGreek" : "language.switchToEnglish"
+    ));
   });
   document.querySelectorAll(".lang-label.lang-el").forEach((el) => {
     el.classList.toggle("active", currentLang === "el");
@@ -107,7 +147,7 @@ function render() {
   const aboutImage = document.getElementById("about-image");
   if (aboutImage) {
     aboutImage.src = SITE_CONTENT.images.about;
-    aboutImage.alt = STRINGS[currentLang].about.imageAlt;
+    aboutImage.alt = localized(SITE_CONTENT.about.imageAlt);
   }
   const cvLink = document.getElementById("cv-download");
   if (cvLink) cvLink.href = SITE_CONTENT.images.cv;
@@ -200,9 +240,13 @@ document.addEventListener("DOMContentLoaded", () => {
   const yearEl = document.getElementById("year");
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-  const contactForm = document.getElementById("contact-form");
-  if (contactForm) {
-    contactForm.action = `https://formsubmit.co/${SITE_CONTENT.contactEmail}`;
+  const imageLightbox = document.getElementById("image-lightbox");
+  const closeImageLightbox = document.getElementById("image-lightbox-close");
+  if (imageLightbox && closeImageLightbox) {
+    closeImageLightbox.addEventListener("click", () => imageLightbox.close());
+    imageLightbox.addEventListener("click", (event) => {
+      if (event.target === imageLightbox) imageLightbox.close();
+    });
   }
 
   document.querySelectorAll(".lang-toggle").forEach((toggle) => {
@@ -218,11 +262,26 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  render();
-  updateHeaderHeight();
-  window.addEventListener("resize", updateHeaderHeight, { passive: true });
-  initHeaderVisibility();
-  initScrollSpy();
+  fetch("content.json")
+    .then((response) => {
+      if (!response.ok) throw new Error(`content.json returned ${response.status}`);
+      return response.json();
+    })
+    .then((content) => {
+      SITE_CONTENT = content;
+      const contactForm = document.getElementById("contact-form");
+      if (contactForm) contactForm.action = `https://formsubmit.co/${SITE_CONTENT.contactEmail}`;
+      render();
+      updateHeaderHeight();
+      window.addEventListener("resize", updateHeaderHeight, { passive: true });
+      initHeaderVisibility();
+      initScrollSpy();
+    })
+    .catch((error) => {
+      console.error("Could not load portfolio content from content.json:", error);
+      const errorMessage = document.getElementById("content-load-error");
+      if (errorMessage) errorMessage.hidden = false;
+    });
 });
 
 /* Contact form submission */
@@ -252,7 +311,7 @@ if (contactForm) {
     const originalBtnText = submitBtn ? submitBtn.textContent : "";
     if (submitBtn) {
       submitBtn.disabled = true;
-      submitBtn.textContent = currentLang === "en" ? "Sending..." : "Αποστολή...";
+      submitBtn.textContent = t("contact.sending");
     }
 
     try {
