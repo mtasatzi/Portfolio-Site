@@ -63,9 +63,6 @@ components:
             - jpeg
             - png
             - webp
-      - name: alt
-        label: Image description
-        component: translatedText
   galleryPeriod:
     type: object
     label: Gallery period

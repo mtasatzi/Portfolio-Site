@@ -33,6 +33,8 @@ Years that are the same in both languages are stored once as a string, such as `
 
 Gallery period dates are shared strings, such as `"date": "2023-2024"`.
 
+Artwork image descriptions are generated from each artwork's title and medium/dimensions, so no separate image description field is needed.
+
 Keep the JSON quotation marks, braces, and commas valid. JSON does not allow comments or trailing commas.
 
 ## Publish changes

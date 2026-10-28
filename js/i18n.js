@@ -13,6 +13,10 @@ function localized(value) {
   return typeof value === "string" ? value : value?.[currentLang] || "";
 }
 
+function artworkDescription(work) {
+  return [localized(work.title), localized(work.details)].filter(Boolean).join(". ");
+}
+
 function renderGallery() {
   const timeline = document.getElementById("timeline");
   if (!timeline) return;
@@ -43,7 +47,7 @@ function renderGallery() {
       const image = document.createElement("img");
       image.className = "work-img";
       image.src = work.image;
-      image.alt = localized(work.alt);
+      image.alt = artworkDescription(work);
       image.loading = "lazy";
       image.decoding = "async";
 
@@ -90,7 +94,7 @@ function openImagePreview(work) {
   if (!dialog || !image || !caption) return;
 
   image.src = work.image;
-  image.alt = localized(work.alt);
+  image.alt = artworkDescription(work);
   caption.textContent = [work.title, work.details, work.year].map(localized).filter(Boolean).join(" · ");
   dialog.showModal();
 }
