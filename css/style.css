@@ -9,7 +9,7 @@
      #566372 charcoal slate
      #1F2329 near-black navy
      #050608 deep black
-   Type: Courier New (monospace)
+   Type: TeX Gyre Cursor (Courier replacement)
    ========================================================================== */
 
 /* --- Design tokens --- */
@@ -23,7 +23,7 @@
   --color-navy: #1f2329;
   --color-black: #050608;
 
-  --font-main: "Courier New", Courier, monospace;
+  --font-main: "TeX Gyre Cursor", monospace;
 
   --space-xs: 0.5rem;
   --space-sm: 1rem;
@@ -38,6 +38,38 @@
   --header-height: 94px;
 }
 
+@font-face {
+  font-family: "TeX Gyre Cursor";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../assets/fonts/texgyrecursor-regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "TeX Gyre Cursor";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../assets/fonts/texgyrecursor-bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "TeX Gyre Cursor";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../assets/fonts/texgyrecursor-italic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "TeX Gyre Cursor";
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../assets/fonts/texgyrecursor-bolditalic.otf") format("opentype");
+}
+
 /* --- Reset & base --- */
 *,
 *::before,
@@ -48,6 +80,14 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: calc(var(--header-height) - 1px);
+}
+
+html.is-loading {
+  background: var(--color-cream);
+}
+
+html.is-loading body {
+  visibility: hidden;
 }
 
 body {

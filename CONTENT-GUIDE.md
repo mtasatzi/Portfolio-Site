@@ -2,6 +2,8 @@
 
 Edit portfolio text, artwork, and image paths in [`content.json`](./content.json). Each translated field keeps English and Greek together, and each artwork has one shared image path. The portfolio remains static and has no build step.
 
+The site opens in Greek unless a language was previously selected; the selected language is saved in the browser for the next visit.
+
 ## Open the site locally
 
 Browsers block websites opened directly from a `file://` address from loading a separate JSON file. Use the VS Code Live Server extension to serve the project locally, then preview the portfolio at the URL it opens. The VS Code **Portfolio: Public site** launch profile opens the site at `http://127.0.0.1:5501/` when Live Server is running.
@@ -34,6 +36,8 @@ Years that are the same in both languages are stored once as a string, such as `
 Gallery period dates are shared strings, such as `"date": "2023-2024"`.
 
 Artwork image descriptions are generated from each artwork's title and medium/dimensions, so no separate image description field is needed.
+
+The site uses the self-hosted TeX Gyre Cursor font for consistent Latin and Greek typography. Its GUST Font License is included at `assets/fonts/GUST-FONT-LICENSE.txt`.
 
 Keep the JSON quotation marks, braces, and commas valid. JSON does not allow comments or trailing commas.
 

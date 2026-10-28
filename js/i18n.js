@@ -1,5 +1,17 @@
-/* Current language; defaults to English */
-let currentLang = "en";
+const LANGUAGE_STORAGE_KEY = "matina-portfolio-language";
+
+function getPreferredLanguage() {
+  try {
+    const savedLanguage = localStorage.getItem(LANGUAGE_STORAGE_KEY);
+    return savedLanguage === "en" || savedLanguage === "el" ? savedLanguage : "el";
+  } catch (error) {
+    console.warn("Could not read the saved language preference:", error);
+    return "el";
+  }
+}
+
+/* Defaults to Greek; a valid saved language preference takes precedence. */
+let currentLang = getPreferredLanguage();
 let SITE_CONTENT;
 
 /* Map data-i18n keys ("section.key") to string lookups */
@@ -162,16 +174,23 @@ function render() {
 
 /* Set language directly */
 function setLang(lang) {
+  if (lang !== "en" && lang !== "el") return;
+
   if (lang !== currentLang) {
     currentLang = lang;
     render();
+  }
+
+  try {
+    localStorage.setItem(LANGUAGE_STORAGE_KEY, lang);
+  } catch (error) {
+    console.warn("Could not save the language preference:", error);
   }
 }
 
 /* Toggle language */
 function toggleLang() {
-  currentLang = currentLang === "en" ? "el" : "en";
-  render();
+  setLang(currentLang === "en" ? "el" : "en");
 }
 
 /* Keep header height in sync with CSS scroll-padding */
@@ -280,9 +299,11 @@ document.addEventListener("DOMContentLoaded", () => {
       window.addEventListener("resize", updateHeaderHeight, { passive: true });
       initHeaderVisibility();
       initScrollSpy();
+      document.documentElement.classList.remove("is-loading");
     })
     .catch((error) => {
       console.error("Could not load portfolio content from content.json:", error);
+      document.documentElement.classList.remove("is-loading");
       const errorMessage = document.getElementById("content-load-error");
       if (errorMessage) errorMessage.hidden = false;
     });

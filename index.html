@@ -1,10 +1,22 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="el" dir="ltr" class="is-loading">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Matina Tasatzi | Portfolio</title>
+  <script>
+    try {
+      const savedLanguage = localStorage.getItem("matina-portfolio-language");
+      if (savedLanguage === "en" || savedLanguage === "el") {
+        document.documentElement.lang = savedLanguage;
+      }
+    } catch (error) {
+      console.warn("Could not read the saved language preference:", error);
+    }
+  </script>
+  <link rel="preload" href="assets/fonts/texgyrecursor-regular.otf" as="font" type="font/otf" crossorigin>
+  <link rel="preload" href="assets/fonts/texgyrecursor-bold.otf" as="font" type="font/otf" crossorigin>
   <link rel="preload" href="css/style.css" as="style">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -12,7 +24,7 @@
 <body>
 
   <!-- Site Header & Navigation -->
-  <header class="site-header">
+  <header class="site-header header--hidden">
     <div class="header-inner">
       <nav class="nav" aria-label="Main navigation">
         <a href="#about" class="nav-link" data-i18n="nav.about">About</a>
@@ -48,7 +60,7 @@
       <h1 data-i18n="hero.title">Matina Tasatzi</h1>
       <p class="hero-sub" data-i18n="hero.subtitle">Painting &amp; mixed media print making</p>
       <div class="hero-cta-wrap">
-        <a href="#about" class="btn btn-primary btn-enter" data-i18n="hero.enter">Enter Portfolio</a>
+        <a href="#about" class="btn btn-primary btn-enter" data-i18n="hero.enter">Enter</a>
       </div>
     </div>
   </section>
