@@ -117,7 +117,7 @@ function renderExhibitions() {
 
   const items = SITE_CONTENT.exhibitions.items
     .map((item) => `${localized(item.date)} — ${localized(item.title)}, ${localized(item.venue)}`);
-  paragraph.textContent = `${localized(SITE_CONTENT.exhibitions.title)}${items.join("; ")}.`;
+  paragraph.textContent = `${localized(SITE_CONTENT.exhibitions.title)}${items.join(", ")}.`;
 }
 
 function render() {
