@@ -162,7 +162,17 @@
     <button class="image-lightbox-close" id="image-lightbox-close" type="button"
       aria-label="Close image preview" data-i18n="gallery.closePreview"
       data-i18n-aria-label="gallery.closePreview">Close</button>
-    <img class="image-lightbox-img" id="image-lightbox-img" alt="">
+    <div class="image-lightbox-view">
+      <button class="image-lightbox-nav image-lightbox-nav--previous" id="image-lightbox-previous" type="button"
+        aria-label="Previous image" data-i18n-aria-label="gallery.previousImage">
+        <span aria-hidden="true">←</span>
+      </button>
+      <img class="image-lightbox-img" id="image-lightbox-img" alt="">
+      <button class="image-lightbox-nav image-lightbox-nav--next" id="image-lightbox-next" type="button"
+        aria-label="Next image" data-i18n-aria-label="gallery.nextImage">
+        <span aria-hidden="true">→</span>
+      </button>
+    </div>
     <p class="image-lightbox-caption" id="image-lightbox-caption"></p>
   </dialog>
 

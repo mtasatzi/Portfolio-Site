@@ -233,6 +233,14 @@
             "en": "Close preview",
             "el": "Κλείσιμο προεπισκόπησης"
         },
+        "previousImage": {
+            "en": "Previous image",
+            "el": "Προηγούμενο έργο"
+        },
+        "nextImage": {
+            "en": "Next image",
+            "el": "Επόμενο έργο"
+        },
         "periods": [
             {
                 "date": "2022",

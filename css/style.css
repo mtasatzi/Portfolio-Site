@@ -704,13 +704,28 @@ p {
 }
 
 .image-lightbox-img {
-  max-width: 100%;
-  max-height: calc(100vh - 9rem);
-  max-height: calc(100dvh - 9rem);
+  flex: 0 1 auto;
+  min-width: 0;
+  max-width: calc(100% - 6rem);
+  max-height: calc(100vh - 12rem);
+  max-height: calc(100dvh - 12rem);
   width: auto;
   height: auto;
   object-fit: contain;
   border: var(--border-width) solid var(--color-light-blue);
+}
+
+.image-lightbox-view {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  min-width: 0;
+  min-height: 0;
+  touch-action: pan-y;
 }
 
 .image-lightbox-caption {
@@ -723,6 +738,26 @@ p {
   position: absolute;
   top: var(--space-md);
   right: var(--space-md);
+}
+
+.image-lightbox-nav {
+  position: relative;
+  flex: 0 0 2.75rem;
+  display: grid;
+  place-items: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  padding: 0;
+  border: 0;
+  color: var(--color-light-blue);
+  background: transparent;
+  font: inherit;
+  font-size: 2rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.image-lightbox-close {
   padding: var(--space-xs) var(--space-sm);
   border: var(--border-width) solid var(--color-light-blue);
   color: var(--color-cream);
@@ -731,7 +766,13 @@ p {
   cursor: pointer;
 }
 
-.image-lightbox-close:focus-visible {
+.image-lightbox-nav:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.image-lightbox-close:focus-visible,
+.image-lightbox-nav:focus-visible {
   outline: 3px solid var(--color-steel-blue);
   outline-offset: 3px;
 }
@@ -787,6 +828,27 @@ p {
 @media (max-width: 600px) {
   .form-row {
     grid-template-columns: 1fr;
+  }
+
+  .image-lightbox {
+    padding: 4rem var(--space-xs) var(--space-sm);
+  }
+
+  .image-lightbox-view {
+    gap: var(--space-xs);
+  }
+
+  .image-lightbox-img {
+    max-width: calc(100% - 5rem);
+    max-height: calc(100vh - 10rem);
+    max-height: calc(100dvh - 10rem);
+  }
+
+  .image-lightbox-nav {
+    flex-basis: 2rem;
+    width: 2rem;
+    height: 2.75rem;
+    font-size: 1.75rem;
   }
 }
 

@@ -13,6 +13,8 @@ function getPreferredLanguage() {
 /* Defaults to Greek; a valid saved language preference takes precedence. */
 let currentLang = getPreferredLanguage();
 let SITE_CONTENT;
+let previewWorks = [];
+let previewIndex = -1;
 
 /* Map data-i18n keys ("section.key") to string lookups */
 function t(key) {
@@ -33,6 +35,7 @@ function renderGallery() {
   const timeline = document.getElementById("timeline");
   if (!timeline) return;
 
+  previewWorks = SITE_CONTENT.gallery.periods.flatMap((period) => period.works);
   timeline.replaceChildren();
   SITE_CONTENT.gallery.periods.forEach((period) => {
     const article = document.createElement("article");
@@ -97,18 +100,40 @@ function renderGallery() {
     article.append(date, title, summary, works);
     timeline.append(article);
   });
+
+  const dialog = document.getElementById("image-lightbox");
+  if (dialog?.open && previewIndex >= 0) updateImagePreview();
 }
 
 function openImagePreview(work) {
   const dialog = document.getElementById("image-lightbox");
+  previewIndex = previewWorks.indexOf(work);
+  if (!dialog || previewIndex < 0) return;
+
+  updateImagePreview();
+  dialog.showModal();
+}
+
+function updateImagePreview() {
   const image = document.getElementById("image-lightbox-img");
   const caption = document.getElementById("image-lightbox-caption");
-  if (!dialog || !image || !caption) return;
+  const previousButton = document.getElementById("image-lightbox-previous");
+  const nextButton = document.getElementById("image-lightbox-next");
+  const work = previewWorks[previewIndex];
+  if (!image || !caption || !work) return;
 
   image.src = work.image;
   image.alt = artworkDescription(work);
   caption.textContent = [work.title, work.details, work.year].map(localized).filter(Boolean).join(" · ");
-  dialog.showModal();
+  if (previousButton) previousButton.disabled = previewWorks.length < 2;
+  if (nextButton) nextButton.disabled = previewWorks.length < 2;
+}
+
+function showAdjacentImage(offset) {
+  if (previewWorks.length < 2) return;
+
+  previewIndex = (previewIndex + offset + previewWorks.length) % previewWorks.length;
+  updateImagePreview();
 }
 
 function renderExhibitions() {
@@ -264,9 +289,43 @@ document.addEventListener("DOMContentLoaded", () => {
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
   const imageLightbox = document.getElementById("image-lightbox");
+  const imageLightboxView = document.querySelector(".image-lightbox-view");
   const closeImageLightbox = document.getElementById("image-lightbox-close");
-  if (imageLightbox && closeImageLightbox) {
+  const previousImage = document.getElementById("image-lightbox-previous");
+  const nextImage = document.getElementById("image-lightbox-next");
+  const previewImage = document.getElementById("image-lightbox-img");
+  if (imageLightbox && imageLightboxView && closeImageLightbox && previousImage && nextImage && previewImage) {
+    let swipeStart = null;
     closeImageLightbox.addEventListener("click", () => imageLightbox.close());
+    previousImage.addEventListener("click", () => showAdjacentImage(-1));
+    nextImage.addEventListener("click", () => showAdjacentImage(1));
+    imageLightboxView.addEventListener("pointerdown", (event) => {
+      if (event.pointerType === "touch" && event.target === previewImage) {
+        swipeStart = { x: event.clientX, y: event.clientY };
+      }
+    });
+    imageLightboxView.addEventListener("pointerup", (event) => {
+      if (!swipeStart) return;
+
+      const deltaX = event.clientX - swipeStart.x;
+      const deltaY = event.clientY - swipeStart.y;
+      swipeStart = null;
+      if (Math.abs(deltaX) >= 50 && Math.abs(deltaX) > Math.abs(deltaY)) {
+        showAdjacentImage(deltaX < 0 ? 1 : -1);
+      }
+    });
+    imageLightboxView.addEventListener("pointercancel", () => {
+      swipeStart = null;
+    });
+    imageLightbox.addEventListener("keydown", (event) => {
+      if (event.key === "ArrowLeft") {
+        event.preventDefault();
+        showAdjacentImage(-1);
+      } else if (event.key === "ArrowRight") {
+        event.preventDefault();
+        showAdjacentImage(1);
+      }
+    });
     imageLightbox.addEventListener("click", (event) => {
       if (event.target === imageLightbox) imageLightbox.close();
     });
