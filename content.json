@@ -902,15 +902,16 @@
               "el": "Παγοδρόμιο"
             },
             "details": {
-              "en": "Hand-coloured intaglio, typographic ink on foam paper with glitter",
-              "el": "Επιζωγραφισμένη βαθυτυπία, τυπογραφικό μελάνι σε αφρώδες χαρτί με γκλίτερ"
+              "en": "Intaglio and relief printing, typographic ink on paper",
+              "el": "Βαθυτυπία και υψιτυπία, τυπογραφικό μελάνι σε χαρτί"
             },
+            "year": "2024",
             "image": "assets/gallery/vehicles/33.jpg"
           },
           {
             "title": {
-              "en": "Steamboat 01",
-              "el": "Ατμόπλοιο 01"
+              "en": "Steamboat ",
+              "el": "Ατμόπλοιο "
             },
             "details": {
               "en": "Intaglio and relief printing, typographic ink on paper",
@@ -920,24 +921,25 @@
           },
           {
             "title": {
-              "en": "Steamboat 02",
-              "el": "Ατμόπλοιο 02"
-            },
-            "details": {
-              "en": "Intaglio and relief printing, typographic ink on paper",
-              "el": "Βαθυτυπία και υψιτυπία, τυπογραφικό μελάνι σε χαρτί"
-            },
-            "image": "assets/gallery/vehicles/35.jpg"
-          },
-          {
-            "title": {
-              "en": "Steamboat 03",
-              "el": "Ατμόπλοιο 03"
+              "en": "Steamboat ",
+              "el": "Ατμόπλοιο "
             },
             "details": {
               "en": "Mixed media, typographic ink and acrylic on paper",
               "el": "Μεικτή τεχνική, τυπογραφικό μελάνι και ακρυλικό σε χαρτί"
             },
+            "image": "assets/gallery/vehicles/35.jpg"
+          },
+          {
+            "title": {
+              "en": "Ice rink",
+              "el": "Παγοδρόμιο"
+            },
+            "details": {
+              "en": "Hand-coloured intaglio, typographic ink on foam paper with glitter",
+              "el": "Επιζωγραφισμένη βαθυτυπία, τυπογραφικό μελάνι σε αφρώδες χαρτί με γκλίτερ"
+            },
+            "year": "2024",
             "image": "assets/gallery/vehicles/36.jpg"
           },
           {
