@@ -942,35 +942,37 @@
           },
           {
             "title": {
-              "en": "Submarine 01",
-              "el": "Υποβρύχιο 01"
+              "en": "Submarine 01 Sophia",
+              "el": "Υποβρύχιο 01 Sophia"
             },
             "details": {
-              "en": "Intaglio and relief printing, typographic ink on paper",
-              "el": "Βαθυτυπία και υψιτυπία, τυπογραφικό μελάνι σε χαρτί"
+              "en": "35x50 cm, Intaglio and relief printing, typographic ink on paper",
+              "el": "35x50 cm, Βαθυτυπία και υψιτυπία, τυπογραφικό μελάνι σε χαρτί"
             },
             "image": "assets/gallery/vehicles/37.jpg"
           },
           {
             "title": {
-              "en": "Submarine 02",
-              "el": "Υποβρύχιο 02"
+              "en": "Submarine 02 Sophia",
+              "el": "Υποβρύχιο 02 Sophia"
             },
             "details": {
-              "en": "Intaglio and relief printing, typographic ink on paper",
-              "el": "Βαθυτυπία και υψιτυπία, τυπογραφικό μελάνι σε χαρτί"
+              "en": "35x50 cm, Intaglio and relief printing, typographic ink on paper",
+              "el": "35x50 cm, Βαθυτυπία και υψιτυπία, τυπογραφικό μελάνι σε χαρτί"
             },
+            "year": "2024",
             "image": "assets/gallery/vehicles/38.jpg"
           },
           {
             "title": {
-              "en": "Submarine 03",
-              "el": "Υποβρύχιο 03"
+              "en": "Submarine 03 Sophia",
+              "el": "Υποβρύχιο 03 Sophia"
             },
             "details": {
-              "en": "Mixed media, typographic ink and acrylic on paper",
-              "el": "Μεικτή τεχνική, τυπογραφικό μελάνι και ακρυλικό σε χαρτί"
+              "en": "35x50 cm,Mixed media, typographic ink and acrylic on paper",
+              "el": "35x50 cm, Μεικτή τεχνική, τυπογραφικό μελάνι και ακρυλικό σε χαρτί"
             },
+            "year": "2024",
             "image": "assets/gallery/vehicles/39.jpg"
           },
           {
