@@ -1019,14 +1019,15 @@
           },
           {
             "title": {
-              "en": "Airplane 02",
-              "el": "Αεροπλάνο 02"
+              "en": "Airplane 02 Sophia",
+              "el": "Αεροπλάνο 02 Sophia"
             },
             "details": {
               "en": "Intaglio, typographic ink on metallic foam paper",
               "el": "Βαθυτυπία, τυπογραφικό μελάνι σε μεταλλικό αφρώδες χαρτί"
             },
-            "image": "assets/gallery/vehicles/44.jpg"
+            "year": "2024",
+            "image": "assets/aeroplano-1.jpg"
           },
           {
             "title": {
