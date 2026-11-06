@@ -898,12 +898,12 @@
           },
           {
             "title": {
-              "en": "Ice Rink",
-              "el": "Παγοδρόμιο"
+              "en": "Steamboat",
+              "el": "Ατμόπλοιο"
             },
             "details": {
-              "en": "Intaglio and relief printing, typographic ink on paper",
-              "el": "Βαθυτυπία και υψιτυπία, τυπογραφικό μελάνι σε χαρτί"
+              "en": " 35x50 cm, Intaglio and relief printing, typographic ink on paper",
+              "el": " 35x50 cm, Βαθυτυπία και υψιτυπία, τυπογραφικό μελάνι σε χαρτί"
             },
             "year": "2024",
             "image": "assets/gallery/vehicles/33.jpg"
@@ -914,9 +914,10 @@
               "el": "Ατμόπλοιο "
             },
             "details": {
-              "en": "Intaglio and relief printing, typographic ink on paper",
-              "el": "Βαθυτυπία και υψιτυπία, τυπογραφικό μελάνι σε χαρτί"
+              "en": " 35x50 cm, Intaglio and relief printing, typographic ink on paper",
+              "el": " 35x50 cm, Βαθυτυπία και υψιτυπία, τυπογραφικό μελάνι σε χαρτί"
             },
+            "year": "2024",
             "image": "assets/gallery/vehicles/34.jpg"
           },
           {
@@ -925,9 +926,10 @@
               "el": "Ατμόπλοιο "
             },
             "details": {
-              "en": "Mixed media, typographic ink and acrylic on paper",
-              "el": "Μεικτή τεχνική, τυπογραφικό μελάνι και ακρυλικό σε χαρτί"
+              "en": "35x50 cm, Mixed media, typographic ink and acrylic on paper",
+              "el": "35x50 cm, Μεικτή τεχνική, τυπογραφικό μελάνι και ακρυλικό σε χαρτί"
             },
+            "year": "2024",
             "image": "assets/gallery/vehicles/35.jpg"
           },
           {
@@ -936,8 +938,8 @@
               "el": "Παγοδρόμιο"
             },
             "details": {
-              "en": "Hand-coloured intaglio, typographic ink on foam paper with glitter",
-              "el": "Επιζωγραφισμένη βαθυτυπία, τυπογραφικό μελάνι σε αφρώδες χαρτί με γκλίτερ"
+              "en": "59,4x42 cm, Hand-coloured intaglio, typographic ink on foam paper with glitter",
+              "el": "59,4x42 cm, Επιζωγραφισμένη βαθυτυπία, τυπογραφικό μελάνι σε αφρώδες χαρτί με γκλίτερ"
             },
             "year": "2024",
             "image": "assets/gallery/vehicles/36.jpg"
