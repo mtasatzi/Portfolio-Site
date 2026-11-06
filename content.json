@@ -997,26 +997,15 @@
           },
           {
             "title": {
-              "en": "Hot Air Balloon 02",
-              "el": "Αερόστατο 02"
+              "en": "AT AT Walker",
+              "el": "AT AT Walker"
             },
             "details": {
-              "en": "Mixed media, typographic ink and acrylic on paper",
-              "el": "Μεικτή τεχνική, τυπογραφικό μελάνι και ακρυλικό σε χαρτί"
-            },
-            "image": "assets/gallery/vehicles/42.jpg"
-          },
-          {
-            "title": {
-              "en": "Airplane 02 Sophia",
-              "el": "Αεροπλάνο 02 Sophia"
-            },
-            "details": {
-              "en": "Intaglio, typographic ink on metallic foam paper",
-              "el": "Βαθυτυπία, τυπογραφικό μελάνι σε μεταλλικό αφρώδες χαρτί"
+              "en": " 24x18,5 cm, Mixed media, typographic ink and acrylic on paper",
+              "el": " 24x18,5 cm, Μεικτή τεχνική, τυπογραφικό μελάνι και ακρυλικό σε χαρτί"
             },
             "year": "2024",
-            "image": "assets/aeroplano-1.jpg"
+            "image": "assets/gallery/vehicles/42.jpg"
           },
           {
             "title": {
@@ -1040,6 +1029,18 @@
             },
             "year": "2024",
             "image": "assets/αεροστατο1.jpg"
+          },
+          {
+            "title": {
+              "en": "Airplane 02 Sophia",
+              "el": "Αεροπλάνο 02 Sophia"
+            },
+            "details": {
+              "en": "21x29,7 cm,  Intaglio, typographic ink on metallic foam paper",
+              "el": "21x29,7 cm, Βαθυτυπία, τυπογραφικό μελάνι σε μεταλλικό αφρώδες χαρτί"
+            },
+            "year": "2024",
+            "image": "assets/aeroplano-1.jpg"
           },
           {
             "title": {
