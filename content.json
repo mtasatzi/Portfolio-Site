@@ -595,7 +595,7 @@
           },
           {
             "title": {
-              "en": "Vehicle 01 Prodromos",
+              "en": "Vehicle 01 Forerunner",
               "el": "Όχημα 01 Πρόδρομος"
             },
             "details": {
@@ -607,7 +607,7 @@
           },
           {
             "title": {
-              "en": "Vehicle 02 Prodromos",
+              "en": "Vehicle 02 Forerunner",
               "el": "Όχημα 02 Πρόδρομος"
             },
             "details": {
@@ -619,7 +619,7 @@
           },
           {
             "title": {
-              "en": "Vehicle 03 Prodromos",
+              "en": "Vehicle 03 Forerunner",
               "el": "Όχημα 03 Πρόδρομος"
             },
             "details": {
@@ -631,7 +631,7 @@
           },
           {
             "title": {
-              "en": "Vehicle 04 Prodromos",
+              "en": "Vehicle 04 Forerunner",
               "el": "Όχημα 04 Πρόδρομος"
             },
             "details": {
@@ -643,7 +643,7 @@
           },
           {
             "title": {
-              "en": "Vehicle 05 Prodromos",
+              "en": "Vehicle 05 Forerunner",
               "el": "Όχημα 05 Πρόδρομος"
             },
             "details": {
@@ -655,7 +655,7 @@
           },
           {
             "title": {
-              "en": "Vehicle 06 Prodromos",
+              "en": "Vehicle 06 Forerunner",
               "el": "Όχημα 06 Πρόδρομος"
             },
             "details": {
@@ -667,7 +667,7 @@
           },
           {
             "title": {
-              "en": "Train 01 Prodromos",
+              "en": "Train 01 Forerunner",
               "el": "Τρένο 01 Πρόδρομος"
             },
             "details": {
@@ -679,7 +679,7 @@
           },
           {
             "title": {
-              "en": "Aircraft 01 Prodromos",
+              "en": "Aircraft 01 Forerunner",
               "el": "Αεροσκάφος 01 Πρόδρομος"
             },
             "details": {
@@ -691,7 +691,7 @@
           },
           {
             "title": {
-              "en": "Aircraft 02 Prodromos",
+              "en": "Aircraft 02 Forerunner",
               "el": "Αεροσκάφος 02 Πρόδρομος"
             },
             "details": {
@@ -703,7 +703,7 @@
           },
           {
             "title": {
-              "en": "Aircraft 03 Prodromos",
+              "en": "Aircraft 03 Forerunner",
               "el": "Αεροσκάφος 03 Πρόδρομος"
             },
             "details": {
@@ -715,7 +715,7 @@
           },
           {
             "title": {
-              "en": "Aircraft 05 Prodromos",
+              "en": "Aircraft 05 Forerunner",
               "el": "Αεροσκάφος 05 Πρόδρομος"
             },
             "details": {
@@ -727,7 +727,7 @@
           },
           {
             "title": {
-              "en": "Wright Aircraft Prodromos",
+              "en": "Wright Aircraft Forerunner",
               "el": "Αεροσκάφος Wright Πρόδρομος"
             },
             "details": {
@@ -739,19 +739,31 @@
           },
           {
             "title": {
-              "en": "Aircraft 04 Prodromos",
+              "en": "Aircraft 04 Forerunner",
               "el": "Αεροσκάφος 04 Πρόδρομος"
             },
             "details": {
-              "en": "25 × 35 cm · mixed media",
-              "el": "25 × 35 εκ. · μεικτή τεχνική"
+              "en": "25 × 35 cm · mixed media, ink on paper",
+              "el": "25 × 35 εκ. · μεικτή τεχνική, μελάνι σε χαρτί"
             },
             "year": "2023",
             "image": "assets/gallery/vehicles/17.jpeg"
           },
           {
             "title": {
-              "en": "Runway",
+              "en": " Flight",
+              "el": "Πτήση"
+            },
+            "details": {
+              "en": "35 × 30 cm · monotype, ink on fabric",
+              "el": "35 × 30 εκ. · μονοτυπία, μελάνι σε ύφασμα"
+            },
+            "year": "2023",
+            "image": "assets/gallery/vehicles/18.jpeg"
+          },
+          {
+            "title": {
+              "en": "Airway",
               "el": "Αεροδιάδρομος"
             },
             "details": {
@@ -759,17 +771,6 @@
               "el": "50 × 35 εκ. · μεικτή τεχνική, μελάνι σε χαρτί"
             },
             "year": "2023",
-            "image": "assets/gallery/vehicles/18.jpeg"
-          },
-          {
-            "title": {
-              "en": "Flight",
-              "el": "Πτήση"
-            },
-            "details": {
-              "en": "35 × 30 cm · monotype, ink on fabric",
-              "el": "35 × 30 εκ. · μονοτυπία, μελάνι σε ύφασμα"
-            },
             "image": "assets/gallery/vehicles/19.jpeg"
           },
           {
