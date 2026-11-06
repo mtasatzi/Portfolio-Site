@@ -1030,34 +1030,36 @@
           },
           {
             "title": {
-              "en": "Hot Air Balloon 04",
-              "el": "Αερόστατο 04"
+              "en": "Hot Air Balloon 01 Sophia",
+              "el": "Αερόστατο 01 Sophia"
             },
             "details": {
-              "en": "Intaglio, typographic ink on metallic foam paper",
-              "el": "Βαθυτυπία, τυπογραφικό μελάνι σε μεταλλικό αφρώδες χαρτί"
+              "en": "21x29,7 cm, Intaglio, typographic ink on metallic foam paper",
+              "el": "21x29,7 cm, Βαθυτυπία, τυπογραφικό μελάνι σε μεταλλικό αφρώδες χαρτί"
             },
-            "image": "assets/gallery/vehicles/45.jpg"
+            "year": "2024",
+            "image": "assets/αεροστατο.jpg"
           },
           {
             "title": {
-              "en": "Airplane 03",
-              "el": "Αεροπλάνο 03"
+              "en": "Airplane 02 Sophia",
+              "el": "Αεροπλάνο 02 Sophia"
             },
             "details": {
-              "en": "Intaglio, typographic ink on metallic foam paper",
-              "el": "Βαθυτυπία, τυπογραφικό μελάνι σε μεταλλικό αφρώδες χαρτί"
+              "en": "21x29,7 cm, Intaglio, typographic ink on metallic foam paper",
+              "el": "21x29,7 cm, Βαθυτυπία, τυπογραφικό μελάνι σε μεταλλικό αφρώδες χαρτί"
             },
+            "year": "2024",
             "image": "assets/gallery/vehicles/46.jpg"
           },
           {
             "title": {
-              "en": "Submarine 04",
-              "el": "Υποβρύχιο 04"
+              "en": "Submarine 04 Sophia",
+              "el": "Υποβρύχιο 04 Sophia"
             },
             "details": {
-              "en": "Hand-coloured intaglio, typographic ink and acrylic on metallic foam paper",
-              "el": "Επιζωγραφισμένη βαθυτυπία, τυπογραφικό μελάνι και ακρυλικό σε αφρώδες μεταλλικό χαρτί"
+              "en": "21x29,7cm, Hand-coloured intaglio, typographic ink and acrylic on metallic foam paper",
+              "el": "21x29,7cm, Επιζωγραφισμένη βαθυτυπία, τυπογραφικό μελάνι και ακρυλικό σε αφρώδες μεταλλικό χαρτί"
             },
             "image": "assets/gallery/vehicles/47.jpg"
           },
