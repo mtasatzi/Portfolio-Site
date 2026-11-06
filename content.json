@@ -1008,17 +1008,6 @@
           },
           {
             "title": {
-              "en": "Hot Air Balloon 03",
-              "el": "Αερόστατο 03"
-            },
-            "details": {
-              "en": "Intaglio, typographic ink on metallic foam paper",
-              "el": "Βαθυτυπία, τυπογραφικό μελάνι σε μεταλλικό αφρώδες χαρτί"
-            },
-            "image": "assets/gallery/vehicles/43.jpg"
-          },
-          {
-            "title": {
               "en": "Airplane 02 Sophia",
               "el": "Αεροπλάνο 02 Sophia"
             },
@@ -1038,8 +1027,19 @@
               "en": "21x29,7 cm, Intaglio, typographic ink on metallic foam paper",
               "el": "21x29,7 cm, Βαθυτυπία, τυπογραφικό μελάνι σε μεταλλικό αφρώδες χαρτί"
             },
+            "image": "assets/gallery/vehicles/43.jpg"
+          },
+          {
+            "title": {
+              "en": "Hot Air Balloon 01 Sophia",
+              "el": "Αερόστατο 01 Sophia"
+            },
+            "details": {
+              "en": "21x29,7 cm, Intaglio, typographic ink on metallic foam paper",
+              "el": "21x29,7 cm, Βαθυτυπία, τυπογραφικό μελάνι σε μεταλλικό αφρώδες χαρτί"
+            },
             "year": "2024",
-            "image": "assets/αεροστατο.jpg"
+            "image": "assets/αεροστατο1.jpg"
           },
           {
             "title": {
