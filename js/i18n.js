@@ -81,6 +81,14 @@ function renderGallery() {
       image.loading = "lazy";
       image.decoding = "async";
 
+      let photoCounter;
+      const updatePhoto = () => {
+        image.src = photos[photoIndex];
+        if (photoCounter) {
+          photoCounter.textContent = `${photoIndex + 1} / ${photos.length}`;
+        }
+      };
+
       const imageButton = document.createElement("button");
       imageButton.className = "work-image-button";
       imageButton.type = "button";
@@ -88,17 +96,40 @@ function renderGallery() {
         "aria-label",
         t("gallery.zoomLabel").replace("{title}", localized(work.title))
       );
-      imageButton.addEventListener("click", () => openImagePreview(work, photoIndex));
+      let swipeStart = null;
+      let suppressSwipeClick = false;
+      imageButton.addEventListener("click", () => {
+        if (suppressSwipeClick) {
+          suppressSwipeClick = false;
+          return;
+        }
+        openImagePreview(work, photoIndex);
+      });
+      imageButton.addEventListener("pointerdown", (event) => {
+        if (photos.length < 2 || event.pointerType !== "touch") return;
+        swipeStart = { x: event.clientX, y: event.clientY };
+      });
+      imageButton.addEventListener("pointerup", (event) => {
+        if (!swipeStart) return;
+        const deltaX = event.clientX - swipeStart.x;
+        const deltaY = event.clientY - swipeStart.y;
+        swipeStart = null;
+        if (Math.abs(deltaX) < 40 || Math.abs(deltaX) <= Math.abs(deltaY)) return;
+        photoIndex = (photoIndex + (deltaX < 0 ? 1 : -1) + photos.length) % photos.length;
+        updatePhoto();
+        suppressSwipeClick = true;
+        window.setTimeout(() => {
+          suppressSwipeClick = false;
+        }, 0);
+      });
+      imageButton.addEventListener("pointercancel", () => {
+        swipeStart = null;
+      });
 
       if (photos.length > 1) {
-        const photoCounter = document.createElement("span");
+        photoCounter = document.createElement("span");
         photoCounter.className = "work-photo-counter";
         photoCounter.setAttribute("aria-live", "polite");
-
-        const updatePhoto = () => {
-          image.src = photos[photoIndex];
-          photoCounter.textContent = `${photoIndex + 1} / ${photos.length}`;
-        };
 
         [-1, 1].forEach((offset) => {
           const button = document.createElement("button");

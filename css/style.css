@@ -644,6 +644,7 @@ p {
   border: 0;
   background: var(--color-navy);
   cursor: zoom-in;
+  touch-action: pan-y;
 }
 
 .work-image-button:focus-visible {
@@ -665,12 +666,13 @@ p {
   font: inherit;
   font-size: 1.75rem;
   line-height: 1;
+  text-shadow: 0 0 3px var(--color-navy);
   cursor: pointer;
   transform: translateY(-50%);
 }
 
 .work-carousel-nav:hover {
-  color: var(--color-cream);
+  filter: brightness(1.15);
 }
 
 .work-carousel-nav--previous {
