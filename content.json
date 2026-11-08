@@ -1145,12 +1145,14 @@
               "el": "Αερόστατο 01 Sophia"
             },
             "details": {
-              "en": " 24x18,5 cm, Mixed media, typographic ink and acrylic on paper",
-              "el": " 24x18,5 cm, Μεικτή τεχνική, τυπογραφικό μελάνι και ακρυλικό σε χαρτί"
+              "en": "24x18.5 cm, mixed media, typographic ink and acrylic on paper; 21x29.7 cm, intaglio, typographic ink on metallic foam paper",
+              "el": "24x18,5 εκ., μεικτή τεχνική, τυπογραφικό μελάνι και ακρυλικό σε χαρτί· 21x29,7 εκ., βαθυτυπία, τυπογραφικό μελάνι σε μεταλλικό αφρώδες χαρτί"
             },
             "year": "2024",
             "images": [
-              "assets/gallery/vehicles/41.jpg"
+              "assets/gallery/vehicles/41.jpg",
+              "assets/gallery/vehicles/43.jpg",
+              "assets/αεροστατο1.jpg"
             ]
           },
           {
@@ -1169,33 +1171,6 @@
           },
           {
             "title": {
-              "en": "Hot Air Balloon 01 Sophia",
-              "el": "Αερόστατο 01 Sophia"
-            },
-            "details": {
-              "en": "21x29,7 cm, Intaglio, typographic ink on metallic foam paper",
-              "el": "21x29,7 cm, Βαθυτυπία, τυπογραφικό μελάνι σε μεταλλικό αφρώδες χαρτί"
-            },
-            "images": [
-              "assets/gallery/vehicles/43.jpg"
-            ]
-          },
-          {
-            "title": {
-              "en": "Hot Air Balloon 01 Sophia",
-              "el": "Αερόστατο 01 Sophia"
-            },
-            "details": {
-              "en": "21x29,7 cm, Intaglio, typographic ink on metallic foam paper",
-              "el": "21x29,7 cm, Βαθυτυπία, τυπογραφικό μελάνι σε μεταλλικό αφρώδες χαρτί"
-            },
-            "year": "2024",
-            "images": [
-              "assets/αεροστατο1.jpg"
-            ]
-          },
-          {
-            "title": {
               "en": "Airplane 02 Sophia",
               "el": "Αεροπλάνο 02 Sophia"
             },
@@ -1205,20 +1180,7 @@
             },
             "year": "2024",
             "images": [
-              "assets/aeroplano-1.jpg"
-            ]
-          },
-          {
-            "title": {
-              "en": "Airplane 02 Sophia",
-              "el": "Αεροπλάνο 02 Sophia"
-            },
-            "details": {
-              "en": "21x29,7 cm, Intaglio, typographic ink on metallic foam paper",
-              "el": "21x29,7 cm, Βαθυτυπία, τυπογραφικό μελάνι σε μεταλλικό αφρώδες χαρτί"
-            },
-            "year": "2024",
-            "images": [
+              "assets/aeroplano-1.jpg",
               "assets/gallery/vehicles/46.jpg"
             ]
           },
