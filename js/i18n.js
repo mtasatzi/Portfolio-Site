@@ -15,6 +15,8 @@ let currentLang = getPreferredLanguage();
 let SITE_CONTENT;
 let previewImages = [];
 let previewIndex = -1;
+let previewZoom = 1;
+let previewBaseSize = null;
 
 /* Map data-i18n keys ("section.key") to string lookups */
 function t(key) {
@@ -43,9 +45,10 @@ function renderGallery() {
     artworkImages(work).map((src, imageIndex) => ({ work, src, imageIndex }))
   ));
   timeline.replaceChildren();
-  SITE_CONTENT.gallery.periods.forEach((period) => {
+  SITE_CONTENT.gallery.periods.forEach((period, periodIndex) => {
     const article = document.createElement("article");
     article.className = "period";
+    article.dataset.periodIndex = periodIndex;
 
     const date = document.createElement("time");
     date.className = "period-date";
@@ -61,11 +64,12 @@ function renderGallery() {
 
     const works = document.createElement("div");
     works.className = "period-works";
-    period.works.forEach((work) => {
+    period.works.forEach((work, workIndex) => {
       const photos = artworkImages(work);
       let photoIndex = 0;
       const figure = document.createElement("figure");
       figure.className = "work";
+      figure.dataset.workIndex = workIndex;
 
       const media = document.createElement("div");
       media.className = "work-media";
@@ -158,22 +162,113 @@ function openImagePreview(work, imageIndex) {
 }
 
 function updateImagePreview() {
+  const imageToggle = document.getElementById("image-lightbox-image-toggle");
   const image = document.getElementById("image-lightbox-img");
   const caption = document.getElementById("image-lightbox-caption");
   const previousButton = document.getElementById("image-lightbox-previous");
   const nextButton = document.getElementById("image-lightbox-next");
   const preview = previewImages[previewIndex];
-  if (!image || !caption || !preview) return;
+  if (!imageToggle || !image || !caption || !preview) return;
 
+  setPreviewZoom(1);
   const { work, src, imageIndex } = preview;
   const photos = artworkImages(work);
   image.src = src;
   image.alt = artworkDescription(work);
+  imageToggle.setAttribute(
+    "aria-label",
+    t("gallery.zoomInImage").replace("{title}", localized(work.title))
+  );
   const captionParts = [work.title, work.details, work.year].map(localized).filter(Boolean);
   if (photos.length > 1) captionParts.push(`${imageIndex + 1} / ${photos.length}`);
   caption.textContent = captionParts.join(" · ");
   if (previousButton) previousButton.disabled = previewImages.length < 2;
   if (nextButton) nextButton.disabled = previewImages.length < 2;
+}
+
+function setPreviewZoom(zoom, event) {
+  const imageToggle = document.getElementById("image-lightbox-image-toggle");
+  const image = document.getElementById("image-lightbox-img");
+  const view = document.querySelector(".image-lightbox-view");
+  if (!imageToggle || !image || !view) return;
+
+  const imageBounds = image.getBoundingClientRect();
+  const viewBounds = view.getBoundingClientRect();
+  const targetX = Number.isFinite(event?.clientX) ? event.clientX : viewBounds.left + view.clientWidth / 2;
+  const targetY = Number.isFinite(event?.clientY) ? event.clientY : viewBounds.top + view.clientHeight / 2;
+  const focusX = Math.min(1, Math.max(0, (targetX - imageBounds.left) / imageBounds.width));
+  const focusY = Math.min(1, Math.max(0, (targetY - imageBounds.top) / imageBounds.height));
+
+  previewZoom = zoom;
+  if (previewZoom === 1) {
+    image.style.removeProperty("width");
+    image.style.removeProperty("height");
+    image.style.removeProperty("max-width");
+    image.style.removeProperty("max-height");
+    imageToggle.style.removeProperty("margin-left");
+    imageToggle.style.removeProperty("margin-top");
+    imageToggle.style.removeProperty("width");
+    imageToggle.style.removeProperty("height");
+    view.style.removeProperty("width");
+    view.style.removeProperty("height");
+    view.style.removeProperty("overflow");
+    view.style.removeProperty("overflow-x");
+    view.style.removeProperty("overflow-y");
+    view.classList.remove("is-zoomed");
+    previewBaseSize = null;
+  } else {
+    if (!previewBaseSize) {
+      const bounds = image.getBoundingClientRect();
+      previewBaseSize = { width: bounds.width, height: bounds.height };
+    }
+
+    image.style.maxWidth = "none";
+    image.style.maxHeight = "none";
+    image.style.width = `${previewBaseSize.width * previewZoom}px`;
+    image.style.height = `${previewBaseSize.height * previewZoom}px`;
+    view.classList.add("is-zoomed");
+    const scrollbarSize = 10;
+    let needsHorizontalScroll = image.offsetWidth > viewBounds.width;
+    let needsVerticalScroll = image.offsetHeight > viewBounds.height;
+    for (let iteration = 0; iteration < 2; iteration += 1) {
+      needsHorizontalScroll = image.offsetWidth
+        > viewBounds.width - (needsVerticalScroll ? scrollbarSize : 0);
+      needsVerticalScroll = image.offsetHeight
+        > viewBounds.height - (needsHorizontalScroll ? scrollbarSize : 0);
+    }
+
+    imageToggle.style.width = `${image.offsetWidth}px`;
+    imageToggle.style.height = `${image.offsetHeight}px`;
+    view.style.width = `${Math.min(
+      viewBounds.width,
+      image.offsetWidth + (needsVerticalScroll ? scrollbarSize : 0)
+    )}px`;
+    view.style.height = `${Math.min(
+      viewBounds.height,
+      image.offsetHeight + (needsHorizontalScroll ? scrollbarSize : 0)
+    )}px`;
+    view.style.overflowX = needsHorizontalScroll ? "auto" : "hidden";
+    view.style.overflowY = needsVerticalScroll ? "auto" : "hidden";
+    const verticalMargin = Math.min(
+      Math.max(0, view.clientHeight - image.offsetHeight),
+      Math.max(0, targetY - viewBounds.top - focusY * image.offsetHeight)
+    );
+    imageToggle.style.marginTop = `${verticalMargin}px`;
+  }
+  if (previewZoom === 1) {
+    view.scrollTo(0, 0);
+  } else {
+    const updatedImageBounds = image.getBoundingClientRect();
+    view.scrollLeft += updatedImageBounds.left + focusX * updatedImageBounds.width - targetX;
+    view.scrollTop += updatedImageBounds.top + focusY * updatedImageBounds.height - targetY;
+  }
+
+  const work = previewImages[previewIndex]?.work;
+  imageToggle.setAttribute(
+    "aria-label",
+    t(previewZoom === 1 ? "gallery.zoomInImage" : "gallery.zoomOutImage")
+      .replace("{title}", localized(work?.title))
+  );
 }
 
 function showAdjacentImage(offset) {
@@ -244,13 +339,58 @@ function render() {
   renderExhibitions();
 }
 
+function captureViewportAnchor() {
+  const y = Math.min(window.innerHeight - 1, Math.max(0, window.innerHeight * 0.4));
+  const element = document.elementFromPoint(window.innerWidth / 2, y);
+  const work = element?.closest(".work");
+  if (work) {
+    const period = work.closest(".period");
+    return {
+      kind: "work",
+      periodIndex: Number(period?.dataset.periodIndex),
+      workIndex: Number(work.dataset.workIndex),
+      top: work.getBoundingClientRect().top,
+      scrollY: window.scrollY,
+    };
+  }
+
+  const anchor = element?.closest("[data-i18n], section[id]");
+  return anchor
+    ? { element: anchor, top: anchor.getBoundingClientRect().top, scrollY: window.scrollY }
+    : { scrollY: window.scrollY };
+}
+
+function restoreViewportAnchor(anchor) {
+  requestAnimationFrame(() => {
+    updateHeaderHeight();
+    let element = anchor.element;
+    if (anchor.kind === "work") {
+      element = document.querySelector(
+        `.period[data-period-index="${anchor.periodIndex}"] .work[data-work-index="${anchor.workIndex}"]`
+      );
+    }
+
+    if (!element?.isConnected) {
+      window.scrollTo({ top: anchor.scrollY, behavior: "instant" });
+      return;
+    }
+
+    window.scrollTo({
+      top: window.scrollY + element.getBoundingClientRect().top - anchor.top,
+      behavior: "instant",
+    });
+  });
+}
+
 /* Set language directly */
 function setLang(lang) {
   if (lang !== "en" && lang !== "el") return;
 
   if (lang !== currentLang) {
+    const anchor = captureViewportAnchor();
     currentLang = lang;
     render();
+    restoreViewportAnchor(anchor);
   }
 
   try {
@@ -340,32 +480,108 @@ document.addEventListener("DOMContentLoaded", () => {
   const closeImageLightbox = document.getElementById("image-lightbox-close");
   const previousImage = document.getElementById("image-lightbox-previous");
   const nextImage = document.getElementById("image-lightbox-next");
+  const previewImageToggle = document.getElementById("image-lightbox-image-toggle");
   const previewImage = document.getElementById("image-lightbox-img");
-  if (imageLightbox && imageLightboxView && closeImageLightbox && previousImage && nextImage && previewImage) {
-    let swipeStart = null;
+  if (imageLightbox && imageLightboxView && closeImageLightbox && previousImage && nextImage
+    && previewImageToggle && previewImage) {
+    const activeTouches = new Map();
+    let gestureStart = null;
+    let pinchStart = null;
+    let suppressPreviewClick = false;
+    const touchDistance = (first, second) => Math.hypot(
+      first.x - second.x,
+      first.y - second.y
+    );
+    const touchCenter = (first, second) => ({
+      x: (first.x + second.x) / 2,
+      y: (first.y + second.y) / 2,
+    });
     closeImageLightbox.addEventListener("click", () => imageLightbox.close());
     previousImage.addEventListener("click", () => showAdjacentImage(-1));
     nextImage.addEventListener("click", () => showAdjacentImage(1));
+    previewImageToggle.addEventListener("click", (event) => {
+      if (suppressPreviewClick) {
+        suppressPreviewClick = false;
+        event.preventDefault();
+        return;
+      }
+      if (event.detail > 0 && window.matchMedia("(pointer: coarse)").matches) return;
+      setPreviewZoom(previewZoom === 1 ? 2 : 1, event);
+    });
     imageLightboxView.addEventListener("pointerdown", (event) => {
-      if (event.pointerType === "touch" && event.target === previewImage) {
-        swipeStart = { x: event.clientX, y: event.clientY };
+      if (event.pointerType !== "touch" || !previewImageToggle.contains(event.target)) return;
+      event.preventDefault();
+      imageLightboxView.setPointerCapture(event.pointerId);
+      activeTouches.set(event.pointerId, { x: event.clientX, y: event.clientY });
+
+      if (activeTouches.size === 1) {
+        gestureStart = { x: event.clientX, y: event.clientY, zoom: previewZoom };
+      } else if (activeTouches.size === 2) {
+        const [first, second] = activeTouches.values();
+        pinchStart = {
+          distance: Math.max(1, touchDistance(first, second)),
+          zoom: previewZoom,
+        };
+        gestureStart = null;
+        suppressPreviewClick = true;
+      }
+    });
+    imageLightboxView.addEventListener("pointermove", (event) => {
+      if (!activeTouches.has(event.pointerId)) return;
+      event.preventDefault();
+      const previous = activeTouches.get(event.pointerId);
+      activeTouches.set(event.pointerId, { x: event.clientX, y: event.clientY });
+
+      if (activeTouches.size >= 2 && pinchStart) {
+        const [first, second] = activeTouches.values();
+        const center = touchCenter(first, second);
+        const zoom = Math.min(4, Math.max(
+          1,
+          pinchStart.zoom * touchDistance(first, second) / pinchStart.distance
+        ));
+        setPreviewZoom(zoom, { clientX: center.x, clientY: center.y });
+        suppressPreviewClick = true;
+      } else if (activeTouches.size === 1 && gestureStart?.zoom > 1) {
+        imageLightboxView.scrollLeft -= event.clientX - previous.x;
+        imageLightboxView.scrollTop -= event.clientY - previous.y;
+        if (Math.abs(event.clientX - gestureStart.x) > 5
+          || Math.abs(event.clientY - gestureStart.y) > 5) {
+          suppressPreviewClick = true;
+        }
       }
     });
     imageLightboxView.addEventListener("pointerup", (event) => {
-      if (!swipeStart) return;
-
-      const deltaX = event.clientX - swipeStart.x;
-      const deltaY = event.clientY - swipeStart.y;
-      swipeStart = null;
-      if (Math.abs(deltaX) >= 50 && Math.abs(deltaX) > Math.abs(deltaY)) {
-        showAdjacentImage(deltaX < 0 ? 1 : -1);
+      if (!activeTouches.has(event.pointerId)) return;
+      const start = gestureStart;
+      const deltaX = event.clientX - (start?.x ?? event.clientX);
+      const deltaY = event.clientY - (start?.y ?? event.clientY);
+      activeTouches.delete(event.pointerId);
+      if (imageLightboxView.hasPointerCapture(event.pointerId)) {
+        imageLightboxView.releasePointerCapture(event.pointerId);
       }
+
+      if (start?.zoom === 1 && activeTouches.size === 0
+        && Math.abs(deltaX) >= 50 && Math.abs(deltaX) > Math.abs(deltaY)) {
+        showAdjacentImage(deltaX < 0 ? 1 : -1);
+        suppressPreviewClick = true;
+      }
+      if (activeTouches.size < 2) pinchStart = null;
+      if (activeTouches.size === 0) gestureStart = null;
+      suppressPreviewClick = true;
+      window.setTimeout(() => {
+        suppressPreviewClick = false;
+      }, 0);
     });
-    imageLightboxView.addEventListener("pointercancel", () => {
-      swipeStart = null;
+    imageLightboxView.addEventListener("pointercancel", (event) => {
+      activeTouches.delete(event.pointerId);
+      gestureStart = null;
+      pinchStart = null;
     });
     imageLightbox.addEventListener("keydown", (event) => {
-      if (event.key === "ArrowLeft") {
+      if (event.target === previewImageToggle && (event.key === "Enter" || event.key === " ")) {
+        event.preventDefault();
+        setPreviewZoom(previewZoom === 1 ? 2 : 1);
+      } else if (event.key === "ArrowLeft") {
         event.preventDefault();
         showAdjacentImage(-1);
       } else if (event.key === "ArrowRight") {

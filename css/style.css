@@ -659,14 +659,18 @@ p {
   width: 2rem;
   height: 2.5rem;
   padding: 0;
-  border: var(--border-width) solid var(--color-light-blue);
-  color: var(--color-cream);
-  background: var(--color-navy);
+  border: 0;
+  color: var(--color-light-blue);
+  background: transparent;
   font: inherit;
-  font-size: 1.25rem;
+  font-size: 1.75rem;
   line-height: 1;
   cursor: pointer;
   transform: translateY(-50%);
+}
+
+.work-carousel-nav:hover {
+  color: var(--color-cream);
 }
 
 .work-carousel-nav--previous {
@@ -747,32 +751,93 @@ p {
 }
 
 .image-lightbox::backdrop {
-  background: rgba(5, 6, 8, 0.96);
+  background: var(--color-black);
+}
+
+.image-lightbox-image-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 1 auto;
+  min-width: 0;
+  max-width: 100%;
+  max-height: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: zoom-in;
 }
 
 .image-lightbox-img {
+  display: block;
   flex: 0 1 auto;
   min-width: 0;
-  max-width: calc(100% - 6rem);
+  max-width: calc(100vw - 6rem);
   max-height: calc(100vh - 12rem);
   max-height: calc(100dvh - 12rem);
   width: auto;
   height: auto;
   object-fit: contain;
-  border: var(--border-width) solid var(--color-light-blue);
 }
 
 .image-lightbox-view {
   display: flex;
+  align-self: center;
   align-items: center;
   justify-content: center;
   gap: var(--space-sm);
-  width: 100%;
+  width: calc(100% - 7rem);
+  height: calc(100% - 3.5rem);
   max-width: 100%;
   max-height: 100%;
   min-width: 0;
   min-height: 0;
-  touch-action: pan-y;
+  overflow: hidden;
+  overscroll-behavior: contain;
+  touch-action: none;
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-steel-blue) var(--color-navy);
+}
+
+.image-lightbox-view::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.image-lightbox-view::-webkit-scrollbar-track {
+  background: var(--color-navy);
+}
+
+.image-lightbox-view::-webkit-scrollbar-thumb {
+  border: 2px solid var(--color-navy);
+  background: var(--color-steel-blue);
+}
+
+.image-lightbox-view::-webkit-scrollbar-thumb:hover {
+  background: var(--color-light-blue);
+}
+
+.image-lightbox-view.is-zoomed {
+  align-items: flex-start;
+  justify-content: flex-start;
+  overflow: auto;
+  touch-action: none;
+}
+
+.image-lightbox-view.is-zoomed .image-lightbox-image-toggle,
+.image-lightbox-view.is-zoomed .image-lightbox-img {
+  flex: none;
+}
+
+.image-lightbox-view.is-zoomed .image-lightbox-image-toggle {
+  max-width: none;
+  max-height: none;
+  cursor: zoom-out;
+}
+
+.image-lightbox-image-toggle:focus-visible {
+  outline: 3px solid var(--color-light-blue);
+  outline-offset: 3px;
 }
 
 .image-lightbox-caption {
@@ -788,7 +853,9 @@ p {
 }
 
 .image-lightbox-nav {
-  position: relative;
+  position: fixed;
+  z-index: 1;
+  top: 50%;
   flex: 0 0 2.75rem;
   display: grid;
   place-items: center;
@@ -802,6 +869,15 @@ p {
   font-size: 2rem;
   line-height: 1;
   cursor: pointer;
+  transform: translateY(-50%);
+}
+
+.image-lightbox-nav--previous {
+  left: var(--space-md);
+}
+
+.image-lightbox-nav--next {
+  right: var(--space-md);
 }
 
 .image-lightbox-close {
@@ -883,10 +959,17 @@ p {
 
   .image-lightbox-view {
     gap: var(--space-xs);
+    width: calc(100% - 5rem);
+    height: calc(100% - 3rem);
+  }
+
+  .image-lightbox-image-toggle {
+    max-width: 100%;
+    max-height: 100%;
   }
 
   .image-lightbox-img {
-    max-width: calc(100% - 5rem);
+    max-width: calc(100vw - 5rem);
     max-height: calc(100vh - 10rem);
     max-height: calc(100dvh - 10rem);
   }
@@ -896,6 +979,14 @@ p {
     width: 2rem;
     height: 2.75rem;
     font-size: 1.75rem;
+  }
+
+  .image-lightbox-nav--previous {
+    left: var(--space-xs);
+  }
+
+  .image-lightbox-nav--next {
+    right: var(--space-xs);
   }
 }
 

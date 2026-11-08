@@ -241,6 +241,14 @@
       "en": "Next image",
       "el": "Επόμενη εικόνα"
     },
+    "zoomInImage": {
+      "en": "Zoom in on {title}",
+      "el": "Μεγέθυνση του έργου «{title}»"
+    },
+    "zoomOutImage": {
+      "en": "Reset zoom on {title}",
+      "el": "Επαναφορά μεγέθυνσης του έργου «{title}»"
+    },
     "previewLabel": {
       "en": "Artwork preview",
       "el": "Προεπισκόπηση έργου"

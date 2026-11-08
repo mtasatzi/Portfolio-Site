@@ -195,6 +195,12 @@ content:
           - name: nextImage
             label: Next full-screen image button
             component: translatedString
+          - name: zoomInImage
+            label: Zoom in image accessibility label
+            component: translatedString
+          - name: zoomOutImage
+            label: Reset image zoom accessibility label
+            component: translatedString
           - name: previewLabel
             label: Image preview accessibility label
             component: translatedString
