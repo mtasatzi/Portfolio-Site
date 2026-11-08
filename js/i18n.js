@@ -13,7 +13,7 @@ function getPreferredLanguage() {
 /* Defaults to Greek; a valid saved language preference takes precedence. */
 let currentLang = getPreferredLanguage();
 let SITE_CONTENT;
-let previewWorks = [];
+let previewImages = [];
 let previewIndex = -1;
 
 /* Map data-i18n keys ("section.key") to string lookups */
@@ -31,11 +31,17 @@ function artworkDescription(work) {
   return [localized(work.title), localized(work.details)].filter(Boolean).join(". ");
 }
 
+function artworkImages(work) {
+  return Array.isArray(work.images) ? work.images : [];
+}
+
 function renderGallery() {
   const timeline = document.getElementById("timeline");
   if (!timeline) return;
 
-  previewWorks = SITE_CONTENT.gallery.periods.flatMap((period) => period.works);
+  previewImages = SITE_CONTENT.gallery.periods.flatMap((period) => period.works.flatMap((work) =>
+    artworkImages(work).map((src, imageIndex) => ({ work, src, imageIndex }))
+  ));
   timeline.replaceChildren();
   SITE_CONTENT.gallery.periods.forEach((period) => {
     const article = document.createElement("article");
@@ -56,12 +62,17 @@ function renderGallery() {
     const works = document.createElement("div");
     works.className = "period-works";
     period.works.forEach((work) => {
+      const photos = artworkImages(work);
+      let photoIndex = 0;
       const figure = document.createElement("figure");
       figure.className = "work";
 
+      const media = document.createElement("div");
+      media.className = "work-media";
+
       const image = document.createElement("img");
       image.className = "work-img";
-      image.src = work.image;
+      image.src = photos[photoIndex];
       image.alt = artworkDescription(work);
       image.loading = "lazy";
       image.decoding = "async";
@@ -73,7 +84,38 @@ function renderGallery() {
         "aria-label",
         t("gallery.zoomLabel").replace("{title}", localized(work.title))
       );
-      imageButton.addEventListener("click", () => openImagePreview(work));
+      imageButton.addEventListener("click", () => openImagePreview(work, photoIndex));
+
+      if (photos.length > 1) {
+        const photoCounter = document.createElement("span");
+        photoCounter.className = "work-photo-counter";
+        photoCounter.setAttribute("aria-live", "polite");
+
+        const updatePhoto = () => {
+          image.src = photos[photoIndex];
+          photoCounter.textContent = `${photoIndex + 1} / ${photos.length}`;
+        };
+
+        [-1, 1].forEach((offset) => {
+          const button = document.createElement("button");
+          button.className = `work-carousel-nav work-carousel-nav--${offset < 0 ? "previous" : "next"}`;
+          button.type = "button";
+          button.setAttribute(
+            "aria-label",
+            t(offset < 0 ? "gallery.previousPhoto" : "gallery.nextPhoto")
+              .replace("{title}", localized(work.title))
+          );
+          button.textContent = offset < 0 ? "←" : "→";
+          button.addEventListener("click", () => {
+            photoIndex = (photoIndex + offset + photos.length) % photos.length;
+            updatePhoto();
+          });
+          media.append(button);
+        });
+
+        updatePhoto();
+        media.append(photoCounter);
+      }
 
       const caption = document.createElement("figcaption");
       const workTitle = document.createElement("span");
@@ -93,7 +135,8 @@ function renderGallery() {
         caption.append(year);
       }
       imageButton.append(image);
-      figure.append(imageButton, caption);
+      media.prepend(imageButton);
+      figure.append(media, caption);
       works.append(figure);
     });
 
@@ -105,9 +148,9 @@ function renderGallery() {
   if (dialog?.open && previewIndex >= 0) updateImagePreview();
 }
 
-function openImagePreview(work) {
+function openImagePreview(work, imageIndex) {
   const dialog = document.getElementById("image-lightbox");
-  previewIndex = previewWorks.indexOf(work);
+  previewIndex = previewImages.findIndex((item) => item.work === work && item.imageIndex === imageIndex);
   if (!dialog || previewIndex < 0) return;
 
   updateImagePreview();
@@ -119,20 +162,24 @@ function updateImagePreview() {
   const caption = document.getElementById("image-lightbox-caption");
   const previousButton = document.getElementById("image-lightbox-previous");
   const nextButton = document.getElementById("image-lightbox-next");
-  const work = previewWorks[previewIndex];
-  if (!image || !caption || !work) return;
+  const preview = previewImages[previewIndex];
+  if (!image || !caption || !preview) return;
 
-  image.src = work.image;
+  const { work, src, imageIndex } = preview;
+  const photos = artworkImages(work);
+  image.src = src;
   image.alt = artworkDescription(work);
-  caption.textContent = [work.title, work.details, work.year].map(localized).filter(Boolean).join(" · ");
-  if (previousButton) previousButton.disabled = previewWorks.length < 2;
-  if (nextButton) nextButton.disabled = previewWorks.length < 2;
+  const captionParts = [work.title, work.details, work.year].map(localized).filter(Boolean);
+  if (photos.length > 1) captionParts.push(`${imageIndex + 1} / ${photos.length}`);
+  caption.textContent = captionParts.join(" · ");
+  if (previousButton) previousButton.disabled = previewImages.length < 2;
+  if (nextButton) nextButton.disabled = previewImages.length < 2;
 }
 
 function showAdjacentImage(offset) {
-  if (previewWorks.length < 2) return;
+  if (previewImages.length < 2) return;
 
-  previewIndex = (previewIndex + offset + previewWorks.length) % previewWorks.length;
+  previewIndex = (previewIndex + offset + previewImages.length) % previewImages.length;
   updateImagePreview();
 }
 

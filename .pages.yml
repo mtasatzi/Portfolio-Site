@@ -53,9 +53,10 @@ components:
       - name: year
         label: Year
         type: string
-      - name: image
-        label: Image
+      - name: images
+        label: Images
         type: image
+        list: true
         options:
           path: gallery
           extensions:
@@ -181,6 +182,18 @@ content:
             component: translatedText
           - name: zoomLabel
             label: Artwork zoom button
+            component: translatedString
+          - name: previousPhoto
+            label: Previous artwork photo button
+            component: translatedString
+          - name: nextPhoto
+            label: Next artwork photo button
+            component: translatedString
+          - name: previousImage
+            label: Previous full-screen image button
+            component: translatedString
+          - name: nextImage
+            label: Next full-screen image button
             component: translatedString
           - name: previewLabel
             label: Image preview accessibility label

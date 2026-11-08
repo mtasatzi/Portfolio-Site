@@ -632,6 +632,11 @@ p {
   background: var(--color-navy);
 }
 
+.work-media {
+  position: relative;
+  background: var(--color-navy);
+}
+
 .work-image-button {
   display: block;
   width: 100%;
@@ -644,6 +649,48 @@ p {
 .work-image-button:focus-visible {
   outline: 3px solid var(--color-steel-blue);
   outline-offset: 3px;
+}
+
+.work-carousel-nav {
+  position: absolute;
+  top: 50%;
+  display: grid;
+  place-items: center;
+  width: 2rem;
+  height: 2.5rem;
+  padding: 0;
+  border: var(--border-width) solid var(--color-light-blue);
+  color: var(--color-cream);
+  background: var(--color-navy);
+  font: inherit;
+  font-size: 1.25rem;
+  line-height: 1;
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+
+.work-carousel-nav--previous {
+  left: var(--space-xs);
+}
+
+.work-carousel-nav--next {
+  right: var(--space-xs);
+}
+
+.work-photo-counter {
+  position: absolute;
+  right: var(--space-xs);
+  bottom: var(--space-xs);
+  padding: 0 0.35rem;
+  color: var(--color-cream);
+  background: var(--color-navy);
+  font-size: 0.75rem;
+  line-height: 1.5;
+}
+
+.work-carousel-nav:focus-visible {
+  outline: 3px solid var(--color-light-blue);
+  outline-offset: 2px;
 }
 
 .work figcaption {

@@ -225,6 +225,22 @@
       "en": "View {title} full screen",
       "el": "Προβολή του έργου «{title}» σε πλήρη οθόνη"
     },
+    "previousPhoto": {
+      "en": "Previous photo of {title}",
+      "el": "Προηγούμενη φωτογραφία του έργου «{title}»"
+    },
+    "nextPhoto": {
+      "en": "Next photo of {title}",
+      "el": "Επόμενη φωτογραφία του έργου «{title}»"
+    },
+    "previousImage": {
+      "en": "Previous image",
+      "el": "Προηγούμενη εικόνα"
+    },
+    "nextImage": {
+      "en": "Next image",
+      "el": "Επόμενη εικόνα"
+    },
     "previewLabel": {
       "en": "Artwork preview",
       "el": "Προεπισκόπηση έργου"
@@ -255,7 +271,9 @@
               "el": "55 × 26 εκ. · μεικτή τεχνική, μελάνι σε χαρτί"
             },
             "year": "2022",
-            "image": "assets/gallery/camera-incognita/01.jpeg"
+            "images": [
+              "assets/gallery/camera-incognita/01.jpeg"
+            ]
           },
           {
             "title": {
@@ -267,7 +285,9 @@
               "el": "35 × 50 εκ. · μεικτή τεχνική, μελάνι σε χαρτί"
             },
             "year": "2022",
-            "image": "assets/gallery/camera-incognita/03.jpeg"
+            "images": [
+              "assets/gallery/camera-incognita/03.jpeg"
+            ]
           },
           {
             "title": {
@@ -279,7 +299,9 @@
               "el": "35 × 50 εκ. · μεικτή τεχνική, μελάνι σε χαρτί"
             },
             "year": "2022",
-            "image": "assets/gallery/camera-incognita/04.jpeg"
+            "images": [
+              "assets/gallery/camera-incognita/04.jpeg"
+            ]
           },
           {
             "title": {
@@ -291,7 +313,9 @@
               "el": "35 × 40 εκ. · μεικτή τεχνική, μελάνι σε χαρτί"
             },
             "year": "2022",
-            "image": "assets/gallery/camera-incognita/05.jpeg"
+            "images": [
+              "assets/gallery/camera-incognita/05.jpeg"
+            ]
           },
           {
             "title": {
@@ -303,7 +327,9 @@
               "el": "25 × 30 εκ. · μεικτή τεχνική, μελάνι σε χαρτί"
             },
             "year": "2022",
-            "image": "assets/gallery/camera-incognita/06.jpeg"
+            "images": [
+              "assets/gallery/camera-incognita/06.jpeg"
+            ]
           },
           {
             "title": {
@@ -315,7 +341,9 @@
               "el": "35 × 40 εκ. · μεικτή τεχνική, μελάνι σε χαρτί"
             },
             "year": "2022",
-            "image": "assets/gallery/camera-incognita/07.jpeg"
+            "images": [
+              "assets/gallery/camera-incognita/07.jpeg"
+            ]
           },
           {
             "title": {
@@ -327,7 +355,9 @@
               "el": "35 × 35 εκ. · μεικτή τεχνική, μελάνι σε χαρτί"
             },
             "year": "2022",
-            "image": "assets/gallery/camera-incognita/08.jpeg"
+            "images": [
+              "assets/gallery/camera-incognita/08.jpeg"
+            ]
           },
           {
             "title": {
@@ -339,7 +369,9 @@
               "el": "35 × 50 εκ. · μεικτή τεχνική, μελάνι σε χαρτί"
             },
             "year": "2022",
-            "image": "assets/gallery/camera-incognita/11.jpeg"
+            "images": [
+              "assets/gallery/camera-incognita/11.jpeg"
+            ]
           },
           {
             "title": {
@@ -351,7 +383,9 @@
               "el": "35 × 40 εκ. · μεικτή τεχνική, μελάνι σε χαρτί"
             },
             "year": "2022",
-            "image": "assets/gallery/camera-incognita/12.jpeg"
+            "images": [
+              "assets/gallery/camera-incognita/12.jpeg"
+            ]
           },
           {
             "title": {
@@ -363,7 +397,9 @@
               "el": "30 × 35 εκ. · μεικτή τεχνική, μελάνι σε χαρτί"
             },
             "year": "2022",
-            "image": "assets/gallery/camera-incognita/13.jpeg"
+            "images": [
+              "assets/gallery/camera-incognita/13.jpeg"
+            ]
           },
           {
             "title": {
@@ -375,7 +411,9 @@
               "el": "30 × 30 εκ. · μεικτή τεχνική, μελάνι σε χαρτί"
             },
             "year": "2022",
-            "image": "assets/gallery/camera-incognita/14.jpeg"
+            "images": [
+              "assets/gallery/camera-incognita/14.jpeg"
+            ]
           },
           {
             "title": {
@@ -387,7 +425,9 @@
               "el": "25 × 35 εκ. · μεικτή τεχνική, μελάνι σε χαρτί"
             },
             "year": "2022",
-            "image": "assets/gallery/camera-incognita/15.jpeg"
+            "images": [
+              "assets/gallery/camera-incognita/15.jpeg"
+            ]
           },
           {
             "title": {
@@ -399,7 +439,9 @@
               "el": "50 × 70 εκ. · μεικτή τεχνική, μελάνι σε χαρτί"
             },
             "year": "2022",
-            "image": "assets/gallery/camera-incognita/16.jpeg"
+            "images": [
+              "assets/gallery/camera-incognita/16.jpeg"
+            ]
           },
           {
             "title": {
@@ -411,7 +453,9 @@
               "el": "100 × 70 εκ. · μεικτή τεχνική, μελάνι σε χαρτί"
             },
             "year": "2022",
-            "image": "assets/gallery/camera-incognita/17.jpeg"
+            "images": [
+              "assets/gallery/camera-incognita/17.jpeg"
+            ]
           },
           {
             "title": {
@@ -423,7 +467,9 @@
               "el": "30 × 40 εκ. · μεικτή τεχνική, μελάνι σε χαρτί"
             },
             "year": "2022",
-            "image": "assets/gallery/camera-incognita/18.jpg"
+            "images": [
+              "assets/gallery/camera-incognita/18.jpg"
+            ]
           },
           {
             "title": {
@@ -435,7 +481,9 @@
               "el": "30 × 40 εκ. · μεικτή τεχνική, μελάνι σε χαρτί"
             },
             "year": "2022",
-            "image": "assets/gallery/camera-incognita/19.jpg"
+            "images": [
+              "assets/gallery/camera-incognita/19.jpg"
+            ]
           },
           {
             "title": {
@@ -447,7 +495,9 @@
               "el": "30 × 40 εκ. · μεικτή τεχνική, μελάνι σε χαρτί"
             },
             "year": "2022",
-            "image": "assets/gallery/camera-incognita/20.jpg"
+            "images": [
+              "assets/gallery/camera-incognita/20.jpg"
+            ]
           },
           {
             "title": {
@@ -459,7 +509,9 @@
               "el": "30 × 40 εκ. · μεικτή τεχνική, μελάνι σε χαρτί"
             },
             "year": "2022",
-            "image": "assets/gallery/camera-incognita/21.jpg"
+            "images": [
+              "assets/gallery/camera-incognita/21.jpg"
+            ]
           },
           {
             "title": {
@@ -471,7 +523,9 @@
               "el": "42 × 58,7 εκ. · μεικτή τεχνική, μελάνι σε χαρτί"
             },
             "year": "2022",
-            "image": "assets/gallery/camera-incognita/22.png"
+            "images": [
+              "assets/gallery/camera-incognita/22.png"
+            ]
           },
           {
             "title": {
@@ -483,7 +537,9 @@
               "el": "163,5 × 55,5 εκ. · μεικτή τεχνική, μελάνι σε χαρτί"
             },
             "year": "2022",
-            "image": "assets/gallery/camera-incognita/23.png"
+            "images": [
+              "assets/gallery/camera-incognita/23.png"
+            ]
           },
           {
             "title": {
@@ -495,7 +551,9 @@
               "el": "42 × 45 εκ. · μεικτή τεχνική, μελάνι σε χαρτί"
             },
             "year": "2022",
-            "image": "assets/gallery/camera-incognita/24.png"
+            "images": [
+              "assets/gallery/camera-incognita/24.png"
+            ]
           },
           {
             "title": {
@@ -507,7 +565,9 @@
               "el": "130 × 100 εκ. · μεικτή τεχνική, μελάνι σε χαρτί"
             },
             "year": "2022",
-            "image": "assets/gallery/camera-incognita/27.png"
+            "images": [
+              "assets/gallery/camera-incognita/27.png"
+            ]
           },
           {
             "title": {
@@ -519,7 +579,9 @@
               "el": "70 × 100 εκ. · μεικτή τεχνική, μελάνι σε χαρτί"
             },
             "year": "2022",
-            "image": "assets/gallery/camera-incognita/28.png"
+            "images": [
+              "assets/gallery/camera-incognita/28.png"
+            ]
           },
           {
             "title": {
@@ -530,7 +592,9 @@
               "en": "70 × 100 cm · mixed media, ink on paper",
               "el": "70 × 100 εκ. · μεικτή τεχνική, μελάνι σε χαρτί"
             },
-            "image": "assets/gallery/camera-incognita/29.png"
+            "images": [
+              "assets/gallery/camera-incognita/29.png"
+            ]
           },
           {
             "title": {
@@ -542,7 +606,9 @@
               "el": "100 × 140 εκ. · μεικτή τεχνική, μελάνι σε χαρτί"
             },
             "year": "2022",
-            "image": "assets/gallery/camera-incognita/30.jpeg"
+            "images": [
+              "assets/gallery/camera-incognita/30.jpeg"
+            ]
           }
         ]
       },
@@ -567,7 +633,9 @@
               "el": "25 × 35 εκ. · μεικτή τεχνική, μελάνι σε χαρτί"
             },
             "year": "2023",
-            "image": "assets/gallery/vehicles/01.jpg"
+            "images": [
+              "assets/gallery/vehicles/01.jpg"
+            ]
           },
           {
             "title": {
@@ -579,7 +647,9 @@
               "el": "25 × 35 εκ. · μεικτή τεχνική, μελάνι σε χαρτί"
             },
             "year": "2023",
-            "image": "assets/gallery/vehicles/03.jpeg"
+            "images": [
+              "assets/gallery/vehicles/03.jpeg"
+            ]
           },
           {
             "title": {
@@ -591,7 +661,9 @@
               "el": "25 × 35 εκ. · μεικτή τεχνική, μελάνι σε χαρτί"
             },
             "year": "2023",
-            "image": "assets/gallery/vehicles/04.jpeg"
+            "images": [
+              "assets/gallery/vehicles/04.jpeg"
+            ]
           },
           {
             "title": {
@@ -603,7 +675,9 @@
               "el": "25 × 35 εκ. · μεικτή τεχνική, μελάνι σε χαρτί"
             },
             "year": "2023",
-            "image": "assets/gallery/vehicles/05.jpg"
+            "images": [
+              "assets/gallery/vehicles/05.jpg"
+            ]
           },
           {
             "title": {
@@ -615,7 +689,9 @@
               "el": "40 × 35 εκ. · μεικτή τεχνική, μελάνι σε χαρτί"
             },
             "year": "2023",
-            "image": "assets/gallery/vehicles/06.jpeg"
+            "images": [
+              "assets/gallery/vehicles/06.jpeg"
+            ]
           },
           {
             "title": {
@@ -627,7 +703,9 @@
               "el": "25 × 35 εκ. · μεικτή τεχνική, μελάνι σε χαρτί"
             },
             "year": "2023",
-            "image": "assets/gallery/vehicles/07.jpeg"
+            "images": [
+              "assets/gallery/vehicles/07.jpeg"
+            ]
           },
           {
             "title": {
@@ -639,7 +717,9 @@
               "el": "50 × 35 εκ. · μεικτή τεχνική, μελάνι σε χαρτί"
             },
             "year": "2023",
-            "image": "assets/gallery/vehicles/08.jpeg"
+            "images": [
+              "assets/gallery/vehicles/08.jpeg"
+            ]
           },
           {
             "title": {
@@ -651,7 +731,9 @@
               "el": "25 × 35 εκ. · μεικτή τεχνική, μελάνι σε χαρτί"
             },
             "year": "2023",
-            "image": "assets/gallery/vehicles/09.jpeg"
+            "images": [
+              "assets/gallery/vehicles/09.jpeg"
+            ]
           },
           {
             "title": {
@@ -663,7 +745,9 @@
               "el": "25 × 35 εκ. · μεικτή τεχνική, μελάνι σε χαρτί"
             },
             "year": "2023",
-            "image": "assets/gallery/vehicles/10.jpeg"
+            "images": [
+              "assets/gallery/vehicles/10.jpeg"
+            ]
           },
           {
             "title": {
@@ -675,7 +759,9 @@
               "el": "100 × 35 εκ. · μεικτή τεχνική, μελάνι σε χαρτί"
             },
             "year": "2023",
-            "image": "assets/gallery/vehicles/11.jpg"
+            "images": [
+              "assets/gallery/vehicles/11.jpg"
+            ]
           },
           {
             "title": {
@@ -687,7 +773,9 @@
               "el": "25 × 35 εκ. · μεικτή τεχνική, μελάνι σε χαρτί"
             },
             "year": "2023",
-            "image": "assets/gallery/vehicles/12.jpeg"
+            "images": [
+              "assets/gallery/vehicles/12.jpeg"
+            ]
           },
           {
             "title": {
@@ -699,7 +787,9 @@
               "el": "25 × 35 εκ. · μεικτή τεχνική, μελάνι σε χαρτί"
             },
             "year": "2023",
-            "image": "assets/gallery/vehicles/13.jpeg"
+            "images": [
+              "assets/gallery/vehicles/13.jpeg"
+            ]
           },
           {
             "title": {
@@ -711,7 +801,9 @@
               "el": "25 × 35 εκ. · μεικτή τεχνική, μελάνι σε χαρτί"
             },
             "year": "2023",
-            "image": "assets/gallery/vehicles/14.jpeg"
+            "images": [
+              "assets/gallery/vehicles/14.jpeg"
+            ]
           },
           {
             "title": {
@@ -723,7 +815,9 @@
               "el": "17 × 35 εκ. · μεικτή τεχνική, μελάνι σε χαρτί"
             },
             "year": "2023",
-            "image": "assets/gallery/vehicles/15.jpeg"
+            "images": [
+              "assets/gallery/vehicles/15.jpeg"
+            ]
           },
           {
             "title": {
@@ -735,7 +829,9 @@
               "el": "50 × 35 εκ. · μεικτή τεχνική, μελάνι σε χαρτί"
             },
             "year": "2023",
-            "image": "assets/gallery/vehicles/16.jpeg"
+            "images": [
+              "assets/gallery/vehicles/16.jpeg"
+            ]
           },
           {
             "title": {
@@ -747,7 +843,9 @@
               "el": "25 × 35 εκ. · μεικτή τεχνική, μελάνι σε χαρτί"
             },
             "year": "2023",
-            "image": "assets/gallery/vehicles/17.jpeg"
+            "images": [
+              "assets/gallery/vehicles/17.jpeg"
+            ]
           },
           {
             "title": {
@@ -759,7 +857,9 @@
               "el": "35 × 30 εκ. · μονοτυπία, μελάνι σε ύφασμα"
             },
             "year": "2023",
-            "image": "assets/gallery/vehicles/18.jpeg"
+            "images": [
+              "assets/gallery/vehicles/18.jpeg"
+            ]
           },
           {
             "title": {
@@ -771,7 +871,9 @@
               "el": "50 × 35 εκ. · μεικτή τεχνική, μελάνι σε χαρτί"
             },
             "year": "2023",
-            "image": "assets/gallery/vehicles/19.jpeg"
+            "images": [
+              "assets/gallery/vehicles/19.jpeg"
+            ]
           },
           {
             "title": {
@@ -783,7 +885,9 @@
               "el": "50 × 35 εκ. · μεικτή τεχνική, μελάνι σε χαρτί"
             },
             "year": "2023",
-            "image": "assets/gallery/vehicles/20.jpeg"
+            "images": [
+              "assets/gallery/vehicles/20.jpeg"
+            ]
           },
           {
             "title": {
@@ -795,7 +899,9 @@
               "el": "25 × 35 εκ. · μεικτή τεχνική, μελάνι σε χαρτί"
             },
             "year": "2023",
-            "image": "assets/gallery/vehicles/21.jpeg"
+            "images": [
+              "assets/gallery/vehicles/21.jpeg"
+            ]
           },
           {
             "title": {
@@ -807,7 +913,9 @@
               "el": "50 × 35 εκ. · μεικτή τεχνική, μελάνι σε χαρτί"
             },
             "year": "2023",
-            "image": "assets/gallery/vehicles/22.jpeg"
+            "images": [
+              "assets/gallery/vehicles/22.jpeg"
+            ]
           },
           {
             "title": {
@@ -819,7 +927,9 @@
               "el": "49x70cm, Μεικτή τεχνική, τυπογραφικό μελάνι και ακρυλικό σε χαρτί"
             },
             "year": "2023",
-            "image": "assets/gallery/vehicles/25.jpg"
+            "images": [
+              "assets/gallery/vehicles/25.jpg"
+            ]
           },
           {
             "title": {
@@ -831,7 +941,9 @@
               "el": "50x70cm, Σινική μελάνη σε χαρτί"
             },
             "year": "2023",
-            "image": "assets/gallery/vehicles/26.jpg"
+            "images": [
+              "assets/gallery/vehicles/26.jpg"
+            ]
           },
           {
             "title": {
@@ -842,7 +954,9 @@
               "en": "24x18,5cm, Intaglio and relief printing, typographic ink on paper",
               "el": "24x18,5cm, Βαθυτυπία και υψιτυπία, τυπογραφικό μελάνι σε χαρτί"
             },
-            "image": "assets/gallery/vehicles/29.jpg"
+            "images": [
+              "assets/gallery/vehicles/29.jpg"
+            ]
           },
           {
             "title": {
@@ -854,7 +968,9 @@
               "el": "24x18,5cm, Βαθυτυπία και υψιτυπία, τυπογραφικό μελάνι σε χαρτί"
             },
             "year": "2023",
-            "image": "assets/gallery/vehicles/28.jpg"
+            "images": [
+              "assets/gallery/vehicles/28.jpg"
+            ]
           },
           {
             "title": {
@@ -866,7 +982,9 @@
               "el": "21x29,7cm, Βαθυτυπία, τυπογραφικό μελάνι σε αφρώδες μεταλλικό χαρτί"
             },
             "year": "2023",
-            "image": "assets/gallery/vehicles/27.jpg"
+            "images": [
+              "assets/gallery/vehicles/27.jpg"
+            ]
           },
           {
             "title": {
@@ -878,7 +996,9 @@
               "el": "25x35cm, Βαθυτυπία και υψιτυπία, τυπογραφικό μελάνι σε χαρτί"
             },
             "year": "2023",
-            "image": "assets/gallery/vehicles/30.jpg"
+            "images": [
+              "assets/gallery/vehicles/30.jpg"
+            ]
           },
           {
             "title": {
@@ -890,7 +1010,9 @@
               "el": "25x35cm, Βαθυτυπία και υψιτυπία, τυπογραφικό μελάνι σε χαρτί"
             },
             "year": "2023",
-            "image": "assets/gallery/vehicles/31.jpg"
+            "images": [
+              "assets/gallery/vehicles/31.jpg"
+            ]
           },
           {
             "title": {
@@ -902,7 +1024,9 @@
               "el": "25x35cm, Επιζωγραφισμένο χαρακτικό τύπωμα, τυπογραφικό μελάνι και ακρυλικό σε χαρτί"
             },
             "year": "2023",
-            "image": "assets/gallery/vehicles/32.jpg"
+            "images": [
+              "assets/gallery/vehicles/32.jpg"
+            ]
           },
           {
             "title": {
@@ -914,7 +1038,9 @@
               "el": " 35x50 cm, Βαθυτυπία και υψιτυπία, τυπογραφικό μελάνι σε χαρτί"
             },
             "year": "2024",
-            "image": "assets/gallery/vehicles/33.jpg"
+            "images": [
+              "assets/gallery/vehicles/33.jpg"
+            ]
           },
           {
             "title": {
@@ -926,7 +1052,9 @@
               "el": " 35x50 cm, Βαθυτυπία και υψιτυπία, τυπογραφικό μελάνι σε χαρτί"
             },
             "year": "2024",
-            "image": "assets/gallery/vehicles/34.jpg"
+            "images": [
+              "assets/gallery/vehicles/34.jpg"
+            ]
           },
           {
             "title": {
@@ -938,7 +1066,9 @@
               "el": "35x50 cm, Μεικτή τεχνική, τυπογραφικό μελάνι και ακρυλικό σε χαρτί"
             },
             "year": "2024",
-            "image": "assets/gallery/vehicles/35.jpg"
+            "images": [
+              "assets/gallery/vehicles/35.jpg"
+            ]
           },
           {
             "title": {
@@ -950,7 +1080,9 @@
               "el": "59,4x42 cm, Επιζωγραφισμένη βαθυτυπία, τυπογραφικό μελάνι σε αφρώδες χαρτί με γκλίτερ"
             },
             "year": "2024",
-            "image": "assets/gallery/vehicles/36.jpg"
+            "images": [
+              "assets/gallery/vehicles/36.jpg"
+            ]
           },
           {
             "title": {
@@ -961,7 +1093,9 @@
               "en": "35x50 cm, Intaglio and relief printing, typographic ink on paper",
               "el": "35x50 cm, Βαθυτυπία και υψιτυπία, τυπογραφικό μελάνι σε χαρτί"
             },
-            "image": "assets/gallery/vehicles/37.jpg"
+            "images": [
+              "assets/gallery/vehicles/37.jpg"
+            ]
           },
           {
             "title": {
@@ -973,7 +1107,9 @@
               "el": "35x50 cm, Βαθυτυπία και υψιτυπία, τυπογραφικό μελάνι σε χαρτί"
             },
             "year": "2024",
-            "image": "assets/gallery/vehicles/38.jpg"
+            "images": [
+              "assets/gallery/vehicles/38.jpg"
+            ]
           },
           {
             "title": {
@@ -985,7 +1121,9 @@
               "el": "35x50 cm, Μεικτή τεχνική, τυπογραφικό μελάνι και ακρυλικό σε χαρτί"
             },
             "year": "2024",
-            "image": "assets/gallery/vehicles/39.jpg"
+            "images": [
+              "assets/gallery/vehicles/39.jpg"
+            ]
           },
           {
             "title": {
@@ -997,7 +1135,9 @@
               "el": " 24x18,5 cm, Σινική μελάνη και ακρυλικό σε χαρτί"
             },
             "year": "2024",
-            "image": "assets/gallery/vehicles/40.jpg"
+            "images": [
+              "assets/gallery/vehicles/40.jpg"
+            ]
           },
           {
             "title": {
@@ -1009,7 +1149,9 @@
               "el": " 24x18,5 cm, Μεικτή τεχνική, τυπογραφικό μελάνι και ακρυλικό σε χαρτί"
             },
             "year": "2024",
-            "image": "assets/gallery/vehicles/41.jpg"
+            "images": [
+              "assets/gallery/vehicles/41.jpg"
+            ]
           },
           {
             "title": {
@@ -1021,7 +1163,9 @@
               "el": " 24x18,5 cm, Μεικτή τεχνική, τυπογραφικό μελάνι και ακρυλικό σε χαρτί"
             },
             "year": "2024",
-            "image": "assets/gallery/vehicles/42.jpg"
+            "images": [
+              "assets/gallery/vehicles/42.jpg"
+            ]
           },
           {
             "title": {
@@ -1032,7 +1176,9 @@
               "en": "21x29,7 cm, Intaglio, typographic ink on metallic foam paper",
               "el": "21x29,7 cm, Βαθυτυπία, τυπογραφικό μελάνι σε μεταλλικό αφρώδες χαρτί"
             },
-            "image": "assets/gallery/vehicles/43.jpg"
+            "images": [
+              "assets/gallery/vehicles/43.jpg"
+            ]
           },
           {
             "title": {
@@ -1044,7 +1190,9 @@
               "el": "21x29,7 cm, Βαθυτυπία, τυπογραφικό μελάνι σε μεταλλικό αφρώδες χαρτί"
             },
             "year": "2024",
-            "image": "assets/αεροστατο1.jpg"
+            "images": [
+              "assets/αεροστατο1.jpg"
+            ]
           },
           {
             "title": {
@@ -1056,7 +1204,9 @@
               "el": "21x29,7 cm, Βαθυτυπία, τυπογραφικό μελάνι σε μεταλλικό αφρώδες χαρτί"
             },
             "year": "2024",
-            "image": "assets/aeroplano-1.jpg"
+            "images": [
+              "assets/aeroplano-1.jpg"
+            ]
           },
           {
             "title": {
@@ -1068,7 +1218,9 @@
               "el": "21x29,7 cm, Βαθυτυπία, τυπογραφικό μελάνι σε μεταλλικό αφρώδες χαρτί"
             },
             "year": "2024",
-            "image": "assets/gallery/vehicles/46.jpg"
+            "images": [
+              "assets/gallery/vehicles/46.jpg"
+            ]
           },
           {
             "title": {
@@ -1079,7 +1231,9 @@
               "en": "21x29,7cm, Hand-coloured intaglio, typographic ink and acrylic on metallic foam paper",
               "el": "21x29,7cm, Επιζωγραφισμένη βαθυτυπία, τυπογραφικό μελάνι και ακρυλικό σε αφρώδες μεταλλικό χαρτί"
             },
-            "image": "assets/gallery/vehicles/47.jpg"
+            "images": [
+              "assets/gallery/vehicles/47.jpg"
+            ]
           },
           {
             "title": {
@@ -1091,7 +1245,9 @@
               "el": "24x18,5 cm, Επιζωγραφισμένη βαθυτυπία, τυπογραφικό μελάνι και ακρυλικό σε χαρτί"
             },
             "year": "2024",
-            "image": "assets/gallery/vehicles/48.jpg"
+            "images": [
+              "assets/gallery/vehicles/48.jpg"
+            ]
           },
           {
             "title": {
@@ -1103,7 +1259,9 @@
               "el": "35x50cm, Μεικτή τεχνική, τυπογραφικό μελάνι και ακρυλικό σε μεταλλιζέ χαρτί"
             },
             "year": "2024",
-            "image": "assets/gallery/vehicles/50.jpg"
+            "images": [
+              "assets/gallery/vehicles/50.jpg"
+            ]
           },
           {
             "title": {
@@ -1115,7 +1273,9 @@
               "el": "35x50cm, Μεικτή τεχνική, τυπογραφικό μελάνι και ακρυλικό σε χαρτί"
             },
             "year": "2024",
-            "image": "assets/gallery/vehicles/49.jpg"
+            "images": [
+              "assets/gallery/vehicles/49.jpg"
+            ]
           },
           {
             "title": {
@@ -1127,7 +1287,9 @@
               "el": "Σινική μελάνη και ακρυλικό σε χαρτί"
             },
             "year": "2024",
-            "image": "assets/gallery/vehicles/51.jpg"
+            "images": [
+              "assets/gallery/vehicles/51.jpg"
+            ]
           },
           {
             "title": {
@@ -1139,7 +1301,9 @@
               "el": "19x10cm, Τύπωμα linoleum σε πλεξιγκλάς"
             },
             "year": "2024",
-            "image": "assets/gallery/vehicles/52.jpg"
+            "images": [
+              "assets/gallery/vehicles/52.jpg"
+            ]
           },
           {
             "title": {
@@ -1151,7 +1315,9 @@
               "el": "33x35cm, Μεικτή τεχνική, τυπογραφικό μελάνι, ακρυλικό και χρυσό σπρέι σε ύφασμα"
             },
             "year": "2024",
-            "image": "assets/gallery/vehicles/53.jpg"
+            "images": [
+              "assets/gallery/vehicles/53.jpg"
+            ]
           },
           {
             "title": {
@@ -1162,7 +1328,9 @@
               "en": "Intaglio, typographic ink on tracing paper and metallic paper mounted on wood",
               "el": "Βαθυτυπία, τυπογραφικό μελάνι σε ριζόχαρτο και μεταλλικό χαρτί επικολλημένο σε ξύλο"
             },
-            "image": "assets/χερουβιμ.jpg"
+            "images": [
+              "assets/χερουβιμ.jpg"
+            ]
           },
           {
             "title": {
@@ -1173,7 +1341,9 @@
               "en": "85x55 cm, Mixed media, typographic ink on fabric",
               "el": "85x55 cm, Μεικτή τεχνική, τυπογραφικό μελάνι σε ύφασμα"
             },
-            "image": "assets/gallery/vehicles/55.jpg"
+            "images": [
+              "assets/gallery/vehicles/55.jpg"
+            ]
           }
         ]
       }

@@ -1,6 +1,6 @@
 # Updating the portfolio
 
-Edit portfolio text, artwork, and image paths in [`content.json`](./content.json). Each translated field keeps English and Greek together, and each artwork has one shared image path. The portfolio remains static and has no build step.
+Edit portfolio text, artwork, and image paths in [`content.json`](./content.json). Each translated field keeps English and Greek together, and each artwork stores its shared image paths in one `images` array. The portfolio remains static and has no build step.
 
 The site opens in Greek unless a language was previously selected; the selected language is saved in the browser for the next visit.
 
@@ -25,11 +25,16 @@ Open [`content.json`](./content.json) in VS Code. Translated text sits side by s
 }
 ```
 
-Artwork image paths are stored once, outside the language-specific fields:
+Artwork image paths are stored in one array, outside the language-specific fields:
 
 ```json
-"image": "assets/gallery/camera-incognita/01.jpeg"
+"images": [
+  "assets/gallery/camera-incognita/01.jpeg",
+  "assets/gallery/camera-incognita/02.jpeg"
+]
 ```
+
+The first photo is shown initially; carousel buttons switch between photos, and selecting a photo opens it in the full-screen preview. Use an array with one path for an artwork with one photo.
 
 Years that are the same in both languages are stored once as a string, such as `"year": "2022"`. Use the `{ "en": "...", "el": "..." }` form only if the English and Greek year text needs to differ.
 
