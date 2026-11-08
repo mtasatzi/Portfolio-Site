@@ -51,3 +51,5 @@ Keep the JSON quotation marks, braces, and commas valid. JSON does not allow com
 Include the updated `content.json` and any new files in `assets` when publishing the static site.
 
 When changing `js/i18n.js`, increment the `v` value in its script URL in [`index.html`](./index.html), for example from `?v=6` to `?v=7`. This gives the updated script a new URL so browsers fetch it after deployment instead of reusing a cached copy.
+
+The site includes search and social-sharing metadata in [`index.html`](./index.html), plus [`robots.txt`](./robots.txt) to allow search crawlers. Add a canonical URL and sitemap only after confirming the final public site URL; submit the sitemap through Google Search Console once available.
