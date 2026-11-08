@@ -372,8 +372,18 @@ function render() {
 
 function captureViewportAnchor() {
   const y = Math.min(window.innerHeight - 1, Math.max(0, window.innerHeight * 0.4));
-  const element = document.elementFromPoint(window.innerWidth / 2, y);
-  const work = element?.closest(".work");
+  const x = window.innerWidth / 2;
+  const visibleWorks = [...document.querySelectorAll(".work")].filter((work) => {
+    const bounds = work.getBoundingClientRect();
+    return bounds.bottom > 0 && bounds.top < window.innerHeight;
+  });
+  const work = visibleWorks.reduce((nearest, candidate) => {
+    const bounds = candidate.getBoundingClientRect();
+    const distanceX = Math.max(bounds.left - x, 0, x - bounds.right);
+    const distanceY = Math.max(bounds.top - y, 0, y - bounds.bottom);
+    const distance = distanceX ** 2 + distanceY ** 2;
+    return !nearest || distance < nearest.distance ? { element: candidate, distance } : nearest;
+  }, null)?.element;
   if (work) {
     const period = work.closest(".period");
     return {
@@ -385,6 +395,7 @@ function captureViewportAnchor() {
     };
   }
 
+  const element = document.elementFromPoint(x, y);
   const anchor = element?.closest("[data-i18n], section[id]");
   return anchor
     ? { element: anchor, top: anchor.getBoundingClientRect().top, scrollY: window.scrollY }
