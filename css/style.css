@@ -1152,15 +1152,16 @@ p {
   }
 
   .timeline {
-    padding-left: 40px;
+    padding-left: 0;
   }
 
+  .timeline::before,
   .period::before {
-    left: -42px;
+    display: none;
   }
 
   .period-works {
-    grid-template-columns: minmax(0, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .work {
@@ -1199,7 +1200,7 @@ p {
   }
 
   .period-works {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .work-img {
