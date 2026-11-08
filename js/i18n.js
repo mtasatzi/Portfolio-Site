@@ -213,8 +213,8 @@ function updateImagePreview() {
   const captionParts = [work.title, work.details, work.year].map(localized).filter(Boolean);
   if (photos.length > 1) captionParts.push(`${imageIndex + 1} / ${photos.length}`);
   caption.textContent = captionParts.join(" · ");
-  if (previousButton) previousButton.disabled = previewImages.length < 2;
-  if (nextButton) nextButton.disabled = previewImages.length < 2;
+  if (previousButton) previousButton.disabled = previewIndex === 0;
+  if (nextButton) nextButton.disabled = previewIndex === previewImages.length - 1;
 }
 
 function setPreviewZoom(zoom, event) {
@@ -303,9 +303,10 @@ function setPreviewZoom(zoom, event) {
 }
 
 function showAdjacentImage(offset) {
-  if (previewImages.length < 2) return;
+  const nextIndex = previewIndex + offset;
+  if (nextIndex < 0 || nextIndex >= previewImages.length) return;
 
-  previewIndex = (previewIndex + offset + previewImages.length) % previewImages.length;
+  previewIndex = nextIndex;
   updateImagePreview();
 }
 

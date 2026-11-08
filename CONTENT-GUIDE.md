@@ -50,4 +50,4 @@ Keep the JSON quotation marks, braces, and commas valid. JSON does not allow com
 
 Include the updated `content.json` and any new files in `assets` when publishing the static site.
 
-When changing `js/i18n.js`, increment the `v` value in its script URL in [`index.html`](./index.html), for example from `?v=5` to `?v=6`. This gives the updated script a new URL so browsers fetch it after deployment instead of reusing a cached copy.
+When changing `js/i18n.js`, increment the `v` value in its script URL in [`index.html`](./index.html), for example from `?v=6` to `?v=7`. This gives the updated script a new URL so browsers fetch it after deployment instead of reusing a cached copy.

@@ -893,7 +893,7 @@ p {
 
 .image-lightbox-nav:disabled {
   opacity: 0.5;
-  cursor: not-allowed;
+  cursor: default;
 }
 
 .image-lightbox-close:focus-visible,
